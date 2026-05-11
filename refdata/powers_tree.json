@@ -1,0 +1,6526 @@
+{
+  "Blaster": {
+    "primary": {
+      "Archery": {
+        "powers": [
+          "Snap Shot",
+          "Aimed Shot",
+          "Fistful of Arrows",
+          "Blazing Arrow",
+          "Aim",
+          "Explosive Arrow",
+          "Ranged Shot",
+          "Stunning Shot",
+          "Rain of Arrows"
+        ],
+        "full_name": "Blaster_Ranged.Archery"
+      },
+      "Assault Rifle": {
+        "powers": [
+          "Burst",
+          "Slug",
+          "Buckshot",
+          "M30 Grenade",
+          "Beanbag",
+          "Sniper Rifle",
+          "Flamethrower",
+          "Ignite",
+          "Full Auto"
+        ],
+        "full_name": "Blaster_Ranged.Assault_Rifle"
+      },
+      "Beam Rifle": {
+        "powers": [
+          "Single Shot",
+          "Charged Shot",
+          "Cutting Beam",
+          "Disintegrate",
+          "Aim",
+          "Lancer Shot",
+          "Penetrating Ray",
+          "Piercing Beam",
+          "Overcharge"
+        ],
+        "full_name": "Blaster_Ranged.Beam_Rifle"
+      },
+      "Dark Blast": {
+        "powers": [
+          "Dark Blast",
+          "Gloom",
+          "Umbral Torrent",
+          "Aim",
+          "Moonbeam",
+          "Tenebrous Tentacles",
+          "Abyssal Gaze",
+          "Life Drain",
+          "Blackstar"
+        ],
+        "full_name": "Blaster_Ranged.Dark_Blast"
+      },
+      "Dual Pistols": {
+        "powers": [
+          "Chemical Ammunition",
+          "Cryo Ammunition",
+          "Incendiary Ammunition",
+          "Pistols",
+          "Dual Wield",
+          "Empty Clips",
+          "Swap Ammo",
+          "Bullet Rain",
+          "Suppressive Fire",
+          "Executioner's Shot",
+          "Piercing Rounds",
+          "Hail of Bullets"
+        ],
+        "full_name": "Blaster_Ranged.Dual_Pistols"
+      },
+      "Electrical Blast": {
+        "powers": [
+          "Charged Bolts",
+          "Lightning Bolt",
+          "Ball Lightning",
+          "Short Circuit",
+          "Charge Up",
+          "Zapp",
+          "Tesla Cage",
+          "Voltaic Sentinel",
+          "Thunderous Blast"
+        ],
+        "full_name": "Blaster_Ranged.Electrical_Blast"
+      },
+      "Energy Blast": {
+        "powers": [
+          "Power Bolt",
+          "Power Blast",
+          "Energy Torrent",
+          "Power Burst",
+          "Sniper Blast",
+          "Aim",
+          "Power Push",
+          "Explosive Blast",
+          "Nova"
+        ],
+        "full_name": "Blaster_Ranged.Energy_Blast"
+      },
+      "Fire Blast": {
+        "powers": [
+          "Flares",
+          "Fire Blast",
+          "Fire Ball",
+          "Rain of Fire",
+          "Fire Breath",
+          "Aim",
+          "Blaze",
+          "Blazing Bolt",
+          "Inferno"
+        ],
+        "full_name": "Blaster_Ranged.Fire_Blast"
+      },
+      "Ice Blast": {
+        "powers": [
+          "Ice Bolt",
+          "Ice Blast",
+          "Frost Breath",
+          "Aim",
+          "Freeze Ray",
+          "Ice Storm",
+          "Bitter Ice Blast",
+          "Bitter Freeze Ray",
+          "Blizzard"
+        ],
+        "full_name": "Blaster_Ranged.Ice_Blast"
+      },
+      "Psychic Blast": {
+        "powers": [
+          "Dominate Will",
+          "Mental Blast",
+          "Telekinetic Blast",
+          "Psionic Darts",
+          "Psychic Focus",
+          "Psionic Lance",
+          "Psionic Tornado",
+          "Scramble Minds",
+          "Psychic Wail"
+        ],
+        "full_name": "Blaster_Ranged.Psychic_Blast"
+      },
+      "Radiation Blast": {
+        "powers": [
+          "Neutrino Bolt",
+          "X-Ray Beam",
+          "Irradiate",
+          "Electron Haze",
+          "Aim",
+          "Proton Volley",
+          "Cosmic Burst",
+          "Neutron Bomb",
+          "Atomic Blast"
+        ],
+        "full_name": "Blaster_Ranged.Radiation_Blast"
+      },
+      "Seismic Blast": {
+        "powers": [
+          "Seismic Shockwaves",
+          "Encase",
+          "Shatter",
+          "Rock Shards",
+          "Entomb",
+          "Seismic Force",
+          "Upthrust",
+          "Tombstone",
+          "Stalagmite",
+          "Meteor"
+        ],
+        "full_name": "Blaster_Ranged.Seismic_Blast"
+      },
+      "Sonic Attack": {
+        "powers": [
+          "Shriek",
+          "Scream",
+          "Howl",
+          "Shockwave",
+          "Shout",
+          "Amplify",
+          "Sirens Song",
+          "Screech",
+          "Dreadful Wail"
+        ],
+        "full_name": "Blaster_Ranged.Sonic_Attack"
+      },
+      "Storm Blast": {
+        "powers": [
+          "Gust",
+          "Hailstones",
+          "Jet Stream",
+          "Storm Cell",
+          "Intensify",
+          "Direct Strike",
+          "Chain Lightning",
+          "Cloudburst",
+          "Category Five"
+        ],
+        "full_name": "Blaster_Ranged.Storm_Blast"
+      },
+      "Water Blast": {
+        "powers": [
+          "Aqua Bolt",
+          "Hydro Blast",
+          "Water Burst",
+          "Whirlpool",
+          "Tidal Forces",
+          "Dehydrate",
+          "Water Jet",
+          "Steam Spray",
+          "Geyser"
+        ],
+        "full_name": "Blaster_Ranged.Water_Blast"
+      }
+    },
+    "secondary": {
+      "Atomic Manipulation": {
+        "powers": [
+          "Electron Shackles",
+          "Negatron Slam",
+          "Positron Cell",
+          "Ionize",
+          "Beta Decay",
+          "Metabolic Acceleration",
+          "Atom Smasher",
+          "Radioactive Cloud",
+          "Positronic Fist"
+        ],
+        "full_name": "Blaster_Support.Radiation_Manipulation"
+      },
+      "Darkness Manipulation": {
+        "powers": [
+          "Penumbral Grasp",
+          "Smite",
+          "Death Shroud",
+          "Shadow Maul",
+          "Soul Drain",
+          "Touch of the Beyond",
+          "Dark Consumption",
+          "Dark Pit",
+          "Midnight Grasp"
+        ],
+        "full_name": "Blaster_Support.Darkness_Manipulation"
+      },
+      "Devices": {
+        "powers": [
+          "Toxic Web Grenade",
+          "Caltrops",
+          "Taser",
+          "Targeting Drone",
+          "Smoke Grenade",
+          "Field Operative",
+          "Trip Mine",
+          "Remote Bomb",
+          "Gun Drone"
+        ],
+        "full_name": "Blaster_Support.Gadgets"
+      },
+      "Earth Manipulation": {
+        "powers": [
+          "Stone Prison",
+          "Heavy Mallet",
+          "Salt Crystals",
+          "Build Up",
+          "Tremor",
+          "Mud Bath",
+          "Beryl Crystals",
+          "Fracture",
+          "Seismic Smash"
+        ],
+        "full_name": "Blaster_Support.Earth_Manipulation"
+      },
+      "Electricity Manipulation": {
+        "powers": [
+          "Electric Fence",
+          "Charged Brawl",
+          "Build Up",
+          "Havoc Punch",
+          "Thunder Strike",
+          "Dynamo",
+          "Power Sink",
+          "Force of Thunder",
+          "Shocking Grasp"
+        ],
+        "full_name": "Blaster_Support.Electricity_Manipulation"
+      },
+      "Energy Manipulation": {
+        "powers": [
+          "Power Thrust",
+          "Energy Punch",
+          "Build Up",
+          "Bone Smasher",
+          "Energize",
+          "Stun",
+          "Power Boost",
+          "Boost Range",
+          "Total Focus"
+        ],
+        "full_name": "Blaster_Support.Energy_Manipulation"
+      },
+      "Fire Manipulation": {
+        "powers": [
+          "Ring of Fire",
+          "Fire Sword",
+          "Combustion",
+          "Fire Sword Circle",
+          "Build Up",
+          "Cauterizing Aura",
+          "Consume",
+          "Burn",
+          "Hot Feet"
+        ],
+        "full_name": "Blaster_Support.Fire_Manipulation"
+      },
+      "Ice Manipulation": {
+        "powers": [
+          "Chilblain",
+          "Frozen Fists",
+          "Ice Sword",
+          "Frigid Protection",
+          "Build Up",
+          "Ice Patch",
+          "Shiver",
+          "Freezing Touch",
+          "Frozen Aura"
+        ],
+        "full_name": "Blaster_Support.Ice_Manipulation"
+      },
+      "Martial Combat": {
+        "powers": [
+          "Reach for the Limit",
+          "Ki Push",
+          "Storm Kick",
+          "Reach for the Limit",
+          "Burst of Speed",
+          "Dragon's Tail",
+          "Reaction Time",
+          "Inner Will",
+          "Throw Sand",
+          "Eagles Claw"
+        ],
+        "full_name": "Blaster_Support.Martial_Manipulation"
+      },
+      "Mental Manipulation": {
+        "powers": [
+          "Subdual",
+          "Mind Probe",
+          "World of Confusion",
+          "Psychic Scream",
+          "Concentration",
+          "Drain Psyche",
+          "Scare",
+          "Psychic Shockwave",
+          "Telekinetic Thrust"
+        ],
+        "full_name": "Blaster_Support.Mental_Manipulation"
+      },
+      "Ninja Training": {
+        "powers": [
+          "Immobilizing Dart",
+          "Sting of the Wasp",
+          "Choking Powder",
+          "Shinobi",
+          "The Lotus Drops",
+          "Kuji-In Toh",
+          "Smoke Flash",
+          "Blinding Powder",
+          "Golden Dragonfly"
+        ],
+        "full_name": "Blaster_Support.Ninja_Training"
+      },
+      "Plant Manipulation": {
+        "powers": [
+          "Entangle",
+          "Skewer",
+          "Strangler",
+          "Toxins",
+          "Spore Cloud",
+          "Wild Fortress",
+          "Ripper",
+          "Vines",
+          "Thorn Burst"
+        ],
+        "full_name": "Blaster_Support.Plant_Manipulation"
+      },
+      "Sonic Manipulation": {
+        "powers": [
+          "Sonic Thrust",
+          "Strident Echo",
+          "Echo Chamber",
+          "Sound Booster",
+          "Deafening Wave",
+          "Sound Barrier",
+          "Disruption Aura",
+          "Sound Cannon",
+          "Earsplitter"
+        ],
+        "full_name": "Blaster_Support.Sonic_Manipulation"
+      },
+      "Tactical Arrow": {
+        "powers": [
+          "Electrified Net Arrow",
+          "Glue Arrow",
+          "Ice Arrow",
+          "Upshot",
+          "Flash Arrow",
+          "Eagle Eye",
+          "Gymnastics",
+          "ESD Arrow",
+          "Oil Slick Arrow"
+        ],
+        "full_name": "Blaster_Support.Tactical_Arrow"
+      },
+      "Temporal Manipulation": {
+        "powers": [
+          "Time Wall",
+          "Aging Touch",
+          "Time Stop",
+          "Chronos",
+          "End of Time",
+          "Temporal Healing",
+          "Future Pain",
+          "Time Shift",
+          "Time Lord"
+        ],
+        "full_name": "Blaster_Support.Temporal_Manipulation"
+      }
+    },
+    "epic": {
+      "Arsenal Mastery": {
+        "powers": [
+          "Body Armor",
+          "Cryo Freeze Ray",
+          "Sleep Grenade",
+          "Surveillance",
+          "LRM Rocket"
+        ],
+        "full_name": "Epic.Munitions_Mastery"
+      },
+      "Dark Mastery": {
+        "powers": [
+          "Murky Cloud",
+          "Fearsome Stare",
+          "Possess",
+          "Black Hole",
+          "Soul Consumption"
+        ],
+        "full_name": "Epic.Dark_Mastery_Blaster"
+      },
+      "Electricity Mastery": {
+        "powers": [
+          "Static Discharge",
+          "Shocking Bolt",
+          "Charged Armor",
+          "Surge of Power",
+          "EM Pulse"
+        ],
+        "full_name": "Epic.Electrical_Mastery"
+      },
+      "Fire Mastery": {
+        "powers": [
+          "Bonfire",
+          "Char",
+          "Fire Shield",
+          "Melt Armor",
+          "Rise of the Phoenix"
+        ],
+        "full_name": "Epic.Flame_Mastery"
+      },
+      "Force Mastery": {
+        "powers": [
+          "Personal Force Field",
+          "Repulsion Field",
+          "Temp Invulnerability",
+          "Force Bomb",
+          "Force of Nature"
+        ],
+        "full_name": "Epic.Force_Mastery"
+      },
+      "Ice Mastery": {
+        "powers": [
+          "Snow Storm",
+          "Flash Freeze",
+          "Hoarfrost",
+          "Frozen Armor",
+          "Hibernate"
+        ],
+        "full_name": "Epic.Cold_Mastery"
+      },
+      "Leviathan Mastery": {
+        "powers": [
+          "School of Sharks",
+          "Bile Spray",
+          "Knockout Blow",
+          "Shark Skin",
+          "Spirit Shark Jaws"
+        ],
+        "full_name": "Epic.Mastermind_Leviathan_Mastery"
+      },
+      "Mace Mastery": {
+        "powers": [
+          "Web Envelope",
+          "Scorpion Shield",
+          "Mace Beam Volley",
+          "Summon Spiderlings",
+          "Web Cocoon"
+        ],
+        "full_name": "Epic.Blaster_Mace_Mastery"
+      },
+      "Mu Mastery": {
+        "powers": [
+          "Static Discharge",
+          "Charged Armor",
+          "Summon Adept",
+          "Electrifying Fences",
+          "Electric Shackles"
+        ],
+        "full_name": "Epic.Blaster_Mu_Mastery"
+      },
+      "Soul Mastery": {
+        "powers": [
+          "Night Fall",
+          "Dark Embrace",
+          "Oppressive Gloom",
+          "Soul Tentacles",
+          "Soul Storm"
+        ],
+        "full_name": "Epic.Mastermind_Soul_Mastery"
+      }
+    }
+  },
+  "Controller": {
+    "primary": {
+      "Arsenal Control": {
+        "powers": [
+          "Tranquilizer",
+          "Cryo Freeze Ray",
+          "Sleep Grenade",
+          "Liquid Nitrogen",
+          "Cloaking Device",
+          "Smoke Canister",
+          "Flash Bang",
+          "Tear Gas",
+          "Tri-Cannon"
+        ],
+        "full_name": "Controller_Control.Arsenal_Control"
+      },
+      "Darkness Control": {
+        "powers": [
+          "Shadowy Binds",
+          "Dark Grasp",
+          "Living Shadows",
+          "Possess",
+          "Fearsome Stare",
+          "Heart of Darkness",
+          "Haunt",
+          "Shadow Field",
+          "Umbra Beast"
+        ],
+        "full_name": "Controller_Control.Darkness_Control"
+      },
+      "Earth Control": {
+        "powers": [
+          "Stone Prison",
+          "Fossilize",
+          "Stone Cages",
+          "Quicksand",
+          "Salt Crystals",
+          "Stalagmites",
+          "Earthquake",
+          "Volcanic Gasses",
+          "Animate Stone"
+        ],
+        "full_name": "Controller_Control.Earth_Control"
+      },
+      "Electric Control": {
+        "powers": [
+          "Electric Fence",
+          "Tesla Cage",
+          "Chain Fences",
+          "Jolting Chain",
+          "Conductive Aura",
+          "Static Field",
+          "Tesla Coil",
+          "Synaptic Overload",
+          "Gremlins"
+        ],
+        "full_name": "Controller_Control.Electric_Control"
+      },
+      "Fire Control": {
+        "powers": [
+          "Ring of Fire",
+          "Char",
+          "Fire Cages",
+          "Smoke",
+          "Hot Feet",
+          "Flashfire",
+          "Cinders",
+          "Bonfire",
+          "Fire Imps"
+        ],
+        "full_name": "Controller_Control.Fire_Control"
+      },
+      "Gravity Control": {
+        "powers": [
+          "Crush",
+          "Lift",
+          "Gravity Distortion",
+          "Propel",
+          "Crushing Field",
+          "Dimension Shift",
+          "Gravity Distortion Field",
+          "Wormhole",
+          "Singularity"
+        ],
+        "full_name": "Controller_Control.Gravity_Control"
+      },
+      "Ice Control": {
+        "powers": [
+          "Chilblain",
+          "Block of Ice",
+          "Frostbite",
+          "Arctic Air",
+          "Cold Snap",
+          "Ice Slick",
+          "Flash Freeze",
+          "Glacier",
+          "Jack Frost"
+        ],
+        "full_name": "Controller_Control.Ice_Control"
+      },
+      "Illusion Control": {
+        "powers": [
+          "Spectral Wounds",
+          "Blind",
+          "Deceive",
+          "Flash",
+          "Superior Invisibility",
+          "Group Invisibility",
+          "Phantom Army",
+          "Spectral Terror",
+          "Phantasm"
+        ],
+        "full_name": "Controller_Control.Illusion_Control"
+      },
+      "Mind Control": {
+        "powers": [
+          "Mesmerize",
+          "Levitate",
+          "Dominate",
+          "Confuse",
+          "Mass Hypnosis",
+          "Telekinesis",
+          "Total Domination",
+          "Terrify",
+          "Mass Confusion"
+        ],
+        "full_name": "Controller_Control.Mind_Control"
+      },
+      "Plant Control": {
+        "powers": [
+          "Entangle",
+          "Strangler",
+          "Roots",
+          "Spore Burst",
+          "Seeds of Confusion",
+          "Spirit Tree",
+          "Vines",
+          "Carrion Creepers",
+          "Fly Trap"
+        ],
+        "full_name": "Controller_Control.Plant_Control"
+      },
+      "Pyrotechnic Control": {
+        "powers": [
+          "Sparkling Cage",
+          "Dazzle",
+          "Sparkling Chain",
+          "Glittering Column",
+          "Hypnotizing Lights",
+          "Brillant Barrage",
+          "Incendiary Aura",
+          "Explosive Bouquet",
+          "Catherine Wheel"
+        ],
+        "full_name": "Controller_Control.Pyrotechnic_Control"
+      },
+      "Symphony Control": {
+        "powers": [
+          "Melodic Binding",
+          "Hymn of Dissonance",
+          "Aria of Stasis",
+          "Impassioned Serenade",
+          "Dreadful Discord",
+          "Enfeebling Lullaby",
+          "Confounding Chant",
+          "Chords of Despair",
+          "Reverberant"
+        ],
+        "full_name": "Controller_Control.Symphony_Control"
+      }
+    },
+    "secondary": {
+      "Cold Domination": {
+        "powers": [
+          "Infrigidate",
+          "Ice Shield",
+          "Snow Storm",
+          "Glacial Shield",
+          "Frostwork",
+          "Arctic Fog",
+          "Benumb",
+          "Sleet",
+          "Heat Loss"
+        ],
+        "full_name": "Controller_Buff.Cold_Domination"
+      },
+      "Darkness Affinity": {
+        "powers": [
+          "Twilight Grasp",
+          "Tar Patch",
+          "Darkest Night",
+          "Howling Twilight",
+          "Shadow Fall",
+          "Fade",
+          "Soul Absorption",
+          "Black Hole",
+          "Dark Servant"
+        ],
+        "full_name": "Controller_Buff.Darkness_Affinity"
+      },
+      "Electrical Affinity": {
+        "powers": [
+          "Shock",
+          "Rejuvenating Circuit",
+          "Galvanic Sentinel",
+          "Energizing Circuit",
+          "Faraday Cage",
+          "Empowering Circuit",
+          "Defibrillate",
+          "Insulating Circuit",
+          "Amp Up"
+        ],
+        "full_name": "Controller_Buff.Electrical_Affinity"
+      },
+      "Empathy": {
+        "powers": [
+          "Healing Aura",
+          "Heal Other",
+          "Absorb Pain",
+          "Resurrect",
+          "Clear Mind",
+          "Fortitude",
+          "Recovery Aura",
+          "Regeneration Aura",
+          "Adrenalin Boost"
+        ],
+        "full_name": "Controller_Buff.Empathy"
+      },
+      "Force Field": {
+        "powers": [
+          "Personal Force Field",
+          "Deflection Shield",
+          "Repulsion Bolt",
+          "Insulation Shield",
+          "Detention Field",
+          "Dispersion Bubble",
+          "Repulsion Field",
+          "Force Bomb",
+          "Damping Bubble"
+        ],
+        "full_name": "Controller_Buff.Force_Field"
+      },
+      "Kinetics": {
+        "powers": [
+          "Transfusion",
+          "Siphon Power",
+          "Repel",
+          "Siphon Speed",
+          "Increase Density",
+          "Speed Boost",
+          "Inertial Reduction",
+          "Transference",
+          "Fulcrum Shift"
+        ],
+        "full_name": "Controller_Buff.Kinetics"
+      },
+      "Marine Affinity": {
+        "powers": [
+          "Shoal Rush",
+          "Soothing Wave",
+          "Toroidal Bubble",
+          "Whitecap",
+          "Tide Pool",
+          "Brine",
+          "Shifting Tides",
+          "Barrier Reef",
+          "Power of the Depths"
+        ],
+        "full_name": "Controller_Buff.Marine_Affinity"
+      },
+      "Nature Affinity": {
+        "powers": [
+          "Corrosive Enzymes",
+          "Regrowth",
+          "Wild Growth",
+          "Spore Cloud",
+          "Lifegiving Spores",
+          "Wild Bastion",
+          "Rebirth",
+          "Entangling Aura",
+          "Overgrowth"
+        ],
+        "full_name": "Controller_Buff.Nature_Affinity"
+      },
+      "Pain Domination": {
+        "powers": [
+          "Nullify Pain",
+          "Soothe",
+          "Share Pain",
+          "Conduit of Pain",
+          "Enforced Morale",
+          "Soothing Aura",
+          "World of Pain",
+          "Anguishing Cry",
+          "Painbringer"
+        ],
+        "full_name": "Controller_Buff.Pain_Domination"
+      },
+      "Poison": {
+        "powers": [
+          "Alkaloid",
+          "Envenom",
+          "Weaken",
+          "Neurotoxic Breath",
+          "Elixir of Life",
+          "Antidote",
+          "Paralytic Poison",
+          "Poison Trap",
+          "Venomous Gas"
+        ],
+        "full_name": "Controller_Buff.Poison"
+      },
+      "Radiation Emission": {
+        "powers": [
+          "Radiant Aura",
+          "Radiation Infection",
+          "Accelerate Metabolism",
+          "Enervating Field",
+          "Mutation",
+          "Lingering Radiation",
+          "Choking Cloud",
+          "Fallout",
+          "EM Pulse"
+        ],
+        "full_name": "Controller_Buff.Radiation_Emission"
+      },
+      "Sonic Resonance": {
+        "powers": [
+          "Sonic Siphon",
+          "Sonic Barrier",
+          "Sonic Haven",
+          "Sonic Cage",
+          "Disruption Field",
+          "Sonic Dispersion",
+          "Sonic  Repulsion",
+          "Clarity",
+          "Liquefy"
+        ],
+        "full_name": "Controller_Buff.Sonic_Debuff"
+      },
+      "Storm Summoning": {
+        "powers": [
+          "Gale",
+          "O2 Boost",
+          "Snow Storm",
+          "Steamy Mist",
+          "Freezing Rain",
+          "Hurricane",
+          "Thunder Clap",
+          "Tornado",
+          "Lightning Storm"
+        ],
+        "full_name": "Controller_Buff.Storm_Summoning"
+      },
+      "Thermal Radiation": {
+        "powers": [
+          "Warmth",
+          "Thermal Shield",
+          "Cauterize",
+          "Plasma Shield",
+          "Power of the Phoenix",
+          "Thaw",
+          "Forge",
+          "Heat Exhaustion",
+          "Melt Armor"
+        ],
+        "full_name": "Controller_Buff.Thermal_Radiation"
+      },
+      "Time Manipulation": {
+        "powers": [
+          "Time Crawl",
+          "Temporal Mending",
+          "Time's Juncture",
+          "Temporal Selection",
+          "Distortion Field",
+          "Time Stop",
+          "Farsight",
+          "Slowed Response",
+          "Chrono Shift"
+        ],
+        "full_name": "Controller_Buff.Time_Manipulation"
+      },
+      "Traps": {
+        "powers": [
+          "Web Grenade",
+          "Caltrops",
+          "Triage Beacon",
+          "Acid Mortar",
+          "Force Field Generator",
+          "Poison Trap",
+          "Seeker Drones",
+          "Trip Mine",
+          "Temporal Bomb"
+        ],
+        "full_name": "Controller_Buff.Traps"
+      },
+      "Trick Arrow": {
+        "powers": [
+          "Entangling Arrow",
+          "Flash Arrow",
+          "Glue Arrow",
+          "Ice Arrow",
+          "Poison Gas Arrow",
+          "Acid Arrow",
+          "Disruption Arrow",
+          "Oil Slick Arrow",
+          "EMP Arrow"
+        ],
+        "full_name": "Controller_Buff.Trick_Arrow"
+      }
+    },
+    "epic": {
+      "Dark Mastery": {
+        "powers": [
+          "Murky Cloud",
+          "Dark Blast",
+          "Umbral Torrent",
+          "Midnight Grasp",
+          "Soul Consumption"
+        ],
+        "full_name": "Epic.Dark_Mastery_Controller"
+      },
+      "Earth Mastery": {
+        "powers": [
+          "Fissure",
+          "Hurl Boulder",
+          "Rock Armor",
+          "Seismic Smash",
+          "Embrace of the Earth"
+        ],
+        "full_name": "Epic.Stone_Mastery"
+      },
+      "Energy Mastery": {
+        "powers": [
+          "Power Blast",
+          "Conserve Power",
+          "Temp Invulnerability",
+          "Energy Torrent",
+          "Power Boost"
+        ],
+        "full_name": "Epic.Primal_Forces_Mastery"
+      },
+      "Fire Mastery": {
+        "powers": [
+          "Fire Blast",
+          "Fire Ball",
+          "Fire Shield",
+          "Rise of the Phoenix",
+          "Consume"
+        ],
+        "full_name": "Epic.Fire_Mastery"
+      },
+      "Ice Mastery": {
+        "powers": [
+          "Ice Blast",
+          "Hibernate",
+          "Frozen Armor",
+          "Frost Breath",
+          "Ice Storm"
+        ],
+        "full_name": "Epic.Ice_Mastery"
+      },
+      "Leviathan Mastery": {
+        "powers": [
+          "Water Spout",
+          "Bile Spray",
+          "Hibernate",
+          "Shark Skin",
+          "Summon Coralax"
+        ],
+        "full_name": "Epic.Dominator_Leviathan_Mastery"
+      },
+      "Mace Mastery": {
+        "powers": [
+          "Poisonous Ray",
+          "Scorpion Shield",
+          "Disruptor Blast",
+          "Focused Accuracy",
+          "Summon Tarantula"
+        ],
+        "full_name": "Epic.Controller_Mace_Mastery"
+      },
+      "Mu Mastery": {
+        "powers": [
+          "Power Sink",
+          "Charged Armor",
+          "Ball Lightning",
+          "Surge of Power",
+          "Summon Guardian"
+        ],
+        "full_name": "Epic.Dominator_Mu_Mastery"
+      },
+      "Psionic Mastery": {
+        "powers": [
+          "Mental Blast",
+          "Indomitable Will",
+          "Mind Over Body",
+          "World of Confusion",
+          "Psionic Tornado"
+        ],
+        "full_name": "Epic.Psionic_Mastery"
+      },
+      "Soul Mastery": {
+        "powers": [
+          "Dark Consumption",
+          "Dark Embrace",
+          "Dark Obliteration",
+          "Soul Drain",
+          "Summon Seer"
+        ],
+        "full_name": "Epic.Dominator_Soul_Mastery"
+      }
+    }
+  },
+  "Defender": {
+    "primary": {
+      "Cold Domination": {
+        "powers": [
+          "Infrigidate",
+          "Ice Shield",
+          "Snow Storm",
+          "Glacial Shield",
+          "Frostwork",
+          "Arctic Fog",
+          "Benumb",
+          "Sleet",
+          "Heat Loss"
+        ],
+        "full_name": "Defender_Buff.Cold_Domination"
+      },
+      "Dark Miasma": {
+        "powers": [
+          "Twilight Grasp",
+          "Tar Patch",
+          "Darkest Night",
+          "Howling Twilight",
+          "Shadow Fall",
+          "Fearsome Stare",
+          "Petrifying Gaze",
+          "Black Hole",
+          "Dark Servant"
+        ],
+        "full_name": "Defender_Buff.Dark_Miasma"
+      },
+      "Electrical Affinity": {
+        "powers": [
+          "Shock",
+          "Rejuvenating Circuit",
+          "Galvanic Sentinel",
+          "Energizing Circuit",
+          "Faraday Cage",
+          "Empowering Circuit",
+          "Defibrillate",
+          "Insulating Circuit",
+          "Amp Up"
+        ],
+        "full_name": "Defender_Buff.Shock_Therapy"
+      },
+      "Empathy": {
+        "powers": [
+          "Healing Aura",
+          "Heal Other",
+          "Absorb Pain",
+          "Resurrect",
+          "Clear Mind",
+          "Fortitude",
+          "Recovery Aura",
+          "Regeneration Aura",
+          "Adrenalin Boost"
+        ],
+        "full_name": "Defender_Buff.Empathy"
+      },
+      "Force Field": {
+        "powers": [
+          "Personal Force Field",
+          "Deflection Shield",
+          "Repulsion Bolt",
+          "Insulation Shield",
+          "Detention Field",
+          "Dispersion Bubble",
+          "Repulsion Field",
+          "Force Bomb",
+          "Damping Bubble"
+        ],
+        "full_name": "Defender_Buff.Force_Field"
+      },
+      "Kinetics": {
+        "powers": [
+          "Transfusion",
+          "Siphon Power",
+          "Repel",
+          "Siphon Speed",
+          "Increase Density",
+          "Speed Boost",
+          "Inertial Reduction",
+          "Transference",
+          "Fulcrum Shift"
+        ],
+        "full_name": "Defender_Buff.Kinetics"
+      },
+      "Marine Affinity": {
+        "powers": [
+          "Shoal Rush",
+          "Soothing Wave",
+          "Toroidal Bubble",
+          "Whitecap",
+          "Tide Pool",
+          "Brine",
+          "Shifting Tides",
+          "Barrier Reef",
+          "Power of the Depths"
+        ],
+        "full_name": "Defender_Buff.Marine_Affinity"
+      },
+      "Nature Affinity": {
+        "powers": [
+          "Corrosive Enzymes",
+          "Regrowth",
+          "Wild Growth",
+          "Spore Cloud",
+          "Lifegiving Spores",
+          "Wild Bastion",
+          "Rebirth",
+          "Entangling Aura",
+          "Overgrowth"
+        ],
+        "full_name": "Defender_Buff.Nature_Affinity"
+      },
+      "Pain Domination": {
+        "powers": [
+          "Nullify Pain",
+          "Soothe",
+          "Share Pain",
+          "Conduit of Pain",
+          "Enforced Morale",
+          "Soothing Aura",
+          "World of Pain",
+          "Anguishing Cry",
+          "Painbringer"
+        ],
+        "full_name": "Defender_Buff.Pain_Domination"
+      },
+      "Poison": {
+        "powers": [
+          "Alkaloid",
+          "Envenom",
+          "Weaken",
+          "Neurotoxic Breath",
+          "Elixir of Life",
+          "Antidote",
+          "Paralytic Poison",
+          "Poison Trap",
+          "Venomous Gas"
+        ],
+        "full_name": "Defender_Buff.Poison"
+      },
+      "Radiation Emission": {
+        "powers": [
+          "Radiant Aura",
+          "Radiation Infection",
+          "Accelerate Metabolism",
+          "Enervating Field",
+          "Mutation",
+          "Lingering Radiation",
+          "Choking Cloud",
+          "Fallout",
+          "EM Pulse"
+        ],
+        "full_name": "Defender_Buff.Radiation_Emission"
+      },
+      "Sonic Resonance": {
+        "powers": [
+          "Sonic Siphon",
+          "Sonic Barrier",
+          "Sonic Haven",
+          "Sonic Cage",
+          "Disruption Field",
+          "Sonic Dispersion",
+          "Sonic Repulsion",
+          "Clarity",
+          "Liquefy"
+        ],
+        "full_name": "Defender_Buff.Sonic_Debuff"
+      },
+      "Storm Summoning": {
+        "powers": [
+          "Gale",
+          "O2 Boost",
+          "Snow Storm",
+          "Steamy Mist",
+          "Freezing Rain",
+          "Hurricane",
+          "Thunder Clap",
+          "Tornado",
+          "Lightning Storm"
+        ],
+        "full_name": "Defender_Buff.Storm_Summoning"
+      },
+      "Thermal Radiation": {
+        "powers": [
+          "Warmth",
+          "Thermal Shield",
+          "Cauterize",
+          "Plasma Shield",
+          "Power of the Phoenix",
+          "Thaw",
+          "Forge",
+          "Heat Exhaustion",
+          "Melt Armor"
+        ],
+        "full_name": "Defender_Buff.Thermal_Radiation"
+      },
+      "Time Manipulation": {
+        "powers": [
+          "Time Crawl",
+          "Temporal Mending",
+          "Time's Juncture",
+          "Temporal Selection",
+          "Distortion Field",
+          "Time Stop",
+          "Farsight",
+          "Slowed Response",
+          "Chrono Shift"
+        ],
+        "full_name": "Defender_Buff.Time_Manipulation"
+      },
+      "Traps": {
+        "powers": [
+          "Web Grenade",
+          "Caltrops",
+          "Triage Beacon",
+          "Acid Mortar",
+          "Force Field Generator",
+          "Poison Trap",
+          "Seeker Drones",
+          "Trip Mine",
+          "Temporal Bomb"
+        ],
+        "full_name": "Defender_Buff.Traps"
+      },
+      "Trick Arrow": {
+        "powers": [
+          "Entangling Arrow",
+          "Flash Arrow",
+          "Glue Arrow",
+          "Ice Arrow",
+          "Poison Gas Arrow",
+          "Acid Arrow",
+          "Disruption Arrow",
+          "Oil Slick Arrow",
+          "EMP Arrow"
+        ],
+        "full_name": "Defender_Buff.Trick_Arrow"
+      }
+    },
+    "secondary": {
+      "Archery": {
+        "powers": [
+          "Snap Shot",
+          "Aimed Shot",
+          "Fistful of Arrows",
+          "Blazing Arrow",
+          "Aim",
+          "Explosive Arrow",
+          "Ranged Shot",
+          "Stunning Shot",
+          "Rain of Arrows"
+        ],
+        "full_name": "Defender_Ranged.Archery"
+      },
+      "Assault Rifle": {
+        "powers": [
+          "Burst",
+          "Slug",
+          "Buckshot",
+          "M30 Grenade",
+          "Beanbag",
+          "Sniper Rifle",
+          "Flamethrower",
+          "Ignite",
+          "Full Auto"
+        ],
+        "full_name": "Defender_Ranged.Assault_Rifle"
+      },
+      "Beam Rifle": {
+        "powers": [
+          "Single Shot",
+          "Charged Shot",
+          "Cutting Beam",
+          "Disintegrate",
+          "Aim",
+          "Lancer Shot",
+          "Penetrating Ray",
+          "Piercing Beam",
+          "Overcharge"
+        ],
+        "full_name": "Defender_Ranged.Beam_Rifle"
+      },
+      "Dark Blast": {
+        "powers": [
+          "Dark Blast",
+          "Gloom",
+          "Moonbeam",
+          "Dark Pit",
+          "Tenebrous Tentacles",
+          "Night Fall",
+          "Torrent",
+          "Life Drain",
+          "Blackstar"
+        ],
+        "full_name": "Defender_Ranged.Dark_Blast"
+      },
+      "Dual Pistols": {
+        "powers": [
+          "Chemical Ammunition",
+          "Cryo Ammunition",
+          "Incendiary Ammunition",
+          "Pistols",
+          "Dual Wield",
+          "Empty Clips",
+          "Swap Ammo",
+          "Bullet Rain",
+          "Suppressive Fire",
+          "Executioner's Shot",
+          "Piercing Rounds",
+          "Hail of Bullets"
+        ],
+        "full_name": "Defender_Ranged.Dual_Pistols"
+      },
+      "Electrical Blast": {
+        "powers": [
+          "Charged Bolts",
+          "Lightning Bolt",
+          "Ball Lightning",
+          "Short Circuit",
+          "Charge Up",
+          "Zapp",
+          "Tesla Cage",
+          "Voltaic Sentinel",
+          "Thunderous Blast"
+        ],
+        "full_name": "Defender_Ranged.Electrical_Blast"
+      },
+      "Energy Blast": {
+        "powers": [
+          "Power Bolt",
+          "Power Blast",
+          "Energy Torrent",
+          "Power Burst",
+          "Sniper Blast",
+          "Aim",
+          "Power Push",
+          "Explosive Blast",
+          "Nova"
+        ],
+        "full_name": "Defender_Ranged.Energy_Blast"
+      },
+      "Fire Blast": {
+        "powers": [
+          "Flares",
+          "Fire Blast",
+          "Fire Ball",
+          "Rain of Fire",
+          "Fire Breath",
+          "Aim",
+          "Blaze",
+          "Blazing Bolt",
+          "Inferno"
+        ],
+        "full_name": "Defender_Ranged.Fire_Blast"
+      },
+      "Ice Blast": {
+        "powers": [
+          "Ice Bolt",
+          "Ice Blast",
+          "Frost Breath",
+          "Aim",
+          "Freeze Ray",
+          "Ice Storm",
+          "Bitter Ice Blast",
+          "Bitter Freeze Ray",
+          "Blizzard"
+        ],
+        "full_name": "Defender_Ranged.Ice_Blast"
+      },
+      "Psychic Blast": {
+        "powers": [
+          "Subdue",
+          "Mental Blast",
+          "Telekinetic Blast",
+          "Psychic Scream",
+          "Will Domination",
+          "Psionic Lance",
+          "Psionic Tornado",
+          "Scramble Minds",
+          "Psychic Wail"
+        ],
+        "full_name": "Defender_Ranged.Psychic_Blast"
+      },
+      "Radiation Blast": {
+        "powers": [
+          "Neutrino Bolt",
+          "X-Ray Beam",
+          "Irradiate",
+          "Electron Haze",
+          "Proton Volley",
+          "Aim",
+          "Cosmic Burst",
+          "Neutron Bomb",
+          "Atomic Blast"
+        ],
+        "full_name": "Defender_Ranged.Radiation_Blast"
+      },
+      "Seismic Blast": {
+        "powers": [
+          "Seismic Shockwaves",
+          "Encase",
+          "Shatter",
+          "Rock Shards",
+          "Entomb",
+          "Seismic Force",
+          "Upthrust",
+          "Tombstone",
+          "Stalagmite",
+          "Meteor"
+        ],
+        "full_name": "Defender_Ranged.Seismic_Blast"
+      },
+      "Sonic Attack": {
+        "powers": [
+          "Shriek",
+          "Scream",
+          "Howl",
+          "Shockwave",
+          "Shout",
+          "Amplify",
+          "Siren's Song",
+          "Screech",
+          "Dreadful Wail"
+        ],
+        "full_name": "Defender_Ranged.Sonic_Attack"
+      },
+      "Storm Blast": {
+        "powers": [
+          "Gust",
+          "Hailstones",
+          "Jet Stream",
+          "Storm Cell",
+          "Intensify",
+          "Direct Strike",
+          "Chain Lightning",
+          "Cloudburst",
+          "Category Five"
+        ],
+        "full_name": "Defender_Ranged.Storm_Blast"
+      },
+      "Water Blast": {
+        "powers": [
+          "Aqua Bolt",
+          "Hydro Blast",
+          "Water Burst",
+          "Whirlpool",
+          "Tidal Forces",
+          "Dehydrate",
+          "Water Jet",
+          "Steam Spray",
+          "Geyser"
+        ],
+        "full_name": "Defender_Ranged.Water_Blast"
+      }
+    },
+    "epic": {
+      "Dark Mastery": {
+        "powers": [
+          "Dark Consumption",
+          "Oppressive Gloom",
+          "Dark Embrace",
+          "Soul Transfer",
+          "Spirit Drain"
+        ],
+        "full_name": "Epic.Dark_Mastery"
+      },
+      "Electricity Mastery": {
+        "powers": [
+          "Electric Fence",
+          "Thunder Strike",
+          "Charged Armor",
+          "Shocking Bolt",
+          "Power Sink"
+        ],
+        "full_name": "Epic.Electricity_Mastery"
+      },
+      "Energy Mastery": {
+        "powers": [
+          "Conserve Power",
+          "Power Build Up",
+          "Temp Invulnerability",
+          "Force of Nature",
+          "Total Focus"
+        ],
+        "full_name": "Epic.Power_Mastery"
+      },
+      "Fire Mastery": {
+        "powers": [
+          "Consume",
+          "Char",
+          "Fire Shield",
+          "Rise of the Phoenix",
+          "Greater Fire Sword"
+        ],
+        "full_name": "Epic.Def_Flame_Mastery"
+      },
+      "Ice Mastery": {
+        "powers": [
+          "Frozen Armor",
+          "Flash Freeze",
+          "Hoarfrost",
+          "Build Up",
+          "Ice Elemental"
+        ],
+        "full_name": "Epic.Ice_Mastery_DefCorr"
+      },
+      "Leviathan Mastery": {
+        "powers": [
+          "School of Sharks",
+          "Shark Skin",
+          "Hibernate",
+          "Spirit Shark Jaws",
+          "Summon Coralax"
+        ],
+        "full_name": "Epic.Corruptor_Leviathan_Mastery"
+      },
+      "Mace Mastery": {
+        "powers": [
+          "Web Envelope",
+          "Scorpion Shield",
+          "Focused Accuracy",
+          "Web Cocoon",
+          "Summon Disruptor"
+        ],
+        "full_name": "Epic.Corruptor_Mace_Mastery"
+      },
+      "Mu Mastery": {
+        "powers": [
+          "Power Sink",
+          "Charged Armor",
+          "Electric Shackles",
+          "Energize",
+          "Summon Adept"
+        ],
+        "full_name": "Epic.Corruptor_Mu_Mastery"
+      },
+      "Psionic Mastery": {
+        "powers": [
+          "Dominate",
+          "Mass Hypnosis",
+          "Mind Over Body",
+          "World of Confusion",
+          "Telekinesis"
+        ],
+        "full_name": "Epic.Psychic_Mastery"
+      },
+      "Soul Mastery": {
+        "powers": [
+          "Dark Embrace",
+          "Soul Storm",
+          "Power Boost",
+          "Soul Drain",
+          "Summon Mistress"
+        ],
+        "full_name": "Epic.Corruptor_Soul_Mastery"
+      }
+    }
+  },
+  "Scrapper": {
+    "primary": {
+      "Battle Axe": {
+        "powers": [
+          "Beheader",
+          "Chop",
+          "Gash",
+          "Build Up",
+          "Pendulum",
+          "Confront",
+          "Swoop",
+          "Axe Cyclone",
+          "Cleave"
+        ],
+        "full_name": "Scrapper_Melee.Battle_Axe"
+      },
+      "Broad Sword": {
+        "powers": [
+          "Hack",
+          "Slash",
+          "Slice",
+          "Build Up",
+          "Parry",
+          "Confront",
+          "Whirling Sword",
+          "Disembowel",
+          "Head Splitter"
+        ],
+        "full_name": "Scrapper_Melee.Broad_Sword"
+      },
+      "Claws": {
+        "powers": [
+          "Swipe",
+          "Strike",
+          "Slash",
+          "Spin",
+          "Follow Up",
+          "Confront",
+          "Focus",
+          "Eviscerate",
+          "Shockwave"
+        ],
+        "full_name": "Scrapper_Melee.Claws"
+      },
+      "Dark Melee": {
+        "powers": [
+          "Shadow Punch",
+          "Smite",
+          "Shadow Maul",
+          "Touch of Fear",
+          "Siphon Life",
+          "Confront",
+          "Dark Consumption",
+          "Soul Drain",
+          "Midnight Grasp"
+        ],
+        "full_name": "Scrapper_Melee.Dark_Melee"
+      },
+      "Dual Blades": {
+        "powers": [
+          "Nimble Slash",
+          "Power Slice",
+          "Ablating Strike",
+          "Typhoon's Edge",
+          "Blinding Feint",
+          "Confront",
+          "Vengeful Slice",
+          "Sweeping Strike",
+          "One Thousand Cuts"
+        ],
+        "full_name": "Scrapper_Melee.Dual_Blades"
+      },
+      "Electrical Melee": {
+        "powers": [
+          "Charged Brawl",
+          "Havoc Punch",
+          "Jacobs Ladder",
+          "Build Up",
+          "Thunder Strike",
+          "Confront",
+          "Chain Induction",
+          "Lightning Clap",
+          "Lightning Rod"
+        ],
+        "full_name": "Scrapper_Melee.Electrical_Melee"
+      },
+      "Energy Melee": {
+        "powers": [
+          "Barrage",
+          "Energy Punch",
+          "Bone Smasher",
+          "Build Up",
+          "Power Crash",
+          "Confront",
+          "Whirling Hands",
+          "Total Focus",
+          "Energy Transfer"
+        ],
+        "full_name": "Scrapper_Melee.Energy_Melee"
+      },
+      "Fiery Melee": {
+        "powers": [
+          "Scorch",
+          "Fire Sword",
+          "Cremate",
+          "Build Up",
+          "Breath of Fire",
+          "Confront",
+          "Fire Sword Circle",
+          "Incinerate",
+          "Greater Fire Sword"
+        ],
+        "full_name": "Scrapper_Melee.Fiery_Melee"
+      },
+      "Ice Melee": {
+        "powers": [
+          "Frozen Fists",
+          "Ice Sword",
+          "Frost",
+          "Build Up",
+          "Ice Patch",
+          "Confront",
+          "Greater Ice Sword",
+          "Freezing Touch",
+          "Frozen Aura"
+        ],
+        "full_name": "Scrapper_Melee.Ice_Melee"
+      },
+      "Katana": {
+        "powers": [
+          "Sting of the Wasp",
+          "Gambler's Cut",
+          "Flashing Steel",
+          "Build Up",
+          "Divine Avalanche",
+          "Calling the Wolf",
+          "The Lotus Drops",
+          "Soaring Dragon",
+          "Golden Dragonfly"
+        ],
+        "full_name": "Scrapper_Melee.Katana"
+      },
+      "Kinetic Melee": {
+        "powers": [
+          "Quick Strike",
+          "Body Blow",
+          "Smashing Blow",
+          "Power Siphon",
+          "Repulsing Torrent",
+          "Confront",
+          "Burst",
+          "Focused Burst",
+          "Concentrated Strike"
+        ],
+        "full_name": "Scrapper_Melee.Kinetic_Attack"
+      },
+      "Martial Arts": {
+        "powers": [
+          "Thunder Kick",
+          "Storm Kick",
+          "Cobra Strike",
+          "Focus Chi",
+          "Crane Kick",
+          "Warriors Challenge",
+          "Crippling Axe Kick",
+          "Dragon's Tail",
+          "Eagles Claw"
+        ],
+        "full_name": "Scrapper_Melee.Martial_Arts"
+      },
+      "Psionic Melee": {
+        "powers": [
+          "Mental Strike",
+          "Psi Blade",
+          "Telekinetic Blow",
+          "Concentration",
+          "Psi Blade Sweep",
+          "Confront",
+          "Boggle",
+          "Greater Psi Blade",
+          "Mass Levitate"
+        ],
+        "full_name": "Scrapper_Melee.Psionic_Melee"
+      },
+      "Radiation Melee": {
+        "powers": [
+          "Contaminated Strike",
+          "Radioactive Smash",
+          "Proton Sweep",
+          "Fusion",
+          "Radiation Siphon",
+          "Confront",
+          "Irradiated Ground",
+          "Devastating Blow",
+          "Atom Smasher"
+        ],
+        "full_name": "Scrapper_Melee.Radiation_Melee"
+      },
+      "Savage Melee": {
+        "powers": [
+          "Maiming Slash",
+          "Savage Strike",
+          "Shred",
+          "Blood Thirst",
+          "Vicious Slash",
+          "Confront",
+          "Rending Flurry",
+          "Hemorrhage",
+          "Savage Leap"
+        ],
+        "full_name": "Scrapper_Melee.Savage_Melee"
+      },
+      "Sonic Melee": {
+        "powers": [
+          "Sonic Thrust",
+          "Strident Echo",
+          "Attune",
+          "Sonic Clap",
+          "Sound Booster",
+          "Confront",
+          "Sandman's Whisper",
+          "Deafening Wave",
+          "Earsplitter"
+        ],
+        "full_name": "Scrapper_Melee.Sonic_Melee"
+      },
+      "Spines": {
+        "powers": [
+          "Barb Swipe",
+          "Lunge",
+          "Spine Burst",
+          "Build Up",
+          "Impale",
+          "Confront",
+          "Quills",
+          "Ripper",
+          "Throw Spines"
+        ],
+        "full_name": "Scrapper_Melee.Quills"
+      },
+      "Staff Fighting": {
+        "powers": [
+          "Form of the Body",
+          "Form of the Mind",
+          "Form of the Soul",
+          "Mercurial Blow",
+          "Precise Strike",
+          "Guarded Spin",
+          "Eye of the Storm",
+          "Staff Mastery",
+          "Confront",
+          "Serpent's Reach",
+          "Innocuous Strikes",
+          "Sky Splitter"
+        ],
+        "full_name": "Scrapper_Melee.Staff_Fighting"
+      },
+      "Stone Melee": {
+        "powers": [
+          "Stone Fist",
+          "Stone Mallet",
+          "Heavy Mallet",
+          "Build Up",
+          "Fault",
+          "Confront",
+          "Seismic Smash",
+          "Hurl Boulder",
+          "Tremor"
+        ],
+        "full_name": "Scrapper_Melee.Stone_Melee"
+      },
+      "Street Justice": {
+        "powers": [
+          "Initial Strike",
+          "Heavy Blow",
+          "Sweeping Cross",
+          "Combat Readiness",
+          "Rib Cracker",
+          "Confront",
+          "Spinning Strike",
+          "Shin Breaker",
+          "Crushing Uppercut"
+        ],
+        "full_name": "Scrapper_Melee.Brawling"
+      },
+      "Titan Weapons": {
+        "powers": [
+          "Defensive Sweep",
+          "Crushing Blow",
+          "Titan Sweep",
+          "Follow Through",
+          "Build Momentum",
+          "Confront",
+          "Rend Armor",
+          "Whirling Smash",
+          "Arc of Destruction"
+        ],
+        "full_name": "Scrapper_Melee.Titan_Weapons"
+      },
+      "War Mace": {
+        "powers": [
+          "Bash",
+          "Pulverize",
+          "Jawbreaker",
+          "Build Up",
+          "Clobber",
+          "Confront",
+          "Whirling Mace",
+          "Shatter",
+          "Crowd Control"
+        ],
+        "full_name": "Scrapper_Melee.War_Mace"
+      }
+    },
+    "secondary": {
+      "Bio Armor": {
+        "powers": [
+          "Defensive Adaptation",
+          "Efficient Adaptation",
+          "Offensive Adaptation",
+          "Hardened Carapace",
+          "Inexhaustible",
+          "Environmental Modification",
+          "Adaptation",
+          "Ablative Carapace",
+          "Evolving Armor",
+          "DNA Siphon",
+          "Genetic Contamination",
+          "Parasitic Aura"
+        ],
+        "full_name": "Scrapper_Defense.Bio_Organic_Armor"
+      },
+      "Dark Armor": {
+        "powers": [
+          "Dark Embrace",
+          "Death Shroud",
+          "Murky Cloud",
+          "Obsidian Shield",
+          "Dark Regeneration",
+          "Obscure Sustenance",
+          "Cloak of Darkness",
+          "Cloak of Fear",
+          "Oppressive Gloom",
+          "Soul Transfer"
+        ],
+        "full_name": "Scrapper_Defense.Dark_Armor"
+      },
+      "Electric Armor": {
+        "powers": [
+          "Charged Armor",
+          "Lightning Field",
+          "Conductive Shield",
+          "Static Shield",
+          "Grounded",
+          "Energize",
+          "Lightning Reflexes",
+          "Power Sink",
+          "Power Surge"
+        ],
+        "full_name": "Scrapper_Defense.Electric_Armor"
+      },
+      "Energy Aura": {
+        "powers": [
+          "Kinetic Shield",
+          "Dampening Field",
+          "Power Shield",
+          "Entropic Aura",
+          "Energy Protection",
+          "Energy Cloak",
+          "Energize",
+          "Energy Drain",
+          "Overload"
+        ],
+        "full_name": "Scrapper_Defense.Energy_Aura"
+      },
+      "Fiery Aura": {
+        "powers": [
+          "Fire Shield",
+          "Blazing Aura",
+          "Healing Flames",
+          "Temperature Protection",
+          "Plasma Shield",
+          "Consume",
+          "Burn",
+          "Fiery Embrace",
+          "Phoenix Rising"
+        ],
+        "full_name": "Scrapper_Defense.Fiery_Aura"
+      },
+      "Ice Armor": {
+        "powers": [
+          "Frozen Armor",
+          "Hoarfrost",
+          "Rime",
+          "Chilling Embrace",
+          "Wet Ice",
+          "Glacial Armor",
+          "Energy Absorption",
+          "Permafrost",
+          "Icicles",
+          "Icy Bastion"
+        ],
+        "full_name": "Scrapper_Defense.Ice_Armor"
+      },
+      "Invulnerability": {
+        "powers": [
+          "Resist Physical Damage",
+          "Temp Invulnerability",
+          "Dull Pain",
+          "Resist Elements",
+          "Unyielding",
+          "Resist Energies",
+          "Invincibility",
+          "Tough Hide",
+          "Unstoppable"
+        ],
+        "full_name": "Scrapper_Defense.Invulnerability"
+      },
+      "Ninjitsu": {
+        "powers": [
+          "Ninja Reflexes",
+          "Danger Sense",
+          "Shinobi-Iri",
+          "Kuji-In Rin",
+          "Seishinteki Kyoyo",
+          "Kuji-In Sha",
+          "Bo Ryaku",
+          "Blinding Powder",
+          "Kuji-In Retsu"
+        ],
+        "full_name": "Scrapper_Defense.Ninjitsu"
+      },
+      "Psionic Armor": {
+        "powers": [
+          "Psychic Wall",
+          "Psionic Shield",
+          "Mask Presence",
+          "Impenetrable Mind",
+          "Devour Psyche",
+          "Psychokinetic Barrier",
+          "Precognition",
+          "Aura of Insanity",
+          "Memento Mori"
+        ],
+        "full_name": "Scrapper_Defense.Psionic_Armor"
+      },
+      "Radiation Armor": {
+        "powers": [
+          "Alpha Barrier",
+          "Gamma Boost",
+          "Proton Armor",
+          "Fallout Shelter",
+          "Radiation Therapy",
+          "Beta Decay",
+          "Particle Shielding",
+          "Ground Zero",
+          "Meltdown"
+        ],
+        "full_name": "Scrapper_Defense.Radiation_Armor"
+      },
+      "Regeneration": {
+        "powers": [
+          "Fast Healing",
+          "Reconstruction",
+          "Quick Recovery",
+          "Ailment Resistance",
+          "Integration",
+          "Resilience",
+          "Instant Healing",
+          "Reactive Regeneration",
+          "Second Wind",
+          "Moment of Glory"
+        ],
+        "full_name": "Scrapper_Defense.Regeneration"
+      },
+      "Shield Defense": {
+        "powers": [
+          "Deflection",
+          "Battle Agility",
+          "True Grit",
+          "Active Defense",
+          "Against All Odds",
+          "Phalanx Fighting",
+          "Grant Cover",
+          "Shield Charge",
+          "One with the Shield"
+        ],
+        "full_name": "Scrapper_Defense.Shield_Defense"
+      },
+      "Stone Armor": {
+        "powers": [
+          "Rock Armor",
+          "Stone Skin",
+          "Earth's Embrace",
+          "Mud Pots",
+          "Rooted",
+          "Crystal Armor",
+          "Minerals",
+          "Brimstone Armor",
+          "Geode"
+        ],
+        "full_name": "Scrapper_Defense.Stone_Armor"
+      },
+      "Super Reflexes": {
+        "powers": [
+          "Focused Fighting",
+          "Focused Senses",
+          "Agile",
+          "Practiced Brawler",
+          "Dodge",
+          "Quickness",
+          "Lucky",
+          "Evasion",
+          "Elude"
+        ],
+        "full_name": "Scrapper_Defense.Super_Reflexes"
+      },
+      "Willpower": {
+        "powers": [
+          "High Pain Tolerance",
+          "Mind Over Body",
+          "Fast Healing",
+          "Indomitable Will",
+          "Rise to the Challenge",
+          "Quick Recovery",
+          "Heightened Senses",
+          "Resurgence",
+          "Strength of Will"
+        ],
+        "full_name": "Scrapper_Defense.Willpower"
+      }
+    },
+    "epic": {
+      "Dark Mastery": {
+        "powers": [
+          "Petrifying Gaze",
+          "Umbral Torrent",
+          "Dark Blast",
+          "Night Fall",
+          "Tenebrous Tentacles"
+        ],
+        "full_name": "Epic.Darkness_Mastery"
+      },
+      "Energy Mastery": {
+        "powers": [
+          "Conserve Power",
+          "Focused Accuracy",
+          "Laser Beam Eyes",
+          "Physical Perfection",
+          "Energy Torrent"
+        ],
+        "full_name": "Epic.Body_Mastery"
+      },
+      "Fire Mastery": {
+        "powers": [
+          "Ring of Fire",
+          "Char",
+          "Fire Blast",
+          "Melt Armor",
+          "Fire Ball"
+        ],
+        "full_name": "Epic.Blaze_Mastery"
+      },
+      "Ice Mastery": {
+        "powers": [
+          "Ice Bolt",
+          "Frozen Spear",
+          "Shiver",
+          "Frigid Wind",
+          "Ice Elemental"
+        ],
+        "full_name": "Epic.Ice_Mastery_ScrapStalk"
+      },
+      "Leviathan Mastery": {
+        "powers": [
+          "Spirit Shark",
+          "Water Spout",
+          "Hibernate",
+          "Spirit Shark Jaws",
+          "Summon Guardian"
+        ],
+        "full_name": "Epic.Stalker_Leviathan_Mastery"
+      },
+      "Mace Mastery": {
+        "powers": [
+          "Mace Blast",
+          "Mace Beam",
+          "Disruptor Blast",
+          "Web Cocoon",
+          "Summon Spiderlings"
+        ],
+        "full_name": "Epic.Scrapper_Mace_Mastery"
+      },
+      "Mu Mastery": {
+        "powers": [
+          "Mu Bolts",
+          "Zapp",
+          "Ball Lightning",
+          "Electric Shackles",
+          "Summon Adept"
+        ],
+        "full_name": "Epic.Stalker_Mu_Mastery"
+      },
+      "Psionic Mastery": {
+        "powers": [
+          "Mental Blast",
+          "Psionic Lance",
+          "Psychic Scream",
+          "Harmonic Mind",
+          "Psionic Nexus"
+        ],
+        "full_name": "Epic.Psionic_Mastery_ScrapStalk"
+      },
+      "Soul Mastery": {
+        "powers": [
+          "Dark Blast",
+          "Moonbeam",
+          "Shadow Meld",
+          "Soul Storm",
+          "Summon Widow"
+        ],
+        "full_name": "Epic.Stalker_Soul_Mastery"
+      },
+      "Weapon Mastery": {
+        "powers": [
+          "Web Grenade",
+          "Caltrops",
+          "Shuriken",
+          "Targeting Drone",
+          "Exploding Shuriken"
+        ],
+        "full_name": "Epic.Weapon_Mastery"
+      }
+    }
+  },
+  "Tanker": {
+    "primary": {
+      "Bio Armor": {
+        "powers": [
+          "Defensive Adaptation",
+          "Efficient Adaptation",
+          "Offensive Adaptation",
+          "Hardened Carapace",
+          "Inexhaustible",
+          "Environmental Modification",
+          "Adaptation",
+          "Ablative Carapace",
+          "Evolving Armor",
+          "DNA Siphon",
+          "Genetic Contamination",
+          "Parasitic Aura"
+        ],
+        "full_name": "Tanker_Defense.Bio_Organic_Armor"
+      },
+      "Dark Armor": {
+        "powers": [
+          "Death Shroud",
+          "Dark Embrace",
+          "Murky Cloud",
+          "Obsidian Shield",
+          "Dark Regeneration",
+          "Obscure Sustenance",
+          "Cloak of Darkness",
+          "Cloak of Fear",
+          "Oppressive Gloom",
+          "Soul Transfer"
+        ],
+        "full_name": "Tanker_Defense.Dark_Armor"
+      },
+      "Electric Armor": {
+        "powers": [
+          "Charged Armor",
+          "Lightning Field",
+          "Conductive Shield",
+          "Static Shield",
+          "Grounded",
+          "Energize",
+          "Lightning Reflexes",
+          "Power Sink",
+          "Power Surge"
+        ],
+        "full_name": "Tanker_Defense.Electric_Armor"
+      },
+      "Energy Aura": {
+        "powers": [
+          "Kinetic Shield",
+          "Dampening Field",
+          "Power Shield",
+          "Entropic Aura",
+          "Energy Protection",
+          "Power Armor",
+          "Energize",
+          "Energy Drain",
+          "Overload"
+        ],
+        "full_name": "Tanker_Defense.Energy_Aura"
+      },
+      "Fiery Aura": {
+        "powers": [
+          "Blazing Aura",
+          "Fire Shield",
+          "Healing Flames",
+          "Temperature Protection",
+          "Consume",
+          "Plasma Shield",
+          "Burn",
+          "Fiery Embrace",
+          "Phoenix Rising"
+        ],
+        "full_name": "Tanker_Defense.Fiery_Aura"
+      },
+      "Ice Armor": {
+        "powers": [
+          "Frozen Armor",
+          "Hoarfrost",
+          "Rime",
+          "Chilling Embrace",
+          "Wet Ice",
+          "Permafrost",
+          "Icicles",
+          "Glacial Armor",
+          "Energy Absorption",
+          "Icy Bastion"
+        ],
+        "full_name": "Tanker_Defense.Ice_Armor"
+      },
+      "Invulnerability": {
+        "powers": [
+          "Resist Physical Damage",
+          "Temp Invulnerability",
+          "Dull Pain",
+          "Resist Elements",
+          "Unyielding",
+          "Resist Energies",
+          "Invincibility",
+          "Tough Hide",
+          "Unstoppable"
+        ],
+        "full_name": "Tanker_Defense.Invulnerability"
+      },
+      "Psionic Armor": {
+        "powers": [
+          "Psychic Wall",
+          "Psionic Shield",
+          "Impenetrable Mind",
+          "Consume Psyche",
+          "Impose Presence",
+          "Psychokinetic Barrier",
+          "Precognition",
+          "Aura of Insanity",
+          "Memento Mori"
+        ],
+        "full_name": "Tanker_Defense.Psionic_Armor"
+      },
+      "Radiation Armor": {
+        "powers": [
+          "Alpha Barrier",
+          "Gamma Boost",
+          "Proton Armor",
+          "Fallout Shelter",
+          "Radiation Therapy",
+          "Beta Decay",
+          "Particle Shielding",
+          "Ground Zero",
+          "Meltdown"
+        ],
+        "full_name": "Tanker_Defense.Radiation_Armor"
+      },
+      "Regeneration": {
+        "powers": [
+          "Fast Healing",
+          "Reconstruction",
+          "Quick Recovery",
+          "Ailment Resistance",
+          "Integration",
+          "Resilience",
+          "Reactive Regeneration",
+          "Second Wind",
+          "Moment of Glory"
+        ],
+        "full_name": "Tanker_Defense.Regeneration"
+      },
+      "Shield Defense": {
+        "powers": [
+          "Deflection",
+          "Battle Agility",
+          "True Grit",
+          "Active Defense",
+          "Against All Odds",
+          "Phalanx Fighting",
+          "Grant Cover",
+          "Shield Charge",
+          "One with the Shield"
+        ],
+        "full_name": "Tanker_Defense.Shield_Defense"
+      },
+      "Stone Armor": {
+        "powers": [
+          "Rock Armor",
+          "Stone Skin",
+          "Earth's Embrace",
+          "Mud Pots",
+          "Rooted",
+          "Crystal Armor",
+          "Minerals",
+          "Brimstone Armor",
+          "Granite Armor"
+        ],
+        "full_name": "Tanker_Defense.Stone_Armor"
+      },
+      "Super Reflexes": {
+        "powers": [
+          "Focused Fighting",
+          "Focused Senses",
+          "Agile",
+          "Practiced Brawler",
+          "Dodge",
+          "Evasion",
+          "Lucky",
+          "Quickness",
+          "Elude"
+        ],
+        "full_name": "Tanker_Defense.Super_Reflexes"
+      },
+      "Willpower": {
+        "powers": [
+          "High Pain Tolerance",
+          "Mind Over Body",
+          "Fast Healing",
+          "Indomitable Will",
+          "Rise to the Challenge",
+          "Quick Recovery",
+          "Heightened Senses",
+          "Resurgence",
+          "Strength of Will"
+        ],
+        "full_name": "Tanker_Defense.Willpower"
+      }
+    },
+    "secondary": {
+      "Battle Axe": {
+        "powers": [
+          "Beheader",
+          "Chop",
+          "Gash",
+          "Taunt",
+          "Build Up",
+          "Pendulum",
+          "Swoop",
+          "Axe Cyclone",
+          "Cleave"
+        ],
+        "full_name": "Tanker_Melee.Battle_Axe"
+      },
+      "Broad Sword": {
+        "powers": [
+          "Hack",
+          "Slash",
+          "Slice",
+          "Taunt",
+          "Parry",
+          "Build Up",
+          "Whirling Sword",
+          "Disembowel",
+          "Head Splitter"
+        ],
+        "full_name": "Tanker_Melee.Broad_Sword"
+      },
+      "Claws": {
+        "powers": [
+          "Swipe",
+          "Strike",
+          "Slash",
+          "Taunt",
+          "Spin",
+          "Follow Up",
+          "Focus",
+          "Eviscerate",
+          "Shockwave"
+        ],
+        "full_name": "Tanker_Melee.Claws"
+      },
+      "Dark Melee": {
+        "powers": [
+          "Shadow Punch",
+          "Smite",
+          "Shadow Maul",
+          "Taunt",
+          "Siphon Life",
+          "Touch of Fear",
+          "Soul Drain",
+          "Dark Consumption",
+          "Midnight Grasp"
+        ],
+        "full_name": "Tanker_Melee.Dark_Melee"
+      },
+      "Dual Blades": {
+        "powers": [
+          "Nimble Slash",
+          "Power Slice",
+          "Ablating Strike",
+          "Taunt",
+          "Typhoon's Edge",
+          "Blinding Feint",
+          "Vengeful Slice",
+          "Sweeping Strike",
+          "One Thousand Cuts"
+        ],
+        "full_name": "Tanker_Melee.Dual_Blades"
+      },
+      "Electrical Melee": {
+        "powers": [
+          "Charged Brawl",
+          "Havoc Punch",
+          "Jacobs Ladder",
+          "Taunt",
+          "Thunder Strike",
+          "Build Up",
+          "Chain Induction",
+          "Lightning Clap",
+          "Lightning Rod"
+        ],
+        "full_name": "Tanker_Melee.Electrical_Melee"
+      },
+      "Energy Melee": {
+        "powers": [
+          "Barrage",
+          "Energy Punch",
+          "Bone Smasher",
+          "Taunt",
+          "Whirling Hands",
+          "Total Focus",
+          "Build Up",
+          "Power Crash",
+          "Energy Transfer"
+        ],
+        "full_name": "Tanker_Melee.Energy_Melee"
+      },
+      "Fiery Melee": {
+        "powers": [
+          "Scorch",
+          "Fire Sword",
+          "Combustion",
+          "Taunt",
+          "Breath of Fire",
+          "Build Up",
+          "Fire Sword Circle",
+          "Incinerate",
+          "Greater Fire Sword"
+        ],
+        "full_name": "Tanker_Melee.Fiery_Melee"
+      },
+      "Ice Melee": {
+        "powers": [
+          "Frozen Fists",
+          "Ice Sword",
+          "Frost",
+          "Taunt",
+          "Build Up",
+          "Ice Patch",
+          "Freezing Touch",
+          "Greater Ice Sword",
+          "Frozen Aura"
+        ],
+        "full_name": "Tanker_Melee.Ice_Melee"
+      },
+      "Katana": {
+        "powers": [
+          "Sting of the Wasp",
+          "Gambler's Cut",
+          "Flashing Steel",
+          "Dragon's Roar",
+          "Divine Avalanche",
+          "Build Up",
+          "The Lotus Drops",
+          "Soaring Dragon",
+          "Golden Dragonfly"
+        ],
+        "full_name": "Tanker_Melee.Katana"
+      },
+      "Kinetic Melee": {
+        "powers": [
+          "Quick Strike",
+          "Body Blow",
+          "Smashing Blow",
+          "Taunt",
+          "Repulsing Torrent",
+          "Power Siphon",
+          "Burst",
+          "Focused Burst",
+          "Concentrated Strike"
+        ],
+        "full_name": "Tanker_Melee.Kinetic_Attack"
+      },
+      "Martial Arts": {
+        "powers": [
+          "Thunder Kick",
+          "Storm Kick",
+          "Cobra Strike",
+          "Warrior's Provocation",
+          "Crane Kick",
+          "Dragon's Tail",
+          "Focus Chi",
+          "Crippling Axe Kick",
+          "Eagles Claw"
+        ],
+        "full_name": "Tanker_Melee.Martial_Arts"
+      },
+      "Psionic Melee": {
+        "powers": [
+          "Mental Strike",
+          "Psi Blade",
+          "Telekinetic Blow",
+          "Taunt",
+          "Psi Blade Sweep",
+          "Concentration",
+          "Boggle",
+          "Greater Psi Blade",
+          "Mass Levitate"
+        ],
+        "full_name": "Tanker_Melee.Psionic_Melee"
+      },
+      "Radiation Melee": {
+        "powers": [
+          "Contaminated Strike",
+          "Radioactive Smash",
+          "Proton Sweep",
+          "Taunt",
+          "Radiation Siphon",
+          "Fusion",
+          "Irradiated Ground",
+          "Devastating Blow",
+          "Atom Smasher"
+        ],
+        "full_name": "Tanker_Melee.Radiation_Melee"
+      },
+      "Savage Melee": {
+        "powers": [
+          "Maiming Slash",
+          "Savage Strike",
+          "Shred",
+          "Taunt",
+          "Vicious Slash",
+          "Blood Thirst",
+          "Rending Flurry",
+          "Hemorrhage",
+          "Savage Leap"
+        ],
+        "full_name": "Tanker_Melee.Savage_Melee"
+      },
+      "Sonic Melee": {
+        "powers": [
+          "Sonic Thrust",
+          "Strident Echo",
+          "Attune",
+          "Taunt",
+          "Sonic Clap",
+          "Sound Booster",
+          "Sandman's Whisper",
+          "Deafening Wave",
+          "Earsplitter"
+        ],
+        "full_name": "Tanker_Melee.Sonic_Melee"
+      },
+      "Spines": {
+        "powers": [
+          "Barb Swipe",
+          "Lunge",
+          "Spine Burst",
+          "Taunt",
+          "Ripper",
+          "Build Up",
+          "Impale",
+          "Quills",
+          "Throw Spines"
+        ],
+        "full_name": "Tanker_Melee.Spines"
+      },
+      "Staff Fighting": {
+        "powers": [
+          "Form of the Body",
+          "Form of the Mind",
+          "Form of the Soul",
+          "Mercurial Blow",
+          "Precise Strike",
+          "Guarded Spin",
+          "Taunt",
+          "Eye of the Storm",
+          "Staff Mastery",
+          "Serpent's Reach",
+          "Innocuous Strikes",
+          "Sky Splitter"
+        ],
+        "full_name": "Tanker_Melee.Staff_Fighting"
+      },
+      "Stone Melee": {
+        "powers": [
+          "Stone Fist",
+          "Stone Mallet",
+          "Heavy Mallet",
+          "Taunt",
+          "Build Up",
+          "Fault",
+          "Tremor",
+          "Hurl Boulder",
+          "Seismic Smash"
+        ],
+        "full_name": "Tanker_Melee.Stone_Melee"
+      },
+      "Street Justice": {
+        "powers": [
+          "Initial Strike",
+          "Heavy Blow",
+          "Sweeping Cross",
+          "Taunt",
+          "Combat Readiness",
+          "Rib Cracker",
+          "Spinning Strike",
+          "Shin Breaker",
+          "Crushing Uppercut"
+        ],
+        "full_name": "Tanker_Melee.Brawling"
+      },
+      "Super Strength": {
+        "powers": [
+          "Jab",
+          "Punch",
+          "Haymaker",
+          "Taunt",
+          "Hand Clap",
+          "Knockout Blow",
+          "Rage",
+          "Hurl",
+          "Foot Stomp"
+        ],
+        "full_name": "Tanker_Melee.Super_Strength"
+      },
+      "Titan Weapons": {
+        "powers": [
+          "Defensive Sweep",
+          "Crushing Blow",
+          "Titan Sweep",
+          "Taunt",
+          "Follow Through",
+          "Build Momentum",
+          "Rend Armor",
+          "Whirling Smash",
+          "Arc of Destruction"
+        ],
+        "full_name": "Tanker_Melee.Titan_Weapons"
+      },
+      "War Mace": {
+        "powers": [
+          "Bash",
+          "Pulverize",
+          "Jawbreaker",
+          "Taunt",
+          "Build Up",
+          "Whirling Mace",
+          "Clobber",
+          "Shatter",
+          "Crowd Control"
+        ],
+        "full_name": "Tanker_Melee.War_Mace"
+      }
+    },
+    "epic": {
+      "Dark Mastery": {
+        "powers": [
+          "Penumbral Grasp",
+          "Petrifying Gaze",
+          "Dark Blast",
+          "Night Fall",
+          "Tar Patch"
+        ],
+        "full_name": "Epic.Dark_Mastery_TankBrute"
+      },
+      "Earth Mastery": {
+        "powers": [
+          "Stone Prison",
+          "Salt Crystals",
+          "Fossilize",
+          "Quick Sand",
+          "Stalagmites"
+        ],
+        "full_name": "Epic.Earth_Mastery"
+      },
+      "Energy Mastery": {
+        "powers": [
+          "Conserve Power",
+          "Focused Accuracy",
+          "Laser Beam Eyes",
+          "Physical Perfection",
+          "Energy Torrent"
+        ],
+        "full_name": "Epic.Energy_Mastery"
+      },
+      "Fire Mastery": {
+        "powers": [
+          "Ring of Fire",
+          "Char",
+          "Fire Blast",
+          "Melt Armor",
+          "Fire Ball"
+        ],
+        "full_name": "Epic.Pyre_Mastery"
+      },
+      "Ice Mastery": {
+        "powers": [
+          "Chilblain",
+          "Block of Ice",
+          "Ice Blast",
+          "Shiver",
+          "Ice Storm"
+        ],
+        "full_name": "Epic.Arctic_Mastery"
+      },
+      "Leviathan Mastery": {
+        "powers": [
+          "Spirit Shark",
+          "School of Sharks",
+          "Bile Spray",
+          "Arctic Breath",
+          "Summon Guardian"
+        ],
+        "full_name": "Epic.Brute_Leviathan_Mastery"
+      },
+      "Mace Mastery": {
+        "powers": [
+          "Mace Blast",
+          "Web Envelope",
+          "Focused Accuracy",
+          "Disruptor Blast",
+          "Summon Blaster"
+        ],
+        "full_name": "Epic.Brute_Mace_Mastery"
+      },
+      "Mu Mastery": {
+        "powers": [
+          "Mu Lightning",
+          "Electrifying Fences",
+          "Ball Lightning",
+          "Static Discharge",
+          "Summon Striker"
+        ],
+        "full_name": "Epic.Brute_Mu_Mastery"
+      },
+      "Psionic Mastery": {
+        "powers": [
+          "Mesmerize",
+          "Dominate",
+          "Harmonic Mind",
+          "Mental Blast",
+          "Psionic Tornado"
+        ],
+        "full_name": "Epic.Psionic_Mastery_TankBrute"
+      },
+      "Soul Mastery": {
+        "powers": [
+          "Gloom",
+          "Soul Tentacles",
+          "Darkest Night",
+          "Dark Obliteration",
+          "Summon Widow"
+        ],
+        "full_name": "Epic.Brute_Soul_Mastery"
+      }
+    }
+  },
+  "Peacebringer": {
+    "primary": {
+      "Luminous Blast": {
+        "powers": [
+          "Gleaming Bolt",
+          "Glinting Eye",
+          "Gleaming Blast",
+          "Bright Nova",
+          "Radiant Strike",
+          "Proton Scatter",
+          "Inner Light",
+          "Luminous Detonation",
+          "Incandescent Strike",
+          "Pulsar",
+          "Glowing Touch",
+          "Solar Flare",
+          "Photon Seekers",
+          "Dawn Strike"
+        ],
+        "full_name": "Peacebringer_Offensive.Luminous_Blast"
+      }
+    },
+    "secondary": {
+      "Luminous Aura": {
+        "powers": [
+          "Incandescence",
+          "Shining Shield",
+          "Essence Boost",
+          "Thermal Shield",
+          "Quantum Shield",
+          "Group Energy Flight",
+          "White Dwarf",
+          "Reform Essence",
+          "Conserve Energy",
+          "Quantum Maneuvers",
+          "Quantum Flight",
+          "Restore Essence",
+          "Light Form"
+        ],
+        "full_name": "Peacebringer_Defensive.Luminous_Aura"
+      }
+    },
+    "epic": {}
+  },
+  "Warshade": {
+    "primary": {
+      "Umbral Blast": {
+        "powers": [
+          "Shadow Bolt",
+          "Ebon Eye",
+          "Gravimetric Snare",
+          "Dark Nova",
+          "Shadow Blast",
+          "Starless Step",
+          "Sunless Mire",
+          "Dark Detonation",
+          "Gravity Well",
+          "Essence Drain",
+          "Gravitic Emanation",
+          "Unchain Essence",
+          "Dark Extraction",
+          "Quasar"
+        ],
+        "full_name": "Warshade_Offensive.Umbral_Blast"
+      }
+    },
+    "secondary": {
+      "Umbral Aura": {
+        "powers": [
+          "Absorption",
+          "Gravity Shield",
+          "Orbiting Death",
+          "Penumbral Shield",
+          "Shadow Cloak",
+          "Twilight Shield",
+          "Black Dwarf",
+          "Stygian Circle",
+          "Nebulous Form",
+          "Shadow Slip",
+          "Inky Aspect",
+          "Stygian Return",
+          "Eclipse"
+        ],
+        "full_name": "Warshade_Defensive.Umbral_Aura"
+      }
+    },
+    "epic": {}
+  },
+  "Sentinel": {
+    "primary": {
+      "Archery": {
+        "powers": [
+          "Snap Shot",
+          "Aimed Shot",
+          "Fistful of Arrows",
+          "Stunning Shot",
+          "Aim",
+          "Explosive Arrow",
+          "Blazing Arrow",
+          "Perfect Shot",
+          "Rain of Arrows"
+        ],
+        "full_name": "Sentinel_Ranged.Archery"
+      },
+      "Assault Rifle": {
+        "powers": [
+          "Burst",
+          "Disorienting Shot",
+          "Buckshot",
+          "Slug",
+          "Aim",
+          "M30 Grenade",
+          "Flamethrower",
+          "Ignite",
+          "Full Auto"
+        ],
+        "full_name": "Sentinel_Ranged.Assault_Rifle"
+      },
+      "Beam Rifle": {
+        "powers": [
+          "Single Shot",
+          "Charged Shot",
+          "Cutting Beam",
+          "Disintegrate",
+          "Aim",
+          "Lancer Shot",
+          "Refractor Beam",
+          "Piercing Beam",
+          "Overcharge"
+        ],
+        "full_name": "Sentinel_Ranged.Beam_Rifle"
+      },
+      "Dark Blast": {
+        "powers": [
+          "Dark Blast",
+          "Gloom",
+          "Umbral Torrent",
+          "Abyssal Gaze",
+          "Aim",
+          "Dark Obliteration",
+          "Antumbral Beam",
+          "Life Drain",
+          "Blackstar"
+        ],
+        "full_name": "Sentinel_Ranged.Dark_Blast"
+      },
+      "Dual Pistols": {
+        "powers": [
+          "Chemical Ammunition",
+          "Cryo Ammunition",
+          "Incendiary Ammunition",
+          "Pistols",
+          "Dual Wield",
+          "Empty Clips",
+          "Suppressive Fire",
+          "Swap Ammo",
+          "Bullet Rain",
+          "Executioner's Shot",
+          "Piercing Rounds",
+          "Hail of Bullets"
+        ],
+        "full_name": "Sentinel_Ranged.Dual_Pistols"
+      },
+      "Electrical Blast": {
+        "powers": [
+          "Charged Bolts",
+          "Lightning Bolt",
+          "Ball Lightning",
+          "Zapping Bolt",
+          "Charge Up",
+          "Tesla Cage",
+          "Voltaic Sentinel",
+          "Short Circuit",
+          "Thunderous Blast"
+        ],
+        "full_name": "Sentinel_Ranged.Electrical_Blast"
+      },
+      "Energy Blast": {
+        "powers": [
+          "Power Bolt",
+          "Power Blast",
+          "Energy Torrent",
+          "Power Burst",
+          "Aim",
+          "Power Push",
+          "Explosive Blast",
+          "Focused Power Bolt",
+          "Nova"
+        ],
+        "full_name": "Sentinel_Ranged.Energy_Blast"
+      },
+      "Fire Blast": {
+        "powers": [
+          "Flares",
+          "Fire Blast",
+          "Fire Ball",
+          "Blaze",
+          "Aim",
+          "Fire Breath",
+          "Blazing Blast",
+          "Rain of Fire",
+          "Inferno"
+        ],
+        "full_name": "Sentinel_Ranged.Fire_Blast"
+      },
+      "Ice Blast": {
+        "powers": [
+          "Ice Bolt",
+          "Ice Blast",
+          "Frost Breath",
+          "Chilling Ray",
+          "Aim",
+          "Ice Storm",
+          "Bitter Ice Blast",
+          "Bitter Freeze Ray",
+          "Blizzard"
+        ],
+        "full_name": "Sentinel_Ranged.Ice_Blast"
+      },
+      "Psychic Blast": {
+        "powers": [
+          "Mental Blast",
+          "Telekinetic Blast",
+          "Psychic Scream",
+          "Will Domination",
+          "Psychic Focus",
+          "Psionic Strike",
+          "Psionic Tornado",
+          "Scramble Thoughts",
+          "Psychic Wail"
+        ],
+        "full_name": "Sentinel_Ranged.Psychic_Blast"
+      },
+      "Radiation Blast": {
+        "powers": [
+          "Neutrino Bolt",
+          "X-Ray Beam",
+          "Irradiate",
+          "Cosmic Burst",
+          "Aim",
+          "Electron Haze",
+          "Proton Stream",
+          "Neutron Bomb",
+          "Atomic Blast"
+        ],
+        "full_name": "Sentinel_Ranged.Radiation_Blast"
+      },
+      "Seismic Blast": {
+        "powers": [
+          "Seismic Shockwaves",
+          "Encase",
+          "Shatter",
+          "Rock Shards",
+          "Entomb",
+          "Seismic Force",
+          "Upthrust",
+          "Gravestone",
+          "Stalagmite",
+          "Meteor"
+        ],
+        "full_name": "Sentinel_Ranged.Seismic_Blast"
+      },
+      "Sonic Attack": {
+        "powers": [
+          "Shriek",
+          "Scream",
+          "Howl",
+          "Shout",
+          "Amplify",
+          "Shockwave",
+          "Sirens Song",
+          "Screech",
+          "Dreadful Wail"
+        ],
+        "full_name": "Sentinel_Ranged.Sonic_Attack"
+      },
+      "Storm Blast": {
+        "powers": [
+          "Gust",
+          "Hailstones",
+          "Jet Stream",
+          "Storm Cell",
+          "Intensify",
+          "Lightning Strike",
+          "Chain Lightning",
+          "Cloudburst",
+          "Category Five"
+        ],
+        "full_name": "Sentinel_Ranged.Storm_Blast"
+      },
+      "Water Blast": {
+        "powers": [
+          "Aqua Bolt",
+          "Hydro Blast",
+          "Water Burst",
+          "Dehydrate",
+          "Tidal Forces",
+          "Whirlpool",
+          "Water Jet",
+          "Steam Spray",
+          "Geyser"
+        ],
+        "full_name": "Sentinel_Ranged.Water_Blast"
+      }
+    },
+    "secondary": {
+      "Bio Armor": {
+        "powers": [
+          "Defensive Adaptation",
+          "Efficient Adaptation",
+          "Offensive Adaptation",
+          "Hardened Carapace",
+          "Inexhaustible",
+          "Environmental Adaptation",
+          "Adaptation",
+          "Ablative Carapace",
+          "Rebuild DNA",
+          "Athletic Regulation",
+          "Genomic Evolution",
+          "Parasitic Leech"
+        ],
+        "full_name": "Sentinel_Defense.Bio_Organic_Armor"
+      },
+      "Dark Armor": {
+        "powers": [
+          "Dark Embrace",
+          "Shadow Dweller",
+          "Murky Cloud",
+          "Obsidian Shield",
+          "Dark Regeneration",
+          "Obscure Sustenance",
+          "Cloak of Darkness",
+          "Cloak of Fear",
+          "Oppressive Gloom",
+          "Soul Transfer"
+        ],
+        "full_name": "Sentinel_Defense.Dark_Armor"
+      },
+      "Electric Armor": {
+        "powers": [
+          "Charged Armor",
+          "Charged Shield",
+          "Conductive Shield",
+          "Energize",
+          "Static Shield",
+          "Grounded",
+          "Lightning Reflexes",
+          "Power Sink",
+          "Power Surge"
+        ],
+        "full_name": "Sentinel_Defense.Electric_Armor"
+      },
+      "Energy Aura": {
+        "powers": [
+          "Kinetic Shield",
+          "Kinetic Dampening",
+          "Power Shield",
+          "Energize",
+          "Entropy Shield",
+          "Power Armor",
+          "Repelling Force",
+          "Power Drain",
+          "Overload"
+        ],
+        "full_name": "Sentinel_Defense.Energy_Aura"
+      },
+      "Fiery Aura": {
+        "powers": [
+          "Fire Shield",
+          "Molten Embrace",
+          "Healing Flames",
+          "Temperature Protection",
+          "Plasma Shield",
+          "Consume",
+          "Burn",
+          "Cauterizing Blaze",
+          "Phoenix Rising"
+        ],
+        "full_name": "Sentinel_Defense.Fiery_Aura"
+      },
+      "Ice Armor": {
+        "powers": [
+          "Frozen Armor",
+          "Hoarfrost",
+          "Rime",
+          "Wet Ice",
+          "Frigid Shield",
+          "Moisture Absorption",
+          "Glacial Armor",
+          "Permafrost",
+          "Frost Protection",
+          "Icy Bastion"
+        ],
+        "full_name": "Sentinel_Defense.Ice_Armor"
+      },
+      "Invulnerability": {
+        "powers": [
+          "Resist Physical Damage",
+          "Temp Invulnerability",
+          "Durability",
+          "Dull Pain",
+          "Unyielding",
+          "Environmental Resistance",
+          "Invincible",
+          "Tough Hide",
+          "Unstoppable"
+        ],
+        "full_name": "Sentinel_Defense.Invulnerability"
+      },
+      "Ninjitsu": {
+        "powers": [
+          "Ninja Reflexes",
+          "Danger Sense",
+          "Shinobi-Iri",
+          "Kuji-In Rin",
+          "Seishinteki Kyoyo",
+          "Kuji-In Sha",
+          "Bo Ryaku",
+          "Blinding Powder",
+          "Kuji-In Retsu"
+        ],
+        "full_name": "Sentinel_Defense.Ninjitsu"
+      },
+      "Psionic Armor": {
+        "powers": [
+          "Psychic Wall",
+          "Psionic Shield",
+          "Mask Presence",
+          "Impenetrable Mind",
+          "Devour Psyche",
+          "Psychokinetic Barrier",
+          "Precognition",
+          "Aura of Madness",
+          "Memento Mori"
+        ],
+        "full_name": "Sentinel_Defense.Psionic_Armor"
+      },
+      "Radiation Armor": {
+        "powers": [
+          "Alpha Barrier",
+          "Gamma Boost",
+          "Proton Armor",
+          "Fallout Shelter",
+          "Proton Therapy",
+          "Particle Acceleration",
+          "Particle Shielding",
+          "Ground Zero",
+          "Meltdown"
+        ],
+        "full_name": "Sentinel_Defense.Radiation_Armor"
+      },
+      "Regeneration": {
+        "powers": [
+          "Fast Healing",
+          "Reconstruction",
+          "Quick Recovery",
+          "Ailment Resistance",
+          "Integration",
+          "Resilience",
+          "Reactive Regeneration",
+          "Second Wind",
+          "Moment of Glory"
+        ],
+        "full_name": "Sentinel_Defense.Regeneration"
+      },
+      "Stone Armor": {
+        "powers": [
+          "Rock Armor",
+          "Stone Skin",
+          "Earth's Embrace",
+          "Terra Firma",
+          "Rooted",
+          "Crystal Armor",
+          "Brimstone Armor",
+          "Minerals",
+          "Geode"
+        ],
+        "full_name": "Sentinel_Defense.Stone_Armor"
+      },
+      "Super Reflexes": {
+        "powers": [
+          "Focused Fighting",
+          "Focused Senses",
+          "Agile",
+          "Master Brawler",
+          "Practiced Brawler",
+          "Enduring",
+          "Dodge",
+          "Quickness",
+          "Evasion",
+          "Elude"
+        ],
+        "full_name": "Sentinel_Defense.Super_Reflexes"
+      },
+      "Willpower": {
+        "powers": [
+          "High Pain Tolerance",
+          "Mind Over Body",
+          "Fast Healing",
+          "Indomitable Will",
+          "Up to the Challenge",
+          "Quick Recovery",
+          "Heightened Senses",
+          "Resurgence",
+          "Strength of Will"
+        ],
+        "full_name": "Sentinel_Defense.Willpower"
+      }
+    },
+    "epic": {
+      "Dark Mastery": {
+        "powers": [
+          "Netherworld Tentacles",
+          "Smite",
+          "Netherworld Grasp",
+          "Engulfing Darkness",
+          "Darkest Night"
+        ],
+        "full_name": "Epic.Sentinel_Dark_Mastery"
+      },
+      "Electricity Mastery": {
+        "powers": [
+          "Chain Fences",
+          "Havoc Punch",
+          "Paralyzing Jolt",
+          "Shocking Field",
+          "Rehabilitating Circuit"
+        ],
+        "full_name": "Epic.Sentinel_Elec_Mastery"
+      },
+      "Fire Mastery": {
+        "powers": [
+          "Fire Cages",
+          "Cremate",
+          "Char",
+          "Fire Sword Circle",
+          "Warmth"
+        ],
+        "full_name": "Epic.Sentinel_Fire_Mastery"
+      },
+      "Ice Mastery": {
+        "powers": [
+          "Frostbite",
+          "Ice Sword",
+          "Block of Ice",
+          "Frozen Aura",
+          "Snow Storm"
+        ],
+        "full_name": "Epic.Sentinel_Ice_Mastery"
+      },
+      "Leviathan Mastery": {
+        "powers": [
+          "School of Sharks",
+          "Knockout Blow",
+          "Spirit Shark Jaws",
+          "Arctic Breath",
+          "Summon Coralax"
+        ],
+        "full_name": "Epic.Sentinel_Lev_Mastery"
+      },
+      "Mace Mastery": {
+        "powers": [
+          "Web Envelope",
+          "Pulverize",
+          "Web Cocoon",
+          "Coordinated Targeting",
+          "Summon Tarantula"
+        ],
+        "full_name": "Epic.Sentinel_Mace_Mastery"
+      },
+      "Mu Mastery": {
+        "powers": [
+          "Electrifying Fences",
+          "Thunder Strike",
+          "Electric Shackles",
+          "Static Discharge",
+          "Summon Adept"
+        ],
+        "full_name": "Epic.Sentinel_Mu_Mastery"
+      },
+      "Psionic Mastery": {
+        "powers": [
+          "Mass Hypnosis",
+          "Mind Probe",
+          "Dominate",
+          "Psychic Shockwave",
+          "Link Minds"
+        ],
+        "full_name": "Epic.Sentinel_Psi_Mastery"
+      },
+      "Soul Mastery": {
+        "powers": [
+          "Midnight Grasp",
+          "Soul Tentacles",
+          "Soul Storm",
+          "Darkest Night",
+          "Summon Mistress"
+        ],
+        "full_name": "Epic.Sentinel_Soul_Mastery"
+      },
+      "Weapon Mastery": {
+        "powers": [
+          "Tashibishi",
+          "Sting of the Wasp",
+          "Paralyzing Dart",
+          "The Lotus Drops",
+          "Kemuridama"
+        ],
+        "full_name": "Epic.Sentinel_Ninja_Mastery"
+      }
+    }
+  },
+  "Brute": {
+    "primary": {
+      "Battle Axe": {
+        "powers": [
+          "Beheader",
+          "Chop",
+          "Gash",
+          "Build Up",
+          "Pendulum",
+          "Taunt",
+          "Swoop",
+          "Axe Cyclone",
+          "Cleave"
+        ],
+        "full_name": "Brute_Melee.Battle_Axe"
+      },
+      "Broad Sword": {
+        "powers": [
+          "Hack",
+          "Slash",
+          "Slice",
+          "Build Up",
+          "Parry",
+          "Taunt",
+          "Whirling Sword",
+          "Disembowel",
+          "Head Splitter"
+        ],
+        "full_name": "Brute_Melee.Broad_Sword"
+      },
+      "Claws": {
+        "powers": [
+          "Swipe",
+          "Strike",
+          "Slash",
+          "Spin",
+          "Follow Up",
+          "Taunt",
+          "Focus",
+          "Eviscerate",
+          "Shockwave"
+        ],
+        "full_name": "Brute_Melee.Claws"
+      },
+      "Dark Melee": {
+        "powers": [
+          "Shadow Punch",
+          "Smite",
+          "Shadow Maul",
+          "Touch of Fear",
+          "Siphon Life",
+          "Taunt",
+          "Dark Consumption",
+          "Soul Drain",
+          "Midnight Grasp"
+        ],
+        "full_name": "Brute_Melee.Dark_Melee"
+      },
+      "Dual Blades": {
+        "powers": [
+          "Nimble Slash",
+          "Power Slice",
+          "Ablating Strike",
+          "Typhoon's Edge",
+          "Blinding Feint",
+          "Taunt",
+          "Vengeful Slice",
+          "Sweeping Strike",
+          "One Thousand Cuts"
+        ],
+        "full_name": "Brute_Melee.Dual_Blades"
+      },
+      "Electrical Melee": {
+        "powers": [
+          "Charged Brawl",
+          "Havoc Punch",
+          "Jacobs Ladder",
+          "Build Up",
+          "Thunder Strike",
+          "Taunt",
+          "Chain Induction",
+          "Lightning Clap",
+          "Lightning Rod"
+        ],
+        "full_name": "Brute_Melee.Electrical_Melee"
+      },
+      "Energy Melee": {
+        "powers": [
+          "Barrage",
+          "Energy Punch",
+          "Bone Smasher",
+          "Build Up",
+          "Whirling Hands",
+          "Taunt",
+          "Total Focus",
+          "Power Crash",
+          "Energy Transfer"
+        ],
+        "full_name": "Brute_Melee.Energy_Melee"
+      },
+      "Fiery Melee": {
+        "powers": [
+          "Scorch",
+          "Fire Sword",
+          "Cremate",
+          "Build Up",
+          "Incinerate",
+          "Taunt",
+          "Breath of Fire",
+          "Fire Sword Circle",
+          "Greater Fire Sword"
+        ],
+        "full_name": "Brute_Melee.Fiery_Melee"
+      },
+      "Ice Melee": {
+        "powers": [
+          "Frozen Fists",
+          "Ice Sword",
+          "Frost",
+          "Build Up",
+          "Ice Patch",
+          "Taunt",
+          "Greater Ice Sword",
+          "Freezing Touch",
+          "Frozen Aura"
+        ],
+        "full_name": "Brute_Melee.Ice_Melee"
+      },
+      "Katana": {
+        "powers": [
+          "Sting of the Wasp",
+          "Gambler's Cut",
+          "Flashing Steel",
+          "Build Up",
+          "Divine Avalanche",
+          "Dragon's Roar",
+          "The Lotus Drops",
+          "Soaring Dragon",
+          "Golden Dragonfly"
+        ],
+        "full_name": "Brute_Melee.Katana"
+      },
+      "Kinetic Melee": {
+        "powers": [
+          "Quick Strike",
+          "Body Blow",
+          "Smashing Blow",
+          "Power Siphon",
+          "Repulsing Torrent",
+          "Taunt",
+          "Burst",
+          "Focused Burst",
+          "Concentrated Strike"
+        ],
+        "full_name": "Brute_Melee.Kinetic_Attack"
+      },
+      "Martial Arts": {
+        "powers": [
+          "Thunder Kick",
+          "Storm Kick",
+          "Cobra Strike",
+          "Focus Chi",
+          "Crane Kick",
+          "Warrior's Provocation",
+          "Crippling Axe Kick",
+          "Dragon's Tail",
+          "Eagles Claw"
+        ],
+        "full_name": "Brute_Melee.Martial_Arts"
+      },
+      "Psionic Melee": {
+        "powers": [
+          "Mental Strike",
+          "Psi Blade",
+          "Telekinetic Blow",
+          "Concentration",
+          "Psi Blade Sweep",
+          "Taunt",
+          "Boggle",
+          "Greater Psi Blade",
+          "Mass Levitate"
+        ],
+        "full_name": "Brute_Melee.Psionic_Melee"
+      },
+      "Radiation Melee": {
+        "powers": [
+          "Contaminated Strike",
+          "Radioactive Smash",
+          "Proton Sweep",
+          "Fusion",
+          "Radiation Siphon",
+          "Taunt",
+          "Irradiated Ground",
+          "Devastating Blow",
+          "Atom Smasher"
+        ],
+        "full_name": "Brute_Melee.Radiation_Melee"
+      },
+      "Savage Melee": {
+        "powers": [
+          "Savage Strike",
+          "Maiming Slash",
+          "Shred",
+          "Blood Thirst",
+          "Vicious Slash",
+          "Taunt",
+          "Rending Flurry",
+          "Hemorrhage",
+          "Savage Leap"
+        ],
+        "full_name": "Brute_Melee.Savage_Melee"
+      },
+      "Sonic Melee": {
+        "powers": [
+          "Sonic Thrust",
+          "Strident Echo",
+          "Attune",
+          "Sound Booster",
+          "Sonic Clap",
+          "Taunt",
+          "Sandman's Whisper",
+          "Deafening Wave",
+          "Earsplitter"
+        ],
+        "full_name": "Brute_Melee.Sonic_Melee"
+      },
+      "Spines": {
+        "powers": [
+          "Barb Swipe",
+          "Lunge",
+          "Spine Burst",
+          "Build Up",
+          "Impale",
+          "Taunt",
+          "Quills",
+          "Ripper",
+          "Throw Spines"
+        ],
+        "full_name": "Brute_Melee.Spines"
+      },
+      "Staff Fighting": {
+        "powers": [
+          "Form of the Body",
+          "Form of the Mind",
+          "Form of the Soul",
+          "Mercurial Blow",
+          "Precise Strike",
+          "Guarded Spin",
+          "Eye of the Storm",
+          "Staff Mastery",
+          "Taunt",
+          "Serpent's Reach",
+          "Innocuous Strikes",
+          "Sky Splitter"
+        ],
+        "full_name": "Brute_Melee.Staff_Fighting"
+      },
+      "Stone Melee": {
+        "powers": [
+          "Stone Fist",
+          "Stone Mallet",
+          "Heavy Mallet",
+          "Build Up",
+          "Fault",
+          "Taunt",
+          "Seismic Smash",
+          "Hurl Boulder",
+          "Tremor"
+        ],
+        "full_name": "Brute_Melee.Stone_Melee"
+      },
+      "Street Justice": {
+        "powers": [
+          "Initial Strike",
+          "Heavy Blow",
+          "Sweeping Cross",
+          "Combat Readiness",
+          "Rib Cracker",
+          "Taunt",
+          "Spinning Strike",
+          "Shin Breaker",
+          "Crushing Uppercut"
+        ],
+        "full_name": "Brute_Melee.Brawling"
+      },
+      "Super Strength": {
+        "powers": [
+          "Jab",
+          "Punch",
+          "Haymaker",
+          "Hand Clap",
+          "Knockout Blow",
+          "Taunt",
+          "Rage",
+          "Hurl",
+          "Foot Stomp"
+        ],
+        "full_name": "Brute_Melee.Super_Strength"
+      },
+      "Titan Weapons": {
+        "powers": [
+          "Defensive Sweep",
+          "Crushing Blow",
+          "Titan Sweep",
+          "Build Momentum",
+          "Follow Through",
+          "Taunt",
+          "Rend Armor",
+          "Whirling Smash",
+          "Arc of Destruction"
+        ],
+        "full_name": "Brute_Melee.Titan_Weapons"
+      },
+      "War Mace": {
+        "powers": [
+          "Bash",
+          "Pulverize",
+          "Jawbreaker",
+          "Build Up",
+          "Clobber",
+          "Taunt",
+          "Whirling Mace",
+          "Shatter",
+          "Crowd Control"
+        ],
+        "full_name": "Brute_Melee.War_Mace"
+      }
+    },
+    "secondary": {
+      "Bio Armor": {
+        "powers": [
+          "Defensive Adaptation",
+          "Efficient Adaptation",
+          "Offensive Adaptation",
+          "Hardened Carapace",
+          "Inexhaustible",
+          "Environmental Modification",
+          "Adaptation",
+          "Ablative Carapace",
+          "Evolving Armor",
+          "DNA Siphon",
+          "Genetic Contamination",
+          "Parasitic Aura"
+        ],
+        "full_name": "Brute_Defense.Bio_Organic_Armor"
+      },
+      "Dark Armor": {
+        "powers": [
+          "Dark Embrace",
+          "Death Shroud",
+          "Murky Cloud",
+          "Obsidian Shield",
+          "Dark Regeneration",
+          "Obscure Sustenance",
+          "Cloak of Darkness",
+          "Cloak of Fear",
+          "Oppressive Gloom",
+          "Soul Transfer"
+        ],
+        "full_name": "Brute_Defense.Dark_Armor"
+      },
+      "Electric Armor": {
+        "powers": [
+          "Charged Armor",
+          "Lightning Field",
+          "Conductive Shield",
+          "Static Shield",
+          "Grounded",
+          "Lightning Reflexes",
+          "Energize",
+          "Power Sink",
+          "Power Surge"
+        ],
+        "full_name": "Brute_Defense.Electric_Armor"
+      },
+      "Energy Aura": {
+        "powers": [
+          "Kinetic Shield",
+          "Dampening Field",
+          "Power Shield",
+          "Entropic Aura",
+          "Energy Protection",
+          "Energy Cloak",
+          "Energy Drain",
+          "Energize",
+          "Overload"
+        ],
+        "full_name": "Brute_Defense.Energy_Aura"
+      },
+      "Fiery Aura": {
+        "powers": [
+          "Fire Shield",
+          "Blazing Aura",
+          "Healing Flames",
+          "Temperature Protection",
+          "Plasma Shield",
+          "Consume",
+          "Burn",
+          "Fiery Embrace",
+          "Phoenix Rising"
+        ],
+        "full_name": "Brute_Defense.Fiery_Aura"
+      },
+      "Ice Armor": {
+        "powers": [
+          "Frozen Armor",
+          "Hoarfrost",
+          "Rime",
+          "Chilling Embrace",
+          "Wet Ice",
+          "Glacial Armor",
+          "Energy Absorption",
+          "Permafrost",
+          "Icicles",
+          "Icy Bastion"
+        ],
+        "full_name": "Brute_Defense.Ice_Armor"
+      },
+      "Invulnerability": {
+        "powers": [
+          "Resist Physical Damage",
+          "Temp Invulnerability",
+          "Dull Pain",
+          "Resist Elements",
+          "Unyielding",
+          "Resist Energies",
+          "Invincibility",
+          "Tough Hide",
+          "Unstoppable"
+        ],
+        "full_name": "Brute_Defense.Invulnerability"
+      },
+      "Psionic Armor": {
+        "powers": [
+          "Psychic Wall",
+          "Psionic Shield",
+          "Impenetrable Mind",
+          "Consume Psyche",
+          "Impose Presence",
+          "Psychokinetic Barrier",
+          "Precognition",
+          "Aura of Insanity",
+          "Memento Mori"
+        ],
+        "full_name": "Brute_Defense.Psionic_Armor"
+      },
+      "Radiation Armor": {
+        "powers": [
+          "Alpha Barrier",
+          "Gamma Boost",
+          "Proton Armor",
+          "Fallout Shelter",
+          "Radiation Therapy",
+          "Beta Decay",
+          "Particle Shielding",
+          "Ground Zero",
+          "Meltdown"
+        ],
+        "full_name": "Brute_Defense.Radiation_Armor"
+      },
+      "Regeneration": {
+        "powers": [
+          "Fast Healing",
+          "Reconstruction",
+          "Quick Recovery",
+          "Ailment Resistance",
+          "Integration",
+          "Resilience",
+          "Instant Healing",
+          "Reactive Regeneration",
+          "Second Wind",
+          "Moment of Glory"
+        ],
+        "full_name": "Brute_Defense.Regeneration"
+      },
+      "Shield Defense": {
+        "powers": [
+          "Deflection",
+          "Battle Agility",
+          "True Grit",
+          "Active Defense",
+          "Against All Odds",
+          "Phalanx Fighting",
+          "Grant Cover",
+          "Shield Charge",
+          "One with the Shield"
+        ],
+        "full_name": "Brute_Defense.Shield_Defense"
+      },
+      "Stone Armor": {
+        "powers": [
+          "Rock Armor",
+          "Stone Skin",
+          "Earth's Embrace",
+          "Mud Pots",
+          "Rooted",
+          "Crystal Armor",
+          "Minerals",
+          "Brimstone Armor",
+          "Granite Armor"
+        ],
+        "full_name": "Brute_Defense.Stone_Armor"
+      },
+      "Super Reflexes": {
+        "powers": [
+          "Focused Fighting",
+          "Focused Senses",
+          "Agile",
+          "Practiced Brawler",
+          "Dodge",
+          "Evasion",
+          "Lucky",
+          "Quickness",
+          "Elude"
+        ],
+        "full_name": "Brute_Defense.Super_Reflexes"
+      },
+      "Willpower": {
+        "powers": [
+          "High Pain Tolerance",
+          "Mind Over Body",
+          "Fast Healing",
+          "Indomitable Will",
+          "Rise to the Challenge",
+          "Quick Recovery",
+          "Heightened Senses",
+          "Resurgence",
+          "Strength of Will"
+        ],
+        "full_name": "Brute_Defense.Willpower"
+      }
+    },
+    "epic": {
+      "Dark Mastery": {
+        "powers": [
+          "Penumbral Grasp",
+          "Petrifying Gaze",
+          "Dark Blast",
+          "Night Fall",
+          "Tar Patch"
+        ],
+        "full_name": "Epic.Dark_Mastery_TankBrute"
+      },
+      "Earth Mastery": {
+        "powers": [
+          "Stone Prison",
+          "Salt Crystals",
+          "Fossilize",
+          "Quick Sand",
+          "Stalagmites"
+        ],
+        "full_name": "Epic.Earth_Mastery"
+      },
+      "Energy Mastery": {
+        "powers": [
+          "Superior Conditioning",
+          "Focused Accuracy",
+          "Laser Beam Eyes",
+          "Physical Perfection",
+          "Energy Torrent"
+        ],
+        "full_name": "Epic.Energy_Mastery_Brute"
+      },
+      "Fire Mastery": {
+        "powers": [
+          "Ring of Fire",
+          "Char",
+          "Fire Blast",
+          "Melt Armor",
+          "Fire Ball"
+        ],
+        "full_name": "Epic.Pyre_Mastery"
+      },
+      "Ice Mastery": {
+        "powers": [
+          "Chilblain",
+          "Block of Ice",
+          "Ice Blast",
+          "Shiver",
+          "Ice Storm"
+        ],
+        "full_name": "Epic.Arctic_Mastery"
+      },
+      "Leviathan Mastery": {
+        "powers": [
+          "Spirit Shark",
+          "School of Sharks",
+          "Bile Spray",
+          "Arctic Breath",
+          "Summon Guardian"
+        ],
+        "full_name": "Epic.Brute_Leviathan_Mastery"
+      },
+      "Mace Mastery": {
+        "powers": [
+          "Mace Blast",
+          "Web Envelope",
+          "Focused Accuracy",
+          "Disruptor Blast",
+          "Summon Blaster"
+        ],
+        "full_name": "Epic.Brute_Mace_Mastery"
+      },
+      "Mu Mastery": {
+        "powers": [
+          "Mu Lightning",
+          "Electrifying Fences",
+          "Ball Lightning",
+          "Static Discharge",
+          "Summon Striker"
+        ],
+        "full_name": "Epic.Brute_Mu_Mastery"
+      },
+      "Psionic Mastery": {
+        "powers": [
+          "Mesmerize",
+          "Dominate",
+          "Harmonic Mind",
+          "Mental Blast",
+          "Psionic Tornado"
+        ],
+        "full_name": "Epic.Psionic_Mastery_TankBrute"
+      },
+      "Soul Mastery": {
+        "powers": [
+          "Gloom",
+          "Soul Tentacles",
+          "Darkest Night",
+          "Dark Obliteration",
+          "Summon Widow"
+        ],
+        "full_name": "Epic.Brute_Soul_Mastery"
+      }
+    }
+  },
+  "Stalker": {
+    "primary": {
+      "Broad Sword": {
+        "powers": [
+          "Hack",
+          "Slash",
+          "Slice",
+          "Assassin's Slash",
+          "Build Up",
+          "Placate",
+          "Parry",
+          "Disembowel",
+          "Head Splitter"
+        ],
+        "full_name": "Stalker_Melee.Broad_Sword"
+      },
+      "Claws": {
+        "powers": [
+          "Swipe",
+          "Strike",
+          "Slash",
+          "Assassin's Claw",
+          "Build Up",
+          "Placate",
+          "Focus",
+          "Eviscerate",
+          "Shockwave"
+        ],
+        "full_name": "Stalker_Melee.Claws"
+      },
+      "Dark Melee": {
+        "powers": [
+          "Shadow Punch",
+          "Smite",
+          "Shadow Maul",
+          "Assassin's Eclipse",
+          "Build Up",
+          "Placate",
+          "Siphon Life",
+          "Touch of Fear",
+          "Midnight Grasp"
+        ],
+        "full_name": "Stalker_Melee.Dark_Melee"
+      },
+      "Dual Blades": {
+        "powers": [
+          "Nimble Slash",
+          "Power Slice",
+          "Ablating Strike",
+          "Assassin's Blades",
+          "Build Up",
+          "Placate",
+          "Vengeful Slice",
+          "Sweeping Strike",
+          "One Thousand Cuts"
+        ],
+        "full_name": "Stalker_Melee.Dual_Blades"
+      },
+      "Electrical Melee": {
+        "powers": [
+          "Charged Brawl",
+          "Havoc Punch",
+          "Jacobs Ladder",
+          "Assassin's Shock",
+          "Build Up",
+          "Placate",
+          "Chain Induction",
+          "Thunder Strike",
+          "Lightning Rod"
+        ],
+        "full_name": "Stalker_Melee.Electrical_Melee"
+      },
+      "Energy Melee": {
+        "powers": [
+          "Barrage",
+          "Energy Punch",
+          "Bone Smasher",
+          "Assassin's Strike",
+          "Build Up",
+          "Placate",
+          "Power Crash",
+          "Total Focus",
+          "Energy Transfer"
+        ],
+        "full_name": "Stalker_Melee.Energy_Melee"
+      },
+      "Fiery Melee": {
+        "powers": [
+          "Scorch",
+          "Fire Sword",
+          "Cremate",
+          "Assassin's Blaze",
+          "Build Up",
+          "Placate",
+          "Breath of Fire",
+          "Fire Sword Circle",
+          "Greater Fire Sword"
+        ],
+        "full_name": "Stalker_Melee.Fiery_Melee"
+      },
+      "Ice Melee": {
+        "powers": [
+          "Frozen Fists",
+          "Ice Sword",
+          "Frost",
+          "Assassin's Ice Sword",
+          "Placate",
+          "Build Up",
+          "Ice Patch",
+          "Freezing Touch",
+          "Frozen Aura"
+        ],
+        "full_name": "Stalker_Melee.Ice_Melee"
+      },
+      "Kinetic Melee": {
+        "powers": [
+          "Quick Strike",
+          "Body Blow",
+          "Smashing Blow",
+          "Assassin's Strike",
+          "Build Up",
+          "Placate",
+          "Burst",
+          "Focused Burst",
+          "Concentrated Strike"
+        ],
+        "full_name": "Stalker_Melee.Kinetic_Attack"
+      },
+      "Martial Arts": {
+        "powers": [
+          "Thunder Kick",
+          "Storm Kick",
+          "Crippling Axe Kick",
+          "Assassin's Blow",
+          "Focus Chi",
+          "Placate",
+          "Cobra Strike",
+          "Crane Kick",
+          "Eagles Claw"
+        ],
+        "full_name": "Stalker_Melee.Martial_Arts"
+      },
+      "Ninja Blade": {
+        "powers": [
+          "Sting of the Wasp",
+          "Gambler's Cut",
+          "Flashing Steel",
+          "Assassin's Blade",
+          "Build Up",
+          "Placate",
+          "Divine Avalanche",
+          "Soaring Dragon",
+          "Golden Dragonfly"
+        ],
+        "full_name": "Stalker_Melee.Ninja_Sword"
+      },
+      "Psionic Melee": {
+        "powers": [
+          "Mental Strike",
+          "Psi Blade",
+          "Telekinetic Blow",
+          "Assassin's Psi Blade",
+          "Concentration",
+          "Placate",
+          "Boggle",
+          "Greater Psi Blade",
+          "Mass Levitate"
+        ],
+        "full_name": "Stalker_Melee.Psionic_Melee"
+      },
+      "Radiation Melee": {
+        "powers": [
+          "Contaminated Strike",
+          "Radioactive Smash",
+          "Proton Sweep",
+          "Assassin's Corruption",
+          "Build Up",
+          "Placate",
+          "Radiation Siphon",
+          "Devastating Blow",
+          "Atom Smasher"
+        ],
+        "full_name": "Stalker_Melee.Radiation_Melee"
+      },
+      "Savage Melee": {
+        "powers": [
+          "Savage Strike",
+          "Maiming Slash",
+          "Shred",
+          "Assassin's Frenzy",
+          "Build Up",
+          "Placate",
+          "Rending Flurry",
+          "Hemorrhage",
+          "Savage Leap"
+        ],
+        "full_name": "Stalker_Melee.Savage_Melee"
+      },
+      "Sonic Melee": {
+        "powers": [
+          "Sonic Thrust",
+          "Strident Echo",
+          "Attune",
+          "Assassin's Whisper",
+          "Build Up",
+          "Placate",
+          "Sonic Clap",
+          "Deafening Wave",
+          "Earsplitter"
+        ],
+        "full_name": "Stalker_Melee.Sonic_Melee"
+      },
+      "Spines": {
+        "powers": [
+          "Barb Swipe",
+          "Lunge",
+          "Spine Burst",
+          "Assassin's Impaler",
+          "Build Up",
+          "Placate",
+          "Impale",
+          "Ripper",
+          "Throw Spines"
+        ],
+        "full_name": "Stalker_Melee.Spines"
+      },
+      "Staff Fighting": {
+        "powers": [
+          "Mercurial Blow",
+          "Precise Strike",
+          "Guarded Spin",
+          "Assassin's Staff",
+          "Build Up",
+          "Placate",
+          "Eye of the Storm",
+          "Serpent's Reach",
+          "Sky Splitter"
+        ],
+        "full_name": "Stalker_Melee.Staff_Fighting"
+      },
+      "Stone Melee": {
+        "powers": [
+          "Stone Fist",
+          "Stone Mallet",
+          "Fault",
+          "Assassin's Smash",
+          "Build Up",
+          "Placate",
+          "Seismic Mallet",
+          "Hurl Boulder",
+          "Tremor"
+        ],
+        "full_name": "Stalker_Melee.Stone_Melee"
+      },
+      "Street Justice": {
+        "powers": [
+          "Initial Strike",
+          "Heavy Blow",
+          "Sweeping Cross",
+          "Assassin's Strike",
+          "Build Up",
+          "Placate",
+          "Spinning Strike",
+          "Shin Breaker",
+          "Crushing Uppercut"
+        ],
+        "full_name": "Stalker_Melee.Brawling"
+      }
+    },
+    "secondary": {
+      "Bio Armor": {
+        "powers": [
+          "Defensive Adaptation",
+          "Efficient Adaptation",
+          "Offensive Adaptation",
+          "Hide",
+          "Hardened Carapace",
+          "Boundless Energy",
+          "Environmental Modification",
+          "Adaptation",
+          "Ablative Carapace",
+          "DNA Siphon",
+          "Genetic Corruption",
+          "Parasitic Aura"
+        ],
+        "full_name": "Stalker_Defense.Bio_Organic_Armor"
+      },
+      "Dark Armor": {
+        "powers": [
+          "Hide",
+          "Dark Embrace",
+          "Murky Cloud",
+          "Shadow Dweller",
+          "Obscure Sustenance",
+          "Obsidian Shield",
+          "Dark Regeneration",
+          "Cloak of Fear",
+          "Oppressive Gloom",
+          "Soul Transfer"
+        ],
+        "full_name": "Stalker_Defense.Dark_Armor"
+      },
+      "Electric Armor": {
+        "powers": [
+          "Hide",
+          "Charged Armor",
+          "Conductive Shield",
+          "Static Shield",
+          "Grounded",
+          "Lightning Reflexes",
+          "Energize",
+          "Power Sink",
+          "Power Surge"
+        ],
+        "full_name": "Stalker_Defense.Electric_Armor"
+      },
+      "Energy Aura": {
+        "powers": [
+          "Hide",
+          "Kinetic Shield",
+          "Power Shield",
+          "Entropy Shield",
+          "Kinetic Dampening",
+          "Disrupt",
+          "Energy Drain",
+          "Energize",
+          "Overload"
+        ],
+        "full_name": "Stalker_Defense.Energy_Aura"
+      },
+      "Fiery Aura": {
+        "powers": [
+          "Fire Shield",
+          "Hide",
+          "Healing Flames",
+          "Temperature Protection",
+          "Plasma Shield",
+          "Consume",
+          "Burn",
+          "Cauterizing Blaze",
+          "Phoenix Rising"
+        ],
+        "full_name": "Stalker_Defense.Fiery_Aura"
+      },
+      "Ice Armor": {
+        "powers": [
+          "Hide",
+          "Frozen Armor",
+          "Hoarfrost",
+          "Rime",
+          "Wet Ice",
+          "Chilling Embrace",
+          "Permafrost",
+          "Glacial Armor",
+          "Energy Absorption",
+          "Icy Bastion"
+        ],
+        "full_name": "Stalker_Defense.Ice_Armor"
+      },
+      "Invulnerability": {
+        "powers": [
+          "Hide",
+          "Resist Physical Damage",
+          "Temp Invulnerability",
+          "Dull Pain",
+          "Unyielding",
+          "Environmental Resistance",
+          "Invincible",
+          "Tough Hide",
+          "Unstoppable"
+        ],
+        "full_name": "Stalker_Defense.Invulnerability"
+      },
+      "Ninjitsu": {
+        "powers": [
+          "Hide",
+          "Ninja Reflexes",
+          "Danger Sense",
+          "Caltrops",
+          "Kuji-In Rin",
+          "Kuji-In Sha",
+          "Smoke Flash",
+          "Blinding Powder",
+          "Kuji-In Retsu"
+        ],
+        "full_name": "Stalker_Defense.Ninjitsu"
+      },
+      "Psionic Armor": {
+        "powers": [
+          "Hide",
+          "Psychic Wall",
+          "Psionic Shield",
+          "Impenetrable Mind",
+          "Devour Psyche",
+          "Psychokinetic Barrier",
+          "Precognition",
+          "Aura of Madness",
+          "Memento Mori"
+        ],
+        "full_name": "Stalker_Defense.Psionic_Armor"
+      },
+      "Radiation Armor": {
+        "powers": [
+          "Hide",
+          "Alpha Barrier",
+          "Gamma Boost",
+          "Proton Armor",
+          "Fallout Shelter",
+          "Radiation Therapy",
+          "Particle Shielding",
+          "Ground Zero",
+          "Meltdown"
+        ],
+        "full_name": "Stalker_Defense.Radiation_Armor"
+      },
+      "Regeneration": {
+        "powers": [
+          "Hide",
+          "Reconstruction",
+          "Fast Healing",
+          "Ailment Resistance",
+          "Integration",
+          "Resilience",
+          "Instant Healing",
+          "Reactive Regeneration",
+          "Second Wind",
+          "Moment of Glory"
+        ],
+        "full_name": "Stalker_Defense.Regeneration"
+      },
+      "Shield Defense": {
+        "powers": [
+          "Hide",
+          "Deflection",
+          "Battle Agility",
+          "True Grit",
+          "Active Defense",
+          "Against All Odds",
+          "Grant Cover",
+          "Shield Charge",
+          "One with the Shield"
+        ],
+        "full_name": "Stalker_Defense.Shield_Defense"
+      },
+      "Stone Armor": {
+        "powers": [
+          "Hide",
+          "Rock Armor",
+          "Stone Skin",
+          "Earth's Embrace",
+          "Rooted",
+          "Crystal Armor",
+          "Brimstone Armor",
+          "Minerals",
+          "Geode"
+        ],
+        "full_name": "Stalker_Defense.Stone_Armor"
+      },
+      "Super Reflexes": {
+        "powers": [
+          "Hide",
+          "Focused Fighting",
+          "Focused Senses",
+          "Agile",
+          "Practiced Brawler",
+          "Dodge",
+          "Quickness",
+          "Evasion",
+          "Elude"
+        ],
+        "full_name": "Stalker_Defense.Super_Reflexes"
+      },
+      "Willpower": {
+        "powers": [
+          "Hide",
+          "High Pain Tolerance",
+          "Reconstruction",
+          "Mind Over Body",
+          "Indomitable Will",
+          "Heightened Senses",
+          "Fast Healing",
+          "Resurgence",
+          "Strength of Will"
+        ],
+        "full_name": "Stalker_Defense.Willpower"
+      }
+    },
+    "epic": {
+      "Dark Mastery": {
+        "powers": [
+          "Petrifying Gaze",
+          "Umbral Torrent",
+          "Dark Blast",
+          "Night Fall",
+          "Tenebrous Tentacles"
+        ],
+        "full_name": "Epic.Darkness_Mastery"
+      },
+      "Energy Mastery": {
+        "powers": [
+          "Superior Conditioning",
+          "Focused Accuracy",
+          "Laser Beam Eyes",
+          "Physical Perfection",
+          "Energy Torrent"
+        ],
+        "full_name": "Epic.Body_Mastery_Stalker"
+      },
+      "Fire Mastery": {
+        "powers": [
+          "Ring of Fire",
+          "Char",
+          "Fire Blast",
+          "Melt Armor",
+          "Fire Ball"
+        ],
+        "full_name": "Epic.Blaze_Mastery"
+      },
+      "Ice Mastery": {
+        "powers": [
+          "Ice Bolt",
+          "Frozen Spear",
+          "Shiver",
+          "Frigid Wind",
+          "Ice Elemental"
+        ],
+        "full_name": "Epic.Ice_Mastery_ScrapStalk"
+      },
+      "Leviathan Mastery": {
+        "powers": [
+          "Spirit Shark",
+          "Water Spout",
+          "Hibernate",
+          "Spirit Shark Jaws",
+          "Summon Guardian"
+        ],
+        "full_name": "Epic.Stalker_Leviathan_Mastery"
+      },
+      "Mace Mastery": {
+        "powers": [
+          "Mace Blast",
+          "Mace Beam",
+          "Disruptor Blast",
+          "Web Cocoon",
+          "Summon Spiderlings"
+        ],
+        "full_name": "Epic.Stalker_Mace_Mastery"
+      },
+      "Mu Mastery": {
+        "powers": [
+          "Mu Bolts",
+          "Zapp",
+          "Ball Lightning",
+          "Electric Shackles",
+          "Summon Adept"
+        ],
+        "full_name": "Epic.Stalker_Mu_Mastery"
+      },
+      "Psionic Mastery": {
+        "powers": [
+          "Mental Blast",
+          "Psionic Lance",
+          "Psychic Scream",
+          "Harmonic Mind",
+          "Psionic Nexus"
+        ],
+        "full_name": "Epic.Psionic_Mastery_ScrapStalk"
+      },
+      "Soul Mastery": {
+        "powers": [
+          "Dark Blast",
+          "Moonbeam",
+          "Shadow Meld",
+          "Soul Storm",
+          "Summon Widow"
+        ],
+        "full_name": "Epic.Stalker_Soul_Mastery"
+      },
+      "Weapon Mastery": {
+        "powers": [
+          "Web Grenade",
+          "Physical Perfection",
+          "Shuriken",
+          "Targeting Drone",
+          "Exploding Shuriken"
+        ],
+        "full_name": "Epic.Weapon_Mastery_Stalker"
+      }
+    }
+  },
+  "Mastermind": {
+    "primary": {
+      "Beast Mastery": {
+        "powers": [
+          "Pack Mentality",
+          "Call Swarm",
+          "Summon Wolves",
+          "Call Hawk",
+          "Train Beasts",
+          "Call Ravens",
+          "Summon Lions",
+          "Fortify Pack",
+          "Summon Dire Wolf",
+          "Tame Beasts"
+        ],
+        "full_name": "Mastermind_Summon.Beast_Mastery"
+      },
+      "Demon Summoning": {
+        "powers": [
+          "Corruption",
+          "Summon Demonlings",
+          "Lash",
+          "Enchant Demons",
+          "Crack Whip",
+          "Summon Demons",
+          "Hell on Earth",
+          "Summon Demon Prince",
+          "Abyssal Empowerment"
+        ],
+        "full_name": "Mastermind_Summon.Demon_Summoning"
+      },
+      "Mercenaries": {
+        "powers": [
+          "Burst",
+          "Soldiers",
+          "Slug",
+          "Equip Mercenary",
+          "M30 Grenade",
+          "Spec Ops",
+          "Serum",
+          "Commando",
+          "Tactical Upgrade"
+        ],
+        "full_name": "Mastermind_Summon.Mercenaries"
+      },
+      "Necromancy": {
+        "powers": [
+          "Dark Blast",
+          "Zombie Horde",
+          "Gloom",
+          "Enchant Undead",
+          "Life Drain",
+          "Grave Knight",
+          "Soul Extraction",
+          "Lich",
+          "Dark Empowerment"
+        ],
+        "full_name": "Mastermind_Summon.Necromancy"
+      },
+      "Ninjas": {
+        "powers": [
+          "Snap Shot",
+          "Call Genin",
+          "Aimed Shot",
+          "Train Ninjas",
+          "Fistful of Arrows",
+          "Call Jounin",
+          "Smoke Flash",
+          "Oni",
+          "Kuji In Zen"
+        ],
+        "full_name": "Mastermind_Summon.Ninjas"
+      },
+      "Robotics": {
+        "powers": [
+          "Pulse Rifle Blast",
+          "Battle Drones",
+          "Pulse Rifle Burst",
+          "Equip Robot",
+          "Photon Grenade",
+          "Protector Bots",
+          "Maintenance Drone",
+          "Assault Bot",
+          "Upgrade Robot"
+        ],
+        "full_name": "Mastermind_Summon.Robotics"
+      },
+      "Thugs": {
+        "powers": [
+          "Pistols",
+          "Call Thugs",
+          "Dual Wield",
+          "Equip Thugs",
+          "Empty Clips",
+          "Call Enforcer",
+          "Gang War",
+          "Call Bruiser",
+          "Upgrade Equipment"
+        ],
+        "full_name": "Mastermind_Summon.Thugs"
+      }
+    },
+    "secondary": {
+      "Cold Domination": {
+        "powers": [
+          "Infrigidate",
+          "Ice Shield",
+          "Snow Storm",
+          "Glacial Shield",
+          "Frostwork",
+          "Arctic Fog",
+          "Benumb",
+          "Sleet",
+          "Heat Loss"
+        ],
+        "full_name": "Mastermind_Buff.Cold_Domination"
+      },
+      "Dark Miasma": {
+        "powers": [
+          "Twilight Grasp",
+          "Tar Patch",
+          "Darkest Night",
+          "Howling Twilight",
+          "Shadow Fall",
+          "Fearsome Stare",
+          "Petrifying Gaze",
+          "Black Hole",
+          "Dark Servant"
+        ],
+        "full_name": "Mastermind_Buff.Dark_Miasma"
+      },
+      "Electrical Affinity": {
+        "powers": [
+          "Shock",
+          "Rejuvenating Circuit",
+          "Discharge",
+          "Energizing Circuit",
+          "Faraday Cage",
+          "Empowering Circuit",
+          "Defibrillate",
+          "Insulating Circuit",
+          "Amp Up"
+        ],
+        "full_name": "Mastermind_Buff.Electrical_Affinity"
+      },
+      "Empathy": {
+        "powers": [
+          "Healing Aura",
+          "Heal Other",
+          "Absorb Pain",
+          "Resurrect",
+          "Clear Mind",
+          "Fortitude",
+          "Recovery Aura",
+          "Regeneration Aura",
+          "Adrenalin Boost"
+        ],
+        "full_name": "Mastermind_Buff.Empathy"
+      },
+      "Force Field": {
+        "powers": [
+          "Repulsion Bolt",
+          "Deflection Shield",
+          "Insulation Shield",
+          "Detention Field",
+          "Personal Force Field",
+          "Dispersion Bubble",
+          "Repulsion Field",
+          "Force Bomb",
+          "Damping Bubble"
+        ],
+        "full_name": "Mastermind_Buff.Force_Field"
+      },
+      "Kinetics": {
+        "powers": [
+          "Transfusion",
+          "Siphon Power",
+          "Repel",
+          "Siphon Speed",
+          "Increase Density",
+          "Speed Boost",
+          "Inertial Reduction",
+          "Transference",
+          "Fulcrum Shift"
+        ],
+        "full_name": "Mastermind_Buff.Kinetics"
+      },
+      "Marine Affinity": {
+        "powers": [
+          "Shoal Rush",
+          "Soothing Wave",
+          "Toroidal Bubble",
+          "Whitecap",
+          "Tide Pool",
+          "Brine",
+          "Shifting Tides",
+          "Barrier Reef",
+          "Power of the Depths"
+        ],
+        "full_name": "Mastermind_Buff.Marine_Affinity"
+      },
+      "Nature Affinity": {
+        "powers": [
+          "Corrosive Enzymes",
+          "Regrowth",
+          "Wild Growth",
+          "Spore Cloud",
+          "Lifegiving Spores",
+          "Wild Bastion",
+          "Rebirth",
+          "Entangling Aura",
+          "Overgrowth"
+        ],
+        "full_name": "Mastermind_Buff.Nature_Affinity"
+      },
+      "Pain Domination": {
+        "powers": [
+          "Nullify Pain",
+          "Soothe",
+          "Share Pain",
+          "Conduit of Pain",
+          "Enforced Morale",
+          "Suppress Pain",
+          "World of Pain",
+          "Anguishing Cry",
+          "Painbringer"
+        ],
+        "full_name": "Mastermind_Buff.Pain_Domination"
+      },
+      "Poison": {
+        "powers": [
+          "Alkaloid",
+          "Envenom",
+          "Weaken",
+          "Neurotoxic Breath",
+          "Elixir of Life",
+          "Antidote",
+          "Paralytic Poison",
+          "Poison Trap",
+          "Noxious Gas"
+        ],
+        "full_name": "Mastermind_Buff.Poison"
+      },
+      "Radiation Emission": {
+        "powers": [
+          "Radiant Aura",
+          "Radiation Infection",
+          "Accelerate Metabolism",
+          "Enervating Field",
+          "Mutation",
+          "Lingering Radiation",
+          "Choking Cloud",
+          "Fallout",
+          "EM Pulse"
+        ],
+        "full_name": "Mastermind_Buff.Radiation_Emission"
+      },
+      "Sonic Resonance": {
+        "powers": [
+          "Sonic Siphon",
+          "Sonic Barrier",
+          "Sonic Haven",
+          "Sonic Cage",
+          "Disruption Field",
+          "Sonic Dispersion",
+          "Sonic Repulsion",
+          "Clarity",
+          "Liquefy"
+        ],
+        "full_name": "Mastermind_Buff.Sonic_Resonance"
+      },
+      "Storm Summoning": {
+        "powers": [
+          "Gale",
+          "O2 Boost",
+          "Snow Storm",
+          "Steamy Mist",
+          "Freezing Rain",
+          "Hurricane",
+          "Thunder Clap",
+          "Tornado",
+          "Lightning Storm"
+        ],
+        "full_name": "Mastermind_Buff.Storm_Summoning"
+      },
+      "Thermal Radiation": {
+        "powers": [
+          "Warmth",
+          "Fire Shield",
+          "Cauterize",
+          "Plasma Shield",
+          "Power of the Phoenix",
+          "Thaw",
+          "Forge",
+          "Heat Exhaustion",
+          "Melt Armor"
+        ],
+        "full_name": "Mastermind_Buff.Thermal_Radiation"
+      },
+      "Time Manipulation": {
+        "powers": [
+          "Time Crawl",
+          "Temporal Mending",
+          "Time's Juncture",
+          "Temporal Selection",
+          "Distortion Field",
+          "Time Stop",
+          "Farsight",
+          "Slowed Response",
+          "Chrono Shift"
+        ],
+        "full_name": "Mastermind_Buff.Time_Manipulation"
+      },
+      "Traps": {
+        "powers": [
+          "Web Grenade",
+          "Caltrops",
+          "Triage Beacon",
+          "Acid Mortar",
+          "Force Field Generator",
+          "Poison Trap",
+          "Seeker Drones",
+          "Trip Mine",
+          "Detonator"
+        ],
+        "full_name": "Mastermind_Buff.Traps"
+      },
+      "Trick Arrow": {
+        "powers": [
+          "Entangling Arrow",
+          "Flash Arrow",
+          "Glue Arrow",
+          "Ice Arrow",
+          "Poison Gas Arrow",
+          "Acid Arrow",
+          "Disruption Arrow",
+          "Oil Slick Arrow",
+          "EMP Arrow"
+        ],
+        "full_name": "Mastermind_Buff.Trick_Arrow"
+      }
+    },
+    "epic": {
+      "Dark Mastery": {
+        "powers": [
+          "Murky Cloud",
+          "Shadowy Binds",
+          "Dark Pit",
+          "Possess",
+          "Soul Consumption"
+        ],
+        "full_name": "Epic.Dark_Mastery_Mastermind"
+      },
+      "Electricity Mastery": {
+        "powers": [
+          "Static Discharge",
+          "Electric Shackles",
+          "Thunder Strike",
+          "Surge of Power",
+          "ESD"
+        ],
+        "full_name": "Epic.Charge_Mastery"
+      },
+      "Field Mastery": {
+        "powers": [
+          "Power Blast",
+          "Temp Invulnerability",
+          "Energy Torrent",
+          "Explosive Blast",
+          "Force of Nature"
+        ],
+        "full_name": "Epic.Field_Mastery"
+      },
+      "Fire Mastery": {
+        "powers": [
+          "Bonfire",
+          "Fire Blast",
+          "Fire Ball",
+          "Char",
+          "Rise of the Phoenix"
+        ],
+        "full_name": "Epic.Heat_Mastery_Stalker"
+      },
+      "Ice Mastery": {
+        "powers": [
+          "Ice Blast",
+          "Flash Freeze",
+          "Hoarfrost",
+          "Frozen Armor",
+          "Hibernate"
+        ],
+        "full_name": "Epic.Chill_Mastery"
+      },
+      "Leviathan Mastery": {
+        "powers": [
+          "School of Sharks",
+          "Bile Spray",
+          "Knockout Blow",
+          "Shark Skin",
+          "Spirit Shark Jaws"
+        ],
+        "full_name": "Epic.Mastermind_Leviathan_Mastery"
+      },
+      "Mace Mastery": {
+        "powers": [
+          "Web Envelope",
+          "Scorpion Shield",
+          "Mace Beam Volley",
+          "Power Boost",
+          "Web Cocoon"
+        ],
+        "full_name": "Epic.Mastermind_Mace_Mastery"
+      },
+      "Mu Mastery": {
+        "powers": [
+          "Static Discharge",
+          "Charged Armor",
+          "Thunder Strike",
+          "Electrifying Fences",
+          "Electric Shackles"
+        ],
+        "full_name": "Epic.Mastermind_Mu_Mastery"
+      },
+      "Soul Mastery": {
+        "powers": [
+          "Night Fall",
+          "Dark Embrace",
+          "Oppressive Gloom",
+          "Soul Tentacles",
+          "Soul Storm"
+        ],
+        "full_name": "Epic.Mastermind_Soul_Mastery"
+      }
+    }
+  },
+  "Dominator": {
+    "primary": {
+      "Arsenal Control": {
+        "powers": [
+          "Tranquilizer",
+          "Cryo Freeze Ray",
+          "Sleep Grenade",
+          "Liquid Nitrogen",
+          "Cloaking Device",
+          "Smoke Canister",
+          "Flash Bang",
+          "Tear Gas",
+          "Tri-Cannon"
+        ],
+        "full_name": "Dominator_Control.Arsenal_Control"
+      },
+      "Darkness Control": {
+        "powers": [
+          "Shadowy Binds",
+          "Dark Grasp",
+          "Living Shadows",
+          "Possess",
+          "Fearsome Stare",
+          "Heart of Darkness",
+          "Haunt",
+          "Shadow Field",
+          "Umbra Beast"
+        ],
+        "full_name": "Dominator_Control.Darkness_Control"
+      },
+      "Earth Control": {
+        "powers": [
+          "Stone Prison",
+          "Fossilize",
+          "Stone Cages",
+          "Quicksand",
+          "Salt Crystals",
+          "Stalagmites",
+          "Earthquake",
+          "Volcanic Gasses",
+          "Animate Stone"
+        ],
+        "full_name": "Dominator_Control.Earth_Control"
+      },
+      "Electric Control": {
+        "powers": [
+          "Electric Fence",
+          "Tesla Cage",
+          "Chain Fences",
+          "Jolting Chain",
+          "Conductive Aura",
+          "Static Field",
+          "Tesla Coil",
+          "Synaptic Overload",
+          "Gremlins"
+        ],
+        "full_name": "Dominator_Control.Electric_Control"
+      },
+      "Fire Control": {
+        "powers": [
+          "Ring of Fire",
+          "Char",
+          "Fire Cages",
+          "Smoke",
+          "Hot Feet",
+          "Flashfire",
+          "Cinders",
+          "Bonfire",
+          "Fire Imps"
+        ],
+        "full_name": "Dominator_Control.Fire_Control"
+      },
+      "Gravity Control": {
+        "powers": [
+          "Crush",
+          "Lift",
+          "Gravity Distortion",
+          "Propel",
+          "Crushing Field",
+          "Dimension Shift",
+          "Gravity Distortion Field",
+          "Wormhole",
+          "Singularity"
+        ],
+        "full_name": "Dominator_Control.Gravity_Control"
+      },
+      "Ice Control": {
+        "powers": [
+          "Chilblain",
+          "Block of Ice",
+          "Frostbite",
+          "Arctic Air",
+          "Cold Snap",
+          "Ice Slick",
+          "Flash Freeze",
+          "Glacier",
+          "Jack Frost"
+        ],
+        "full_name": "Dominator_Control.Ice_Control"
+      },
+      "Illusion Control": {
+        "powers": [
+          "Spectral Wall",
+          "Blind",
+          "Deceive",
+          "Spectral Terror",
+          "Superior Invisibility",
+          "Gleam",
+          "Phantom Army",
+          "Flash",
+          "Phantasm"
+        ],
+        "full_name": "Dominator_Control.Illusion_Control"
+      },
+      "Mind Control": {
+        "powers": [
+          "Mesmerize",
+          "Levitate",
+          "Dominate",
+          "Confuse",
+          "Mass Hypnosis",
+          "Telekinesis",
+          "Total Domination",
+          "Terrify",
+          "Mass Confusion"
+        ],
+        "full_name": "Dominator_Control.Mind_Control"
+      },
+      "Plant Control": {
+        "powers": [
+          "Entangle",
+          "Strangler",
+          "Roots",
+          "Spore Burst",
+          "Seeds of Confusion",
+          "Spirit Tree",
+          "Vines",
+          "Carrion Creepers",
+          "Fly Trap"
+        ],
+        "full_name": "Dominator_Control.Plant_Control"
+      },
+      "Pyrotechnic Control": {
+        "powers": [
+          "Sparkling Cage",
+          "Dazzle",
+          "Sparkling Chain",
+          "Glittering Column",
+          "Hypnotizing Lights",
+          "Brillant Barrage",
+          "Incendiary Aura",
+          "Explosive Bouquet",
+          "Catherine Wheel"
+        ],
+        "full_name": "Dominator_Control.Pyrotechnic_Control"
+      },
+      "Symphony Control": {
+        "powers": [
+          "Melodic Binding",
+          "Hymn of Dissonance",
+          "Aria of Stasis",
+          "Impassioned Serenade",
+          "Dreadful Discord",
+          "Enfeebling Lullaby",
+          "Confounding Chant",
+          "Chords of Despair",
+          "Reverberant"
+        ],
+        "full_name": "Dominator_Control.Symphony_Control"
+      }
+    },
+    "secondary": {
+      "Arsenal Assault": {
+        "powers": [
+          "Burst",
+          "Buttstroke",
+          "Buckshot",
+          "Elbow Strike",
+          "Power Up",
+          "Trip Mine",
+          "Targeting Drone",
+          "Sniper Rifle",
+          "Ignite"
+        ],
+        "full_name": "Dominator_Assault.Arsenal_Assault"
+      },
+      "Dark Assault": {
+        "powers": [
+          "Dark Blast",
+          "Smite",
+          "Gloom",
+          "Night Fall",
+          "Gather Shadows",
+          "Engulfing Darkness",
+          "Life Drain",
+          "Moon Beam",
+          "Midnight Grasp"
+        ],
+        "full_name": "Dominator_Assault.Dark_Assault"
+      },
+      "Earth Assault": {
+        "powers": [
+          "Stone Spears",
+          "Stone Mallet",
+          "Tremor",
+          "Hurl Boulder",
+          "Power Up",
+          "Heavy Mallet",
+          "Seismic Smash",
+          "Mud Pots",
+          "Fissure"
+        ],
+        "full_name": "Dominator_Assault.Earth_Assault"
+      },
+      "Electricity Assault": {
+        "powers": [
+          "Charged Bolts",
+          "Charged Brawl",
+          "Lightning Bolt",
+          "Havoc Punch",
+          "Build Up",
+          "Zapp",
+          "Static Discharge",
+          "Thunder Strike",
+          "Voltaic Sentinel"
+        ],
+        "full_name": "Dominator_Assault.Electricity_Manipulation"
+      },
+      "Energy Assault": {
+        "powers": [
+          "Power Bolt",
+          "Bone Smasher",
+          "Power Push",
+          "Power Blast",
+          "Power Up",
+          "Whirling Hands",
+          "Total Focus",
+          "Sniper Blast",
+          "Power Burst"
+        ],
+        "full_name": "Dominator_Assault.Energy_Assault"
+      },
+      "Fiery Assault": {
+        "powers": [
+          "Flares",
+          "Incinerate",
+          "Fire Breath",
+          "Fire Blast",
+          "Embrace of Fire",
+          "Combustion",
+          "Consume",
+          "Blazing Bolt",
+          "Blaze"
+        ],
+        "full_name": "Dominator_Assault.Fiery_Assault"
+      },
+      "Icy Assault": {
+        "powers": [
+          "Ice Bolt",
+          "Ice Sword",
+          "Ice Sword Circle",
+          "Ice Blast",
+          "Power Up",
+          "Frost Breath",
+          "Chilling Embrace",
+          "Ice Slash",
+          "Bitter Ice Blast"
+        ],
+        "full_name": "Dominator_Assault.Icy_Assault"
+      },
+      "Martial Assault": {
+        "powers": [
+          "Shuriken Throw",
+          "Thunder Kick",
+          "Trick Shot",
+          "Spinning Kick",
+          "Envenomed Blades",
+          "Dragon's Tail",
+          "Caltrops",
+          "Masterful Throw",
+          "Explosive Shuriken"
+        ],
+        "full_name": "Dominator_Assault.Martial_Assault"
+      },
+      "Psionic Assault": {
+        "powers": [
+          "Psionic Dart",
+          "Mind Probe",
+          "Telekinetic Thrust",
+          "Mental Blast",
+          "Psychic Scream",
+          "Drain Psyche",
+          "Subdue",
+          "Psionic Lance",
+          "Psychic Shockwave"
+        ],
+        "full_name": "Dominator_Assault.Psionic_Assault"
+      },
+      "Radioactive Assault": {
+        "powers": [
+          "Contaminated Strike",
+          "Neutrino Bolt",
+          "X-Ray Beam",
+          "Electron Haze",
+          "Fusion",
+          "Radiation Siphon",
+          "Atom Smasher",
+          "Proton Volley",
+          "Devastating Blow"
+        ],
+        "full_name": "Dominator_Assault.Radioactive_Assault"
+      },
+      "Savage Assault": {
+        "powers": [
+          "Call Swarm",
+          "Maiming Slash",
+          "Vicious Slash",
+          "Unkindness",
+          "Spot Prey",
+          "Rending Flurry",
+          "Blood Craze",
+          "Call Hawk",
+          "Feral Charge"
+        ],
+        "full_name": "Dominator_Assault.Savage_Assault"
+      },
+      "Sonic Assault": {
+        "powers": [
+          "Shriek",
+          "Strident Echo",
+          "Scream",
+          "Shockwave",
+          "Bass Boost",
+          "Deafening Wave",
+          "Disruption Aura",
+          "Shout",
+          "Earsplitter"
+        ],
+        "full_name": "Dominator_Assault.Sonic_Assault"
+      },
+      "Thorny Assault": {
+        "powers": [
+          "Thorny Darts",
+          "Skewer",
+          "Fling Thorns",
+          "Impale",
+          "Build Up",
+          "Thorn Burst",
+          "Thorntrops",
+          "Ripper",
+          "Thorn Barrage"
+        ],
+        "full_name": "Dominator_Assault.Thorny_Assault"
+      }
+    },
+    "epic": {
+      "Dark Mastery": {
+        "powers": [
+          "Murky Cloud",
+          "Tar Patch",
+          "Darkest Night",
+          "Umbral Torrent",
+          "Soul Consumption"
+        ],
+        "full_name": "Epic.Dark_Mastery_Dominator"
+      },
+      "Energy Mastery": {
+        "powers": [
+          "Energy Transfer",
+          "Conserve Power",
+          "Temp Invulnerability",
+          "Energy Torrent",
+          "Explosive Blast"
+        ],
+        "full_name": "Epic.Primal_Forces_Mastery_Dominator"
+      },
+      "Fire Mastery": {
+        "powers": [
+          "Rain of Fire",
+          "Fire Ball",
+          "Fire Shield",
+          "Rise of the Phoenix",
+          "Melt Armor"
+        ],
+        "full_name": "Epic.Fire_Mastery_Dominator"
+      },
+      "Ice Mastery": {
+        "powers": [
+          "Hibernate",
+          "Sleet",
+          "Frozen Armor",
+          "Hoarfrost",
+          "Ice Storm"
+        ],
+        "full_name": "Epic.Ice_Mastery_Dominator"
+      },
+      "Leviathan Mastery": {
+        "powers": [
+          "Water Spout",
+          "Bile Spray",
+          "Hibernate",
+          "Shark Skin",
+          "Summon Coralax"
+        ],
+        "full_name": "Epic.Dominator_Leviathan_Mastery"
+      },
+      "Mace Mastery": {
+        "powers": [
+          "Poisonous Ray",
+          "Scorpion Shield",
+          "Disruptor Blast",
+          "Personal Force Field",
+          "Summon Tarantula"
+        ],
+        "full_name": "Epic.Dominator_Mace_Mastery"
+      },
+      "Mu Mastery": {
+        "powers": [
+          "Power Sink",
+          "Charged Armor",
+          "Ball Lightning",
+          "Surge of Power",
+          "Summon Guardian"
+        ],
+        "full_name": "Epic.Dominator_Mu_Mastery"
+      },
+      "Psionic Mastery": {
+        "powers": [
+          "Link Minds",
+          "Indomitable Will",
+          "Mind Over Body",
+          "World of Confusion",
+          "Psionic Tornado"
+        ],
+        "full_name": "Epic.Psionic_Mastery_Domingator"
+      },
+      "Soul Mastery": {
+        "powers": [
+          "Dark Consumption",
+          "Dark Embrace",
+          "Dark Obliteration",
+          "Soul Drain",
+          "Summon Seer"
+        ],
+        "full_name": "Epic.Dominator_Soul_Mastery"
+      }
+    }
+  },
+  "Corruptor": {
+    "primary": {
+      "Archery": {
+        "powers": [
+          "Snap Shot",
+          "Aimed Shot",
+          "Fistful of Arrows",
+          "Blazing Arrow",
+          "Aim",
+          "Explosive Arrow",
+          "Ranged Shot",
+          "Stunning Shot",
+          "Rain of Arrows"
+        ],
+        "full_name": "Corruptor_Ranged.Archery"
+      },
+      "Assault Rifle": {
+        "powers": [
+          "Burst",
+          "Slug",
+          "Buckshot",
+          "M30 Grenade",
+          "Beanbag",
+          "Sniper Rifle",
+          "Flamethrower",
+          "Ignite",
+          "Full Auto"
+        ],
+        "full_name": "Corruptor_Ranged.Assault_Rifle"
+      },
+      "Beam Rifle": {
+        "powers": [
+          "Single Shot",
+          "Charged Shot",
+          "Cutting Beam",
+          "Disintegrate",
+          "Aim",
+          "Lancer Shot",
+          "Penetrating Ray",
+          "Piercing Beam",
+          "Overcharge"
+        ],
+        "full_name": "Corruptor_Ranged.Beam_Rifle"
+      },
+      "Dark Blast": {
+        "powers": [
+          "Dark Blast",
+          "Gloom",
+          "Moonbeam",
+          "Dark Pit",
+          "Tenebrous Tentacles",
+          "Night Fall",
+          "Torrent",
+          "Life Drain",
+          "Blackstar"
+        ],
+        "full_name": "Corruptor_Ranged.Dark_Blast"
+      },
+      "Dual Pistols": {
+        "powers": [
+          "Chemical Ammunition",
+          "Cryo Ammunition",
+          "Incendiary Ammunition",
+          "Pistols",
+          "Dual Wield",
+          "Empty Clips",
+          "Swap Ammo",
+          "Bullet Rain",
+          "Suppressive Fire",
+          "Executioner's Shot",
+          "Piercing Rounds",
+          "Hail of Bullets"
+        ],
+        "full_name": "Corruptor_Ranged.Dual_Pistols"
+      },
+      "Electrical Blast": {
+        "powers": [
+          "Charged Bolts",
+          "Lightning Bolt",
+          "Ball Lightning",
+          "Short Circuit",
+          "Charge Up",
+          "Zapp",
+          "Tesla Cage",
+          "Voltaic Sentinel",
+          "Thunderous Blast"
+        ],
+        "full_name": "Corruptor_Ranged.Electrical_Blast"
+      },
+      "Energy Blast": {
+        "powers": [
+          "Power Bolt",
+          "Power Blast",
+          "Energy Torrent",
+          "Power Burst",
+          "Sniper Blast",
+          "Aim",
+          "Power Push",
+          "Explosive Blast",
+          "Nova"
+        ],
+        "full_name": "Corruptor_Ranged.Energy_Blast"
+      },
+      "Fire Blast": {
+        "powers": [
+          "Flares",
+          "Fire Blast",
+          "Fire Ball",
+          "Rain of Fire",
+          "Fire Breath",
+          "Aim",
+          "Blaze",
+          "Blazing Bolt",
+          "Inferno"
+        ],
+        "full_name": "Corruptor_Ranged.Fire_Blast"
+      },
+      "Ice Blast": {
+        "powers": [
+          "Ice Bolt",
+          "Ice Blast",
+          "Frost Breath",
+          "Aim",
+          "Freeze Ray",
+          "Ice Storm",
+          "Bitter Ice Blast",
+          "Bitter Freeze Ray",
+          "Blizzard"
+        ],
+        "full_name": "Corruptor_Ranged.Ice_Blast"
+      },
+      "Psychic Blast": {
+        "powers": [
+          "Subdue",
+          "Mental Blast",
+          "Telekinetic Blast",
+          "Psychic Scream",
+          "Will Domination",
+          "Psionic Lance",
+          "Psionic Tornado",
+          "Scramble Minds",
+          "Psychic Wail"
+        ],
+        "full_name": "Corruptor_Ranged.Psychic_Blast"
+      },
+      "Radiation Blast": {
+        "powers": [
+          "Neutrino Bolt",
+          "X-Ray Beam",
+          "Irradiate",
+          "Electron Haze",
+          "Proton Volley",
+          "Aim",
+          "Cosmic Burst",
+          "Neutron Bomb",
+          "Atomic Blast"
+        ],
+        "full_name": "Corruptor_Ranged.Radiation_Blast"
+      },
+      "Seismic Blast": {
+        "powers": [
+          "Seismic Shockwaves",
+          "Encase",
+          "Shatter",
+          "Rock Shards",
+          "Entomb",
+          "Seismic Force",
+          "Upthrust",
+          "Tombstone",
+          "Stalagmite",
+          "Meteor"
+        ],
+        "full_name": "Corruptor_Ranged.Seismic_Blast"
+      },
+      "Sonic Attack": {
+        "powers": [
+          "Shriek",
+          "Scream",
+          "Howl",
+          "Shockwave",
+          "Shout",
+          "Amplify",
+          "Sirens Song",
+          "Screech",
+          "Dreadful Wail"
+        ],
+        "full_name": "Corruptor_Ranged.Sonic_Attack"
+      },
+      "Storm Blast": {
+        "powers": [
+          "Gust",
+          "Hailstones",
+          "Jet Stream",
+          "Storm Cell",
+          "Intensify",
+          "Direct Strike",
+          "Chain Lightning",
+          "Cloudburst",
+          "Category Five"
+        ],
+        "full_name": "Corruptor_Ranged.Storm_Blast"
+      },
+      "Water Blast": {
+        "powers": [
+          "Aqua Bolt",
+          "Hydro Blast",
+          "Water Burst",
+          "Whirlpool",
+          "Tidal Forces",
+          "Dehydrate",
+          "Water Jet",
+          "Steam Spray",
+          "Geyser"
+        ],
+        "full_name": "Corruptor_Ranged.Water_Blast"
+      }
+    },
+    "secondary": {
+      "Cold Domination": {
+        "powers": [
+          "Infrigidate",
+          "Ice Shield",
+          "Snow Storm",
+          "Glacial Shield",
+          "Frostwork",
+          "Arctic Fog",
+          "Benumb",
+          "Sleet",
+          "Heat Loss"
+        ],
+        "full_name": "Corruptor_Buff.Cold_Domination"
+      },
+      "Dark Miasma": {
+        "powers": [
+          "Twilight Grasp",
+          "Tar Patch",
+          "Darkest Night",
+          "Howling Twilight",
+          "Shadow Fall",
+          "Fearsome Stare",
+          "Petrifying Gaze",
+          "Black Hole",
+          "Dark Servant"
+        ],
+        "full_name": "Corruptor_Buff.Dark_Miasma"
+      },
+      "Electrical Affinity": {
+        "powers": [
+          "Shock",
+          "Rejuvenating Circuit",
+          "Galvanic Sentinel",
+          "Energizing Circuit",
+          "Faraday Cage",
+          "Empowering Circuit",
+          "Defibrillate",
+          "Insulating Circuit",
+          "Amp Up"
+        ],
+        "full_name": "Corruptor_Buff.Electrical_Affinity"
+      },
+      "Empathy": {
+        "powers": [
+          "Healing Aura",
+          "Heal Other",
+          "Absorb Pain",
+          "Resurrect",
+          "Clear Mind",
+          "Fortitude",
+          "Recovery Aura",
+          "Regeneration Aura",
+          "Adrenalin Boost"
+        ],
+        "full_name": "Corruptor_Buff.Empathy"
+      },
+      "Force Field": {
+        "powers": [
+          "Personal Force Field",
+          "Deflection Shield",
+          "Repulsion Bolt",
+          "Insulation Shield",
+          "Detention Field",
+          "Dispersion Bubble",
+          "Repulsion Field",
+          "Force Bomb",
+          "Damping Bubble"
+        ],
+        "full_name": "Corruptor_Buff.Force_Field"
+      },
+      "Kinetics": {
+        "powers": [
+          "Transfusion",
+          "Siphon Power",
+          "Repel",
+          "Siphon Speed",
+          "Increase Density",
+          "Speed Boost",
+          "Inertial Reduction",
+          "Transference",
+          "Fulcrum Shift"
+        ],
+        "full_name": "Corruptor_Buff.Kinetics"
+      },
+      "Marine Affinity": {
+        "powers": [
+          "Shoal Rush",
+          "Soothing Wave",
+          "Toroidal Bubble",
+          "Whitecap",
+          "Tide Pool",
+          "Brine",
+          "Shifting Tides",
+          "Barrier Reef",
+          "Power of the Depths"
+        ],
+        "full_name": "Corruptor_Buff.Marine_Affinity"
+      },
+      "Nature Affinity": {
+        "powers": [
+          "Corrosive Enzymes",
+          "Regrowth",
+          "Wild Growth",
+          "Spore Cloud",
+          "Lifegiving Spores",
+          "Wild Bastion",
+          "Rebirth",
+          "Entangling Aura",
+          "Overgrowth"
+        ],
+        "full_name": "Corruptor_Buff.Nature_Affinity"
+      },
+      "Pain Domination": {
+        "powers": [
+          "Nullify Pain",
+          "Soothe",
+          "Share Pain",
+          "Conduit of Pain",
+          "Enforced Morale",
+          "Soothing Aura",
+          "World of Pain",
+          "Anguishing Cry",
+          "Painbringer"
+        ],
+        "full_name": "Corruptor_Buff.Pain_Domination"
+      },
+      "Poison": {
+        "powers": [
+          "Alkaloid",
+          "Envenom",
+          "Weaken",
+          "Neurotoxic Breath",
+          "Elixir of Life",
+          "Antidote",
+          "Paralytic Poison",
+          "Poison Trap",
+          "Venomous Gas"
+        ],
+        "full_name": "Corruptor_Buff.Poison"
+      },
+      "Radiation Emission": {
+        "powers": [
+          "Radiant Aura",
+          "Radiation Infection",
+          "Accelerate Metabolism",
+          "Enervating Field",
+          "Mutation",
+          "Lingering Radiation",
+          "Choking Cloud",
+          "Fallout",
+          "EM Pulse"
+        ],
+        "full_name": "Corruptor_Buff.Radiation_Emission"
+      },
+      "Sonic Resonance": {
+        "powers": [
+          "Sonic Siphon",
+          "Sonic Barrier",
+          "Sonic Haven",
+          "Sonic Cage",
+          "Disruption Field",
+          "Sonic Dispersion",
+          "Sonic Repulsion",
+          "Clarity",
+          "Liquefy"
+        ],
+        "full_name": "Corruptor_Buff.Sonic_Resonance"
+      },
+      "Storm Summoning": {
+        "powers": [
+          "Gale",
+          "O2 Boost",
+          "Snow Storm",
+          "Steamy Mist",
+          "Freezing Rain",
+          "Hurricane",
+          "Thunder Clap",
+          "Tornado",
+          "Lightning Storm"
+        ],
+        "full_name": "Corruptor_Buff.Storm_Summoning"
+      },
+      "Thermal Radiation": {
+        "powers": [
+          "Warmth",
+          "Fire Shield",
+          "Cauterize",
+          "Plasma Shield",
+          "Power of the Phoenix",
+          "Thaw",
+          "Forge",
+          "Heat Exhaustion",
+          "Melt Armor"
+        ],
+        "full_name": "Corruptor_Buff.Thermal_Radiation"
+      },
+      "Time Manipulation": {
+        "powers": [
+          "Time Crawl",
+          "Temporal Mending",
+          "Time's Juncture",
+          "Temporal Selection",
+          "Distortion Field",
+          "Time Stop",
+          "Farsight",
+          "Slowed Response",
+          "Chrono Shift"
+        ],
+        "full_name": "Corruptor_Buff.Time_Manipulation"
+      },
+      "Traps": {
+        "powers": [
+          "Web Grenade",
+          "Caltrops",
+          "Triage Beacon",
+          "Acid Mortar",
+          "Force Field Generator",
+          "Poison Trap",
+          "Seeker Drones",
+          "Trip Mine",
+          "Temporal Bomb"
+        ],
+        "full_name": "Corruptor_Buff.Traps"
+      },
+      "Trick Arrow": {
+        "powers": [
+          "Entangling Arrow",
+          "Flash Arrow",
+          "Glue Arrow",
+          "Ice Arrow",
+          "Poison Gas Arrow",
+          "Acid Arrow",
+          "Disruption Arrow",
+          "Oil Slick Arrow",
+          "EMP Arrow"
+        ],
+        "full_name": "Corruptor_Buff.Trick_Arrow"
+      }
+    },
+    "epic": {
+      "Dark Mastery": {
+        "powers": [
+          "Dark Consumption",
+          "Oppressive Gloom",
+          "Dark Embrace",
+          "Soul Transfer",
+          "Spirit Drain"
+        ],
+        "full_name": "Epic.Dark_Mastery"
+      },
+      "Electricity Mastery": {
+        "powers": [
+          "Electric Fence",
+          "Thunder Strike",
+          "Charged Armor",
+          "Shocking Bolt",
+          "Power Sink"
+        ],
+        "full_name": "Epic.Electricity_Mastery"
+      },
+      "Energy Mastery": {
+        "powers": [
+          "Conserve Power",
+          "Power Build Up",
+          "Temp Invulnerability",
+          "Force of Nature",
+          "Total Focus"
+        ],
+        "full_name": "Epic.Power_Mastery"
+      },
+      "Fire Mastery": {
+        "powers": [
+          "Consume",
+          "Char",
+          "Fire Shield",
+          "Rise of the Phoenix",
+          "Greater Fire Sword"
+        ],
+        "full_name": "Epic.Corr_Flame_Mastery"
+      },
+      "Ice Mastery": {
+        "powers": [
+          "Frozen Armor",
+          "Flash Freeze",
+          "Hoarfrost",
+          "Build Up",
+          "Ice Elemental"
+        ],
+        "full_name": "Epic.Ice_Mastery_DefCorr"
+      },
+      "Leviathan Mastery": {
+        "powers": [
+          "School of Sharks",
+          "Shark Skin",
+          "Hibernate",
+          "Spirit Shark Jaws",
+          "Summon Coralax"
+        ],
+        "full_name": "Epic.Corruptor_Leviathan_Mastery"
+      },
+      "Mace Mastery": {
+        "powers": [
+          "Web Envelope",
+          "Scorpion Shield",
+          "Focused Accuracy",
+          "Web Cocoon",
+          "Summon Disruptor"
+        ],
+        "full_name": "Epic.Corruptor_Mace_Mastery"
+      },
+      "Mu Mastery": {
+        "powers": [
+          "Power Sink",
+          "Charged Armor",
+          "Electric Shackles",
+          "Energize",
+          "Summon Adept"
+        ],
+        "full_name": "Epic.Corruptor_Mu_Mastery"
+      },
+      "Psionic Mastery": {
+        "powers": [
+          "Dominate",
+          "Mass Hypnosis",
+          "Mind Over Body",
+          "World of Confusion",
+          "Telekinesis"
+        ],
+        "full_name": "Epic.Psychic_Mastery"
+      },
+      "Soul Mastery": {
+        "powers": [
+          "Dark Embrace",
+          "Soul Storm",
+          "Power Boost",
+          "Soul Drain",
+          "Summon Mistress"
+        ],
+        "full_name": "Epic.Corruptor_Soul_Mastery"
+      }
+    }
+  },
+  "Arachnos Widow": {
+    "primary": {
+      "Fortunata Training": {
+        "powers": [
+          "Mental Blast",
+          "Telekinetic Blast",
+          "Subdue",
+          "Aim",
+          "Psychic Scream",
+          "Dominate",
+          "Psionic Tornado",
+          "Scramble Thoughts",
+          "Total Domination",
+          "Psychic Wail"
+        ],
+        "full_name": "Widow_Training.Fortunata_Training"
+      },
+      "Night Widow Training": {
+        "powers": [
+          "Mental Blast",
+          "Build Up",
+          "Smoke Grenade",
+          "Slash",
+          "Eviscerate",
+          "Psychic Scream"
+        ],
+        "full_name": "Widow_Training.Night_Widow_Training"
+      },
+      "Widow Training": {
+        "powers": [
+          "Poison Dart",
+          "Swipe",
+          "Strike",
+          "Dart Burst",
+          "Follow Up",
+          "Spin",
+          "Lunge",
+          "Confront"
+        ],
+        "full_name": "Widow_Training.Widow_Training"
+      }
+    },
+    "secondary": {
+      "Fortunata Teamwork": {
+        "powers": [
+          "Fate Sealed",
+          "Mask Presence",
+          "Confuse",
+          "Mind Link",
+          "Tactical Training: Vengeance",
+          "Aura of Confusion"
+        ],
+        "full_name": "Teamwork.Fortunata_Teamwork"
+      },
+      "Teamwork": {
+        "powers": [
+          "Combat Training: Defensive",
+          "Combat Training: Offensive",
+          "Tactical Training: Maneuvers",
+          "Indomitable Will",
+          "Tactical Training: Assault",
+          "Tactical Training: Leadership",
+          "Foresight"
+        ],
+        "full_name": "Teamwork.Teamwork"
+      },
+      "Widow Teamwork": {
+        "powers": [
+          "Pain Tolerance",
+          "Mask Presence",
+          "Mental Training",
+          "Mind Link",
+          "Placate",
+          "Tactical Training: Vengeance",
+          "Elude"
+        ],
+        "full_name": "Teamwork.Widow_Teamwork"
+      }
+    },
+    "epic": {
+      "Leviathan Mastery": {
+        "powers": [
+          "Spirit Shark",
+          "School of Sharks",
+          "Bile Spray",
+          "Arctic Breath",
+          "Summon Guardian"
+        ],
+        "full_name": "Epic.VEAT_Leviathan_Mastery"
+      },
+      "Mace Mastery": {
+        "powers": [
+          "Mace Blast",
+          "Web Envelope",
+          "Disruptor Blast",
+          "Shatter Armor",
+          "Summon Blaster"
+        ],
+        "full_name": "Epic.VEAT_Mace_Mastery"
+      },
+      "Mu Mastery": {
+        "powers": [
+          "Mu Lightning",
+          "Electrifying Fences",
+          "Ball Lightning",
+          "Static Discharge",
+          "Summon Striker"
+        ],
+        "full_name": "Epic.VEAT_Mu_Mastery"
+      },
+      "Soul Mastery": {
+        "powers": [
+          "Gloom",
+          "Soul Tentacles",
+          "Dark Obliteration",
+          "Darkest Night",
+          "Summon Widow"
+        ],
+        "full_name": "Epic.VEAT_Soul_Mastery"
+      }
+    }
+  },
+  "Arachnos Soldier": {
+    "primary": {
+      "Arachnos Soldier": {
+        "powers": [
+          "Single Shot",
+          "Pummel",
+          "Burst",
+          "Wide Area Web Grenade",
+          "Heavy Burst",
+          "Bayonet",
+          "Venom Grenade",
+          "Frag Grenade"
+        ],
+        "full_name": "Arachnos_Soldiers.Arachnos_Soldier"
+      },
+      "Bane Spider Soldier": {
+        "powers": [
+          "Bash",
+          "Mace Beam",
+          "Mace Beam Blast",
+          "Build Up",
+          "Mace Beam Volley",
+          "Poisonous Ray",
+          "Pulverize",
+          "Shatter",
+          "Placate",
+          "Crowd Control"
+        ],
+        "full_name": "Arachnos_Soldiers.Bane_Spider_Soldier"
+      },
+      "Crab Spider Soldier": {
+        "powers": [
+          "Channelgun",
+          "Slice",
+          "Longfang",
+          "Aim",
+          "Suppression",
+          "Arm Lash",
+          "Venom Grenade",
+          "Frag Grenade",
+          "Frenzy",
+          "Omega Maneuver"
+        ],
+        "full_name": "Arachnos_Soldiers.Crab_Spider_Soldier"
+      }
+    },
+    "secondary": {
+      "Bane Spider Training": {
+        "powers": [
+          "Bane Spider Armor Upgrade",
+          "Cloaking Device",
+          "Surveillance",
+          "Web Cocoon"
+        ],
+        "full_name": "Training_Gadgets.Bane_Spider_Training"
+      },
+      "Crab Spider Training": {
+        "powers": [
+          "Crab Spider Armor Upgrade",
+          "Fortification",
+          "Serum",
+          "Summon Spiderlings"
+        ],
+        "full_name": "Training_Gadgets.Crab_Spider_Training"
+      },
+      "Training and Gadgets": {
+        "powers": [
+          "Wolf Spider Armor",
+          "Combat Training: Defensive",
+          "Combat Training: Offensive",
+          "Tactical Training: Maneuvers",
+          "Tactical Training: Assault",
+          "Tactical Training: Leadership",
+          "Mental Training",
+          "Call Reinforcements"
+        ],
+        "full_name": "Training_Gadgets.Training_and_Gadgets"
+      }
+    },
+    "epic": {
+      "Leviathan Mastery": {
+        "powers": [
+          "Spirit Shark",
+          "School of Sharks",
+          "Bile Spray",
+          "Arctic Breath",
+          "Summon Guardian"
+        ],
+        "full_name": "Epic.VEAT_Leviathan_Mastery"
+      },
+      "Mace Mastery": {
+        "powers": [
+          "Mace Blast",
+          "Web Envelope",
+          "Disruptor Blast",
+          "Shatter Armor",
+          "Summon Blaster"
+        ],
+        "full_name": "Epic.VEAT_Mace_Mastery"
+      },
+      "Mu Mastery": {
+        "powers": [
+          "Mu Lightning",
+          "Electrifying Fences",
+          "Ball Lightning",
+          "Static Discharge",
+          "Summon Striker"
+        ],
+        "full_name": "Epic.VEAT_Mu_Mastery"
+      },
+      "Soul Mastery": {
+        "powers": [
+          "Gloom",
+          "Soul Tentacles",
+          "Dark Obliteration",
+          "Darkest Night",
+          "Summon Widow"
+        ],
+        "full_name": "Epic.VEAT_Soul_Mastery"
+      }
+    }
+  },
+  "_pools": {
+    "Concealment": {
+      "powers": [
+        "Stealth",
+        "Grant Invisibility",
+        "Infiltration",
+        "Misdirection",
+        "Phase Shift"
+      ],
+      "full_name": "Pool.Invisibility"
+    },
+    "Experimentation": {
+      "powers": [
+        "Jaunt",
+        "Experimental Injection",
+        "Toxic Dart",
+        "Speed of Sound",
+        "Corrosive Vial",
+        "Adrenal Booster"
+      ],
+      "full_name": "Pool.Experimentation"
+    },
+    "Fighting": {
+      "powers": [
+        "Boxing",
+        "Kick",
+        "Tough",
+        "Weave",
+        "Cross Punch"
+      ],
+      "full_name": "Pool.Fighting"
+    },
+    "Flight": {
+      "powers": [
+        "Hover",
+        "Air Superiority",
+        "Fly",
+        "Group Fly",
+        "Evasive Maneuvers"
+      ],
+      "full_name": "Pool.Flight"
+    },
+    "Force of Will": {
+      "powers": [
+        "Weaken Resolve",
+        "Mighty Leap",
+        "Project Will",
+        "Wall of Force",
+        "Unleash Potential"
+      ],
+      "full_name": "Pool.Force_of_Will"
+    },
+    "Leadership": {
+      "powers": [
+        "Maneuvers",
+        "Assault",
+        "Tactics",
+        "Vengeance",
+        "Victory Rush"
+      ],
+      "full_name": "Pool.Leadership"
+    },
+    "Leaping": {
+      "powers": [
+        "Jump Kick",
+        "Combat Jumping",
+        "Super Jump",
+        "Acrobatics",
+        "Spring Attack"
+      ],
+      "full_name": "Pool.Leaping"
+    },
+    "Medicine": {
+      "powers": [
+        "Aid Other",
+        "Injection",
+        "Aid Self",
+        "Field Medic",
+        "Resuscitate"
+      ],
+      "full_name": "Pool.Medicine"
+    },
+    "Presence": {
+      "powers": [
+        "Pacify",
+        "Provoke",
+        "Intimidate",
+        "Invoke Panic",
+        "Unrelenting"
+      ],
+      "full_name": "Pool.Manipulation"
+    },
+    "Sorcery": {
+      "powers": [
+        "Translocation",
+        "Spirit Ward",
+        "Arcane Bolt",
+        "Mystic Flight",
+        "Enflame",
+        "Rune of Protection"
+      ],
+      "full_name": "Pool.Sorcery"
+    },
+    "Speed": {
+      "powers": [
+        "Flurry",
+        "Hasten",
+        "Super Speed",
+        "Burnout",
+        "Whirlwind"
+      ],
+      "full_name": "Pool.Speed"
+    },
+    "Teleportation": {
+      "powers": [
+        "Teleport Target",
+        "Combat Teleport",
+        "Teleport",
+        "Fold Space",
+        "Team Teleport"
+      ],
+      "full_name": "Pool.Teleportation"
+    }
+  }
+}

@@ -1,0 +1,302 @@
+@font-face {
+  font-family: "Red Circle";
+  src: url("redcircle.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --fg: #d8e0ec;
+  --muted: #7a90aa;
+  --accent: #7db3e0;
+  --bg: #212c3d;
+  --card: #2a3750;
+  --border: #3a4f6a;
+}
+
+* { box-sizing: border-box; }
+
+a { color: var(--accent); }
+a:hover { color: var(--fg); }
+
+body {
+  margin: 0;
+  font: 15px/1.45 -apple-system, "Segoe UI", system-ui, sans-serif;
+  color: var(--fg);
+  background: var(--bg);
+}
+
+header {
+  display: flex;
+  align-items: center;
+  gap: 1.5em;
+  padding: 0.8em 1.5em;
+  background: var(--card);
+  border-bottom: 1px solid var(--border);
+}
+header .brand {
+  font-family: "Red Circle", sans-serif;
+  font-weight: normal;
+  font-size: 1.3em;
+  text-decoration: none;
+  color: var(--fg);
+  display: flex;
+  align-items: center;
+  gap: 0.4em;
+}
+.brand-icon {
+  width: 28px;
+  height: 28px;
+}
+header nav a {
+  color: var(--accent);
+  text-decoration: none;
+  margin-right: 1em;
+}
+header nav a:hover { text-decoration: underline; }
+
+main {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 1.5em;
+}
+
+h1, h2 { font-family: "Red Circle", sans-serif; font-weight: normal; text-shadow: 3px 3px 6px rgba(0,0,0,0.6); }
+h1 { margin-top: 0.2em; }
+h2 { margin-top: 1.5em; border-bottom: 1px solid var(--border); padding-bottom: 0.2em; }
+h4 { margin: 0.6em 0 0.2em; font-size: 0.92em; color: var(--muted); }
+
+.meta { color: var(--muted); }
+
+footer {
+  text-align: center;
+  padding: 1.5em;
+  color: var(--muted);
+  border-top: 1px solid var(--border);
+  margin-top: 2em;
+}
+
+/* Index */
+.at-list {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 0.4em;
+}
+.at-list li {
+  background: var(--card);
+  padding: 0.6em 0.9em;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 0.3em;
+  transition: background 0.15s ease, border-color 0.15s ease;
+}
+.at-list li:hover {
+  background: #324260;
+  border-color: var(--accent);
+}
+.at-list a {
+  color: var(--accent);
+  text-decoration: none;
+  font-family: "Red Circle", sans-serif;
+  font-weight: normal;
+  font-size: 1.1em;
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+  text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+}
+.at-icon {
+  width: 50px;
+  height: 50px;
+  flex-shrink: 0;
+}
+.at-list .count {
+  color: var(--muted);
+  font-size: 0.85em;
+  align-self: flex-end;
+}
+
+/* Breadcrumb */
+.breadcrumb {
+  font-size: 0.85em;
+  color: var(--muted);
+  margin-bottom: 0.8em;
+}
+.breadcrumb a { color: var(--accent); text-decoration: none; }
+.breadcrumb a:hover { text-decoration: underline; }
+
+/* Sort controls */
+.sort-controls {
+  font-size: 0.82em;
+  color: var(--muted);
+  margin-bottom: 0.2em;
+}
+.sort-btn {
+  font: inherit;
+  font-size: 0.95em;
+  border: 1px solid var(--border);
+  border-radius: 3px;
+  background: var(--card);
+  color: var(--muted);
+  padding: 0.1em 0.5em;
+  cursor: pointer;
+  margin-left: 0.3em;
+}
+.sort-btn.active {
+  background: var(--accent);
+  color: #fff;
+  border-color: var(--accent);
+}
+
+/* Nav active state */
+header nav a.active {
+  color: var(--fg);
+  font-weight: 600;
+}
+
+/* Filter input */
+.ps-filter {
+  display: block;
+  width: 100%;
+  max-width: 360px;
+  padding: 0.4em 0.7em;
+  margin-bottom: 1.2em;
+  font: inherit;
+  font-size: 0.95em;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  background: var(--card);
+  color: var(--fg);
+}
+.ps-filter:focus { outline: 2px solid var(--accent); outline-offset: 1px; }
+
+/* Powerset / power tree */
+section.role { margin-bottom: 2em; }
+
+details.powerset {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  margin-bottom: 0.4em;
+  padding: 0.4em 0.8em;
+  transition: background 0.15s ease, border-color 0.15s ease;
+}
+details.powerset:not([open]):hover {
+  background: #324260;
+  border-color: var(--accent);
+}
+details.powerset > summary {
+  font-weight: 600;
+  cursor: pointer;
+  padding: 0.2em 0;
+}
+.ps-meta { font-weight: normal; color: var(--muted); margin-left: 0.6em; font-size: 0.85em; }
+
+details.power {
+  padding: 0.25em 0 0.25em 1em;
+  border-left: 2px solid var(--border);
+  margin: 0.3em 0 0.3em 0.6em;
+}
+details.power > summary {
+  cursor: pointer;
+  padding: 0.15em 0;
+}
+.pwr-name { font-weight: 500; }
+.pwr-meta { color: var(--muted); font-size: 0.85em; margin-left: 0.6em; }
+.pwr-meta.empty { font-style: italic; }
+
+.stats { padding-left: 1em; }
+.stats ul { padding-left: 1.2em; margin: 0.2em 0; }
+.stats-cols {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 2em;
+  margin-top: 0.4em;
+}
+.stats-cols > h4 { margin: 0.3em 0 0.2em; }
+.stats-cols > ul { margin-top: 0; min-width: 0; }
+.layouts > li { margin: 0.3em 0; }
+.layouts .enhs { margin-top: 0.1em; }
+.cnt {
+  display: inline-block;
+  font-variant-numeric: tabular-nums;
+  font-weight: 600;
+  color: var(--accent);
+  margin-right: 0.4em;
+}
+.indiv li { margin: 0.1em 0; }
+
+/* Take-rate table */
+.takerate-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0.5em 0 0.8em;
+  font-size: 0.9em;
+}
+.takerate-table th {
+  text-align: left;
+  font-weight: 600;
+  color: var(--muted);
+  border-bottom: 1px solid var(--border);
+  padding: 0.2em 0.5em;
+}
+.takerate-table td {
+  padding: 0.2em 0.5em;
+  border-bottom: 1px solid var(--border);
+}
+.takerate-table tr:last-child td { border-bottom: none; }
+.takerate-table .num {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+  width: 6em;
+}
+.takerate-table .bar-col { width: 140px; padding-right: 0; }
+.takerate-table .muted { color: var(--muted); }
+.pairings-table { max-width: 700px; }
+
+.selectivity-cols {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2em;
+  align-items: start;
+}
+/* Powerset icons */
+.ps-icon {
+  width: 30px;
+  height: 30px;
+  vertical-align: middle;
+  margin-right: 0.4em;
+  image-rendering: pixelated;
+}
+
+/* Per-power icons */
+.pwr-icon {
+  width: 30px;
+  height: 30px;
+  vertical-align: middle;
+  margin-right: 0.35em;
+  image-rendering: pixelated;
+}
+
+/* Enhancement icons */
+.enh-icon {
+  width: 24px;
+  height: 24px;
+  vertical-align: middle;
+  margin-right: 0.3em;
+  image-rendering: pixelated;
+}
+
+.takerate-bar {
+  height: 0.65em;
+  background: var(--accent);
+  border-radius: 2px;
+  min-width: 1px;
+}

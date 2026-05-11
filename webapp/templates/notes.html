@@ -1,0 +1,97 @@
+{% extends "base.html" %}
+{% block title %}Homecoming Build Stats — Notes & Methodology{% endblock %}
+{% block content %}
+<h1>Notes &amp; Methodology</h1>
+
+<h2>What this is</h2>
+<p>
+  A slotting statistics viewer derived from <strong>{{ "{:,}".format(n_builds) }} complete builds</strong>
+  posted on the Homecoming forums. For each power, it shows how commonly it is taken, how many slots
+  players typically put in it, which enhancement sets dominate, and which layouts are most popular.
+  The goal is to give a quick, data-grounded answer to "what do people actually put in this power?"
+</p>
+
+<h2>Data sources</h2>
+<p>
+  Builds were extracted from a snapshot of the Homecoming forum archive covering posts up to early 2026.
+  Three inline build formats are recognised - MBD (Mids' binary JSON), MxDz (Mids' compressed binary),
+  and Mids' plain-text export in both its compact and long-form variants, as well as
+  <code>.mbd</code> and <code>.mxd</code> files posted as forum attachments.
+  Counts by format for builds included in stats:
+</p>
+<ul>
+  {% for fmt, n in fmt_counts.items() | sort(attribute='1', reverse=True) %}
+    <li><strong>{{ fmt }}</strong>: {{ "{:,}".format(n) }}</li>
+  {% endfor %}
+</ul>
+
+<h2>Quality filters</h2>
+<p>
+  Two filters are applied before a build contributes to any statistic:
+</p>
+<ul>
+  <li>
+    <strong>Minimum 12 slotted powers.</strong>
+    The build-count distribution is strongly bimodal: complete builds cluster at 22–31 slotted powers;
+    stubs and help-skeleton posts form a thin tail below about 15.
+    The 12-power floor sits cleanly in the gap and removes {{ "{:,}".format(n_partial) }} partial builds
+    from stats without touching real ones.
+  </li>
+  <li>
+    <strong>Maximum 50% unresolved enhancements.</strong>
+    Builds exported from an outdated version of Mids sometimes reference enhancement IDs that no longer
+    exist in the current database. If more than half of a build's slots are unresolvable it is excluded,
+    as the slotting signal is too degraded to be useful.
+  </li>
+</ul>
+<p>
+  Excluded builds are retained in the database and visible in the raw counts but do not affect any
+  displayed statistic.
+</p>
+
+<h2>Deduplication</h2>
+<p>
+  Builds are deduplicated by a signature derived from the archetype, powerset selection, and the sorted
+  enhancement tuple for each power. The same build posted in multiple threads, or quoted and re-posted
+  by another user, counts once. Iterative revisions of a build by the same author produce distinct
+  signatures and count separately, which is the intended behaviour.
+</p>
+
+<h2>On data quality and sample bias</h2>
+<p>
+  A common objection to forum-scraped build data is that it will be dominated by bad or incomplete
+  builds. In practice the opposite pressure applies: people post builds publicly to show off a finished
+  project, ask for critique on something they put real effort into, or reply to a request for examples.
+  Placeholder skeletons exist but are removed by the minimum-power filter. The median build in this
+  dataset has 26 slotted powers and resolves 99%+ of its enhancement tokens cleanly.
+</p>
+<p>
+  Sample bias does exist, but it runs in a more specific direction: the forum population skews toward
+  players engaged enough with the game to seek out build discussion. Casual players who never visit the
+  forums are not represented. This means the data likely over-represents IO-slotted builds relative to
+  the player base as a whole, and under-represents early-levelling or TO/SO slotting. For the purpose
+  of understanding how experienced players approach a power or powerset, this is the right population
+  to sample from.
+</p>
+<p>
+  The data is also necessarily backward-looking. A build posted in 2021 reflects the meta and
+  available sets of 2021. Enhancement sets added or rebalanced since then will be under-represented
+  relative to their current prevalence.
+</p>
+
+<h2>Enhancement counting</h2>
+<p>
+  Only named IO set pieces and generic Invention-origin IOs are counted. Training Origin, Dual Origin,
+  and Single Origin enhancements are ignored. Serious builds at level 50 do not use them, and their
+  occasional appearance in build exports is treated as noise rather than signal.
+  The "Superior" tier of archetype-specific purple sets (e.g. Superior Defiant Barrage) is folded into
+  its base set for counting purposes, since players use one or the other and splitting them would halve
+  the sample size for each.
+</p>
+
+<h2>Credits</h2>
+<p>
+  Archetype and powerset icons by <strong>Rylas</strong> (Homecoming forums).
+</p>
+
+{% endblock %}

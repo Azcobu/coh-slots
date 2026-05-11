@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% block title %}Homecoming Build Stats — Archetypes{% endblock %}
+{% block content %}
+<h1>Archetypes</h1>
+<p class="meta">
+  {{ "{:,}".format(complete_builds) }} builds in stats
+  {%- if meta.get('last_scan_at') %} · last scan {{ meta['last_scan_at'] }}{% endif -%}
+  .
+</p>
+<ul class="at-list">
+  {% for at in archetypes %}
+    <li>
+      <a href="{{ url_for('archetype', slug=at_slug(at.name)) }}">
+        {%- set icon = at_icon(at.name) -%}
+        {%- if icon %}<img class="at-icon" src="{{ url_for('static', filename='at/' + icon) }}" alt="">{% endif -%}
+        {{ at.name }}
+      </a>
+      <span class="count">{{ "{:,}".format(at.n_builds) }} builds</span>
+    </li>
+  {% endfor %}
+</ul>
+{% endblock %}

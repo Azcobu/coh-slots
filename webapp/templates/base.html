@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>{% block title %}Homecoming Build Stats{% endblock %}</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <header>
+    <a class="brand" href="{{ url_for('index') }}">
+      <img src="{{ url_for('static', filename='HeroSymbol.png') }}" class="brand-icon" alt="">
+      Homecoming Build Stats
+    </a>
+    <nav>
+      <a href="{{ url_for('index') }}"
+         class="{{ 'active' if request.endpoint in ('index','archetype') }}">Archetypes</a>
+      <a href="{{ url_for('pools') }}"
+         class="{{ 'active' if request.endpoint == 'pools' }}">Universal</a>
+      <a href="{{ url_for('statistics_index') }}"
+         class="{{ 'active' if request.endpoint in ('statistics_index','statistics_at') }}">Statistics</a>
+      <a href="{{ url_for('notes') }}"
+         class="{{ 'active' if request.endpoint == 'notes' }}">Notes</a>
+    </nav>
+  </header>
+  <main>
+    {% block breadcrumb %}{% endblock %}
+    {% block content %}{% endblock %}
+  </main>
+  <footer>
+    <small>Read-only stats viewer. Slot data scanned from the Homecoming forum archive.</small>
+  </footer>
+</body>
+</html>

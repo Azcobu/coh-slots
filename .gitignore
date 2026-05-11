@@ -1,0 +1,20 @@
+# macOS metadata
+.DS_Store
+
+# Python
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+
+# Build output
+build/
+
+# Databases — slots_deploy.sqlite is committed; others are local only
+data/slots.sqlite
+data/archive.sqlite
+data/attachment_cache.sqlite
+data/I12.mhd
+
+# Mids source data stays local
+*.mhd

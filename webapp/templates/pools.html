@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block title %}{{ page_title }} — Homecoming Build Stats{% endblock %}
+{% block content %}
+<h1>{{ page_title }}</h1>
+<p class="meta">Powers any archetype can take.</p>
+
+{% for section in sections %}
+  {% if section.sets %}
+    <section class="role">
+      <h2>{{ section.label }}</h2>
+      {% for set in section.sets %}
+        {% include "_powerset.html" %}
+      {% endfor %}
+    </section>
+  {% endif %}
+{% endfor %}
+{% endblock %}

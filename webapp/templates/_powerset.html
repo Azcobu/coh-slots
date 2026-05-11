@@ -1,0 +1,61 @@
+{# Render one powerset as a <details> block. Used by archetype.html and pools.html. #}
+<details class="powerset">
+  <summary>
+    {%- set psicon = ps_icon(set.display_name) -%}
+    {%- if psicon %}<img class="ps-icon" src="{{ url_for('static', filename=psicon) }}" alt="">{% endif -%}
+    {{ set.display_name }}
+    <span class="ps-meta">
+      {%- set total = set.powers | selectattr('stats') | map(attribute='stats') | map(attribute='n_taken') | sum -%}
+      {%- if total -%}{{ "{:,}".format(total) }} slottings{%- endif -%}
+    </span>
+  </summary>
+  {% for p in set.powers %}
+    <details class="power">
+      <summary>
+        {%- set picon = power_icon(set.display_name, p.display_name) -%}
+        {%- if picon %}<img class="pwr-icon" src="{{ url_for('static', filename=picon) }}" alt="">{% endif -%}
+        <span class="pwr-name">{{ p.display_name }}</span>
+        {% if p.stats %}
+          <span class="pwr-meta">
+            {{ p.stats.n_taken }} times · mean {{ "%.2f"|format(p.stats.mean_slots) }} · median {{ "%.0f"|format(p.stats.median_slots) }} slots
+          </span>
+        {% else %}
+          <span class="pwr-meta empty">no data</span>
+        {% endif %}
+      </summary>
+      {% if p.stats %}
+        <div class="stats">
+          <div class="stats-cols">
+            <h4>Most common slot layouts</h4>
+            <h4>Most common individual enhancements</h4>
+            <ul class="layouts">
+            {% for cnt, layout in p.stats.top_layouts %}
+              <li><span class="cnt">{{ cnt }}x ({{ "%.0f"|format(cnt / p.stats.n_taken * 100) }}%):</span>
+                <ul class="enhs">
+                  {% for e in layout %}
+                    <li>
+                      {%- set icon = enh_icon(e) -%}
+                      {%- if icon %}<img class="enh-icon" src="{{ url_for('static', filename='enh/' + icon) }}" alt="" loading="lazy">{% endif -%}
+                      {{ e }}
+                    </li>
+                  {% endfor %}
+                </ul>
+              </li>
+            {% endfor %}
+            </ul>
+            <ul class="indiv">
+            {% for cnt, enh in p.stats.top_enhs %}
+              <li>
+                <span class="cnt">{{ cnt }}x</span>
+                {%- set icon = enh_icon(enh) -%}
+                {%- if icon %}<img class="enh-icon" src="{{ url_for('static', filename='enh/' + icon) }}" alt="" loading="lazy">{% endif -%}
+                {{ enh }}
+              </li>
+            {% endfor %}
+            </ul>
+          </div>
+        </div>
+      {% endif %}
+    </details>
+  {% endfor %}
+</details>

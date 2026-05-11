@@ -1,0 +1,48 @@
+{% extends "base.html" %}
+{% block title %}{{ archetype }} — Homecoming Build Stats{% endblock %}
+{% block breadcrumb %}<nav class="breadcrumb"><a href="{{ url_for('index') }}">Archetypes</a> / {{ archetype }}</nav>{% endblock %}
+{% block content %}
+<h1>{{ archetype }}</h1>
+<p class="meta">
+  {{ "{:,}".format(n_builds) }} builds in archive.
+  <a href="{{ url_for('statistics_at', slug=at_slug(archetype)) }}">Take-rate &amp; statistics →</a>
+</p>
+
+<input type="search" id="ps-filter" class="ps-filter" placeholder="Filter powers…" autocomplete="off">
+
+{% for section in sections %}
+  {% if section.sets %}
+    <section class="role" data-section>
+      <h2>{{ section.label }}</h2>
+      {% for set in section.sets %}
+        {% include "_powerset.html" %}
+      {% endfor %}
+    </section>
+  {% endif %}
+{% endfor %}
+
+<script>
+(function () {
+  var input = document.getElementById('ps-filter');
+  input.addEventListener('input', function () {
+    var q = this.value.trim().toLowerCase();
+    document.querySelectorAll('[data-section]').forEach(function (section) {
+      var anyVisible = false;
+      section.querySelectorAll('details.powerset').forEach(function (ps) {
+        var psName = ps.querySelector('summary').childNodes[0].textContent.trim().toLowerCase();
+        var powers = Array.from(ps.querySelectorAll('.pwr-name')).map(function (el) {
+          return el.textContent.trim().toLowerCase();
+        });
+        var match = !q || psName.includes(q) || powers.some(function (p) { return p.includes(q); });
+        ps.style.display = match ? '' : 'none';
+        if (match) {
+          anyVisible = true;
+          if (q) ps.open = true;
+        }
+      });
+      section.style.display = anyVisible ? '' : 'none';
+    });
+  });
+})();
+</script>
+{% endblock %}
