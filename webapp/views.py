@@ -7,19 +7,33 @@ import json
 import sqlite3
 from pathlib import Path
 
-from flask import Flask, abort, g, render_template
+from flask import Flask, abort, g, render_template, send_from_directory
 
 from pipeline import db_schema
 from .at_icons import icon_for_at
 from .enh_icons import icon_for_enh
 from .power_icons import icon_for_power
 from .ps_icons import icon_for_ps
+from pipeline.aggregate import load_mutex_groups
 from pipeline.banned import is_banned
 from pipeline.refdata import RefData, load as load_refdata
 
 
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
 SLOTS_DB = PROJECT_ROOT / "data" / "slots.sqlite"
+
+# Cached mutex-partner lookup: power_full_name -> [partner_full_names]
+_mutex_partners: dict[str, list[str]] | None = None
+
+
+def _get_mutex_partners() -> dict[str, list[str]]:
+    global _mutex_partners
+    if _mutex_partners is None:
+        _mutex_partners = {}
+        for group in load_mutex_groups():
+            for i, fn in enumerate(group):
+                _mutex_partners[fn] = [group[j] for j in range(len(group)) if j != i]
+    return _mutex_partners
 
 # Kheldian inherent powers that live in Inherent.Inherent but belong on the
 # Warshade / Peacebringer AT pages rather than the universal inherents list.
@@ -108,10 +122,12 @@ def _stats_for_powers(power_full_names: list[str]) -> dict[str, dict]:
 
 
 def _powers_for_set(refdata: RefData, ps_full: str) -> list[dict]:
-    """List powers in a powerset (Group.Set), ordered by level."""
+    """List enhanceable powers in a powerset (Group.Set), ordered by level."""
     powers = []
     for fn, info in refdata.powers_index.items():
         if f"{info['group_name']}.{info['set_name']}" == ps_full:
+            if not info.get("can_be_enhanced", True):
+                continue
             powers.append({
                 "full_name": fn,
                 "display_name": info["display_name"],
@@ -238,6 +254,12 @@ def register(app: Flask) -> None:
     app.jinja_env.globals["enh_icon"] = icon_for_enh
     app.jinja_env.globals["ps_icon"] = icon_for_ps
     app.jinja_env.globals["power_icon"] = icon_for_power
+
+    _FILTER_JSON_DIR = PROJECT_ROOT / "data" / "filter-json"
+
+    @app.route("/data/<path:filename>")
+    def serve_filter_data(filename):
+        return send_from_directory(_FILTER_JSON_DIR, filename)
 
     @app.route("/")
     def index():
@@ -495,6 +517,25 @@ def register(app: Flask) -> None:
 
         _MIN_BUILDS_FOR_SKIP = 20  # ignore powersets with too few builds to be meaningful
 
+        # Prefetch mutex partner counts for this AT in one query.
+        mutex_partners = _get_mutex_partners()
+        all_partner_fns: set[str] = set()
+        for role in ("primary", "secondary", "epic"):
+            for info in at_data.get(role, {}).values():
+                for p in _powers_for_set(refdata, info["full_name"]):
+                    all_partner_fns.update(mutex_partners.get(p["full_name"], []))
+        if all_partner_fns:
+            ph = ",".join("?" * len(all_partner_fns))
+            n_took_partner: dict[str, int] = dict(db.execute(
+                f"SELECT power_full_name, COUNT(DISTINCT build_id) "
+                f"FROM power_slotting JOIN build USING (build_id) "
+                f"WHERE parsed_partial=0 AND power_full_name IN ({ph}) "
+                f"GROUP BY power_full_name",
+                list(all_partner_fns),
+            ).fetchall())
+        else:
+            n_took_partner = {}
+
         sections = []
         skipped_candidates: list[dict] = []
         _skipped_seen: set[tuple[str, str]] = set()
@@ -517,7 +558,12 @@ def register(app: Flask) -> None:
                         continue
                     s = stats_map.get(p["full_name"])
                     n_taken = s["n_taken"] if s else 0
-                    take_rate = n_taken / n_builds if n_builds > 0 else None
+                    # Adjust denominator for mutex powers: exclude builds that
+                    # took a mutually exclusive partner (couldn't have taken this).
+                    partners = mutex_partners.get(p["full_name"], [])
+                    n_excluded = sum(n_took_partner.get(par, 0) for par in partners)
+                    n_eligible = max(n_builds - n_excluded, n_taken)
+                    take_rate = n_taken / n_eligible if n_eligible > 0 else None
                     power_rows.append({
                         "display_name": p["display_name"],
                         "level": p["level"],
@@ -533,7 +579,7 @@ def register(app: Flask) -> None:
                             "powerset": set_disp,
                             "display_name": p["display_name"],
                             "n_taken": n_taken,
-                            "n_builds": n_builds,
+                            "n_builds": n_eligible,
                             "take_rate": take_rate,
                         })
                 power_rows.sort(key=lambda r: -(r["take_rate"] or 0))

@@ -1,34 +1,34 @@
 {# Render one powerset as a <details> block. Used by archetype.html and pools.html. #}
-<details class="powerset">
+<details class="powerset" data-ps="{{ set.full_name }}">
   <summary>
     {%- set psicon = ps_icon(set.display_name) -%}
     {%- if psicon %}<img class="ps-icon" src="{{ url_for('static', filename=psicon) }}" alt="">{% endif -%}
     {{ set.display_name }}
-    <span class="ps-meta">
+    <span class="ps-meta" data-ps-total>
       {%- set total = set.powers | selectattr('stats') | map(attribute='stats') | map(attribute='n_taken') | sum -%}
       {%- if total -%}{{ "{:,}".format(total) }} slottings{%- endif -%}
     </span>
   </summary>
   {% for p in set.powers %}
-    <details class="power">
+    <details class="power" data-power="{{ p.full_name }}" data-n-taken="{{ p.stats.n_taken if p.stats else 0 }}">
       <summary>
         {%- set picon = power_icon(set.display_name, p.display_name) -%}
         {%- if picon %}<img class="pwr-icon" src="{{ url_for('static', filename=picon) }}" alt="">{% endif -%}
         <span class="pwr-name">{{ p.display_name }}</span>
         {% if p.stats %}
-          <span class="pwr-meta">
+          <span class="pwr-meta" data-pwr-meta>
             {{ p.stats.n_taken }} times · mean {{ "%.2f"|format(p.stats.mean_slots) }} · median {{ "%.0f"|format(p.stats.median_slots) }} slots
           </span>
         {% else %}
-          <span class="pwr-meta empty">no data</span>
+          <span class="pwr-meta empty" data-pwr-meta>no data</span>
         {% endif %}
       </summary>
       {% if p.stats %}
-        <div class="stats">
+        <div class="stats" data-stats>
           <div class="stats-cols">
             <h4>Most common slot layouts</h4>
             <h4>Most common individual enhancements</h4>
-            <ul class="layouts">
+            <ul class="layouts" data-layouts>
             {% for cnt, layout in p.stats.top_layouts %}
               <li><span class="cnt">{{ cnt }}x ({{ "%.0f"|format(cnt / p.stats.n_taken * 100) }}%):</span>
                 <ul class="enhs">
@@ -43,7 +43,7 @@
               </li>
             {% endfor %}
             </ul>
-            <ul class="indiv">
+            <ul class="indiv" data-enhs>
             {% for cnt, enh in p.stats.top_enhs %}
               <li>
                 <span class="cnt">{{ cnt }}x</span>
@@ -55,6 +55,8 @@
             </ul>
           </div>
         </div>
+      {% else %}
+        <div class="stats" data-stats style="display:none"></div>
       {% endif %}
     </details>
   {% endfor %}

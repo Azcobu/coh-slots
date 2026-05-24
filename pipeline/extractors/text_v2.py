@@ -34,7 +34,7 @@ from .common import (
     SlotEnh,
     html_to_text,
 )
-from .text import _meta_for_display
+from .text import _meta_for_display, _normalize_enh_display_simple
 from ..refdata import RefData
 from ..banned import is_banned
 
@@ -129,10 +129,18 @@ def _resolve_power(refdata: RefData, display_name: str,
     return matches[0] if matches else None
 
 
+
+
 def _resolve_enh_by_display(refdata: RefData, set_name: str, enh_name: str) -> SlotEnh | None:
     """Try 'Set: Enh' first; for generic IOs fall back to 'Invention: ...'."""
+    if set_name.startswith('?:'):
+        set_name = set_name[2:]
+    meta = None
     raw = f"{set_name}: {enh_name}"
-    meta = _meta_for_display(refdata, raw)
+    for candidate in _normalize_enh_display_simple(set_name, enh_name):
+        meta = _meta_for_display(refdata, candidate)
+        if meta:
+            break
     if not meta:
         # The display we record always uses 'Invention:' prefix for generic IOs.
         # If the build emits e.g. "Invention: Recharge Reduction" verbatim, it

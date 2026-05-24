@@ -8,7 +8,9 @@ coh-slots/
 ├── data/            SQLite databases (runtime data, not in version control).
 │   ├── archive.sqlite        Forum post archive — source of raw build text.
 │   ├── attachment_cache.sqlite  Downloaded attachment files (survives pipeline resets).
-│   └── slots.sqlite          Parsed builds and aggregated stats — rebuilt by the pipeline.
+│   ├── slots.sqlite          Parsed builds and aggregated stats — rebuilt by the pipeline. LOCAL ONLY.
+│   ├── slots_deploy.sqlite   Trimmed deploy DB committed to git (~49 MB). Used by Cloudflare.
+│   └── filter-json/          Pre-generated filter JSON files (committed). Used by Cloudflare Pages.
 ├── pipeline/        Backend package. Parses builds, aggregates stats.
 ├── refdata/         JSON reference files built from Mids data. Rebuilt by `pipeline refdata`.
 ├── scripts/         Standalone utility scripts.
@@ -124,12 +126,25 @@ caches them in `data/attachment_cache.sqlite`, and injects them into
 Idempotent — already-cached files are skipped.
 
 ```bash
-cd scripts
-python fetch_attachments.py
-python fetch_attachments.py --limit 50     # process at most 50 new files
-python fetch_attachments.py --rate 2.0     # seconds between requests (default 1.0)
-python fetch_attachments.py --dry-run      # enumerate links without downloading
+python scripts/fetch_attachments.py
+python scripts/fetch_attachments.py --limit 50     # process at most 50 new files
+python scripts/fetch_attachments.py --rate 2.0     # seconds between requests (default 1.0)
+python scripts/fetch_attachments.py --dry-run      # enumerate links without downloading
+python scripts/fetch_attachments.py --parse-only   # re-parse cached files, no network requests
 ```
+
+## Importing local build files
+
+To import a directory of local `.mbd` / `.mxd` / `.txt` build files (e.g. a
+builder's personal archive) and attribute them to a named author:
+
+```bash
+python scripts/import_local_builds.py --dir data/submitted/Icesphere --author Icesphere
+```
+
+Files are attributed to `--author` with each file's modification time as
+`posted_at`. Already-imported files (matched by filename hash) are skipped.
+Run `pipeline aggregate` afterwards to include them in stats.
 
 ---
 
@@ -142,19 +157,43 @@ python -m pipeline all
 # 2. Re-inject attachment builds (always needed after a scan reset)
 python scripts/fetch_attachments.py --parse-only
 
-# 3. Re-aggregate to include attachment builds in stats
+# 3. Re-inject local build files (if any)
+python scripts/import_local_builds.py --dir data/submitted/Icesphere --author Icesphere
+python scripts/import_local_builds.py --dir data/submitted/Maelwys --author Maelwys
+
+# 4. Re-aggregate to include all builds in stats
 python -m pipeline aggregate
 
-# 4. (Optional) fetch and parse any newly posted attachments
+# 5. (Optional) fetch and parse any newly posted attachments
 python scripts/fetch_attachments.py
 
-# 5. Start the webapp
+# 6. Start the webapp locally to verify
 python -m webapp
 ```
 
 > **Note:** `pipeline scan` resets `slots.sqlite`, which wipes attachment-sourced
-> builds. Always run `fetch_attachments.py --parse-only` after a scan to restore
-> them from the local cache (no network requests needed).
+> and locally-imported builds. Always run `fetch_attachments.py --parse-only`
+> and any `import_local_builds.py` commands after a scan to restore them.
+
+## Deploying to Cloudflare Pages
+
+After a data refresh, regenerate the deploy DB and push:
+
+```bash
+python scripts/freeze.py       # rebuilds slots_deploy.sqlite + data/filter-json/ + build/
+git add data/slots_deploy.sqlite data/filter-json/
+git commit -m "refresh data"
+git push
+```
+
+Cloudflare Pages picks up the push automatically and rebuilds the static site
+using `python scripts/freeze.py` as the build command (configured in the
+Cloudflare dashboard). Because `slots.sqlite` is not committed, on Cloudflare
+the freeze script copies the pre-built `data/filter-json/` files into `build/`
+instead of regenerating them. Both `slots_deploy.sqlite` and `data/filter-json/`
+must be committed for the Cloudflare build to work.
+
+The live site is at: https://cohstats.pages.dev
 
 To rebuild reference data from Mids (only when deliberately updating Mids version — see warning above):
 
@@ -173,12 +212,19 @@ python scripts/freeze.py --out DIR # output to a custom directory
 ```
 
 This crawls all routes, writes HTML to `build/`, then resolves the icon
-symlinks from `webapp/static/` by copying the real asset files in. The result
-is a fully self-contained static site ready for deployment.
+symlinks from `webapp/static/` by copying the real asset files in. It also
+generates per-filter-combination JSON files for the author/year filter UI:
 
-For Cloudflare Pages: set the build output directory to `build/` and the
-build command to `python scripts/freeze.py`. The `build/` directory should
-be in `.gitignore` as it is regenerated on each deploy.
+- When `slots.sqlite` is present: generates filter JSON from full data, writes
+  copies to both `build/data/` and `data/filter-json/` (the committed cache).
+- When `slots.sqlite` is absent (Cloudflare build): copies `data/filter-json/`
+  into `build/data/` instead.
+
+For Cloudflare Pages: build command is `python scripts/freeze.py`, build
+output directory is `build/`. The `build/` directory is in `.gitignore` as
+it is regenerated on each deploy. `slots_deploy.sqlite` (~49 MB) and
+`data/filter-json/` are both committed to the repo so Cloudflare has data to
+work from; `slots.sqlite` (314 MB) is not committed and stays local only.
 
 ## Adding or correcting icons
 

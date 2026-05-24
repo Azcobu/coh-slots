@@ -21,7 +21,9 @@ CREATE TABLE IF NOT EXISTS build (
     secondary_set   TEXT,
     epic_set        TEXT,
     signature       TEXT NOT NULL,
-    parsed_partial  INTEGER NOT NULL DEFAULT 0
+    parsed_partial  INTEGER NOT NULL DEFAULT 0,
+    author          TEXT,                    -- forum username from archive
+    posted_at       TEXT                     -- ISO-8601 datetime from archive
 );
 CREATE INDEX IF NOT EXISTS ix_build_post ON build(post_id);
 CREATE UNIQUE INDEX IF NOT EXISTS ux_build_signature ON build(signature);
@@ -68,6 +70,13 @@ CREATE TABLE IF NOT EXISTS powerset_stats (
 CREATE TABLE IF NOT EXISTS scan_meta (
     key TEXT PRIMARY KEY,
     value TEXT
+);
+
+CREATE TABLE IF NOT EXISTS submitted_file (
+    file_hash   TEXT PRIMARY KEY,
+    submitter   TEXT NOT NULL,
+    filename    TEXT NOT NULL,
+    ingested_at TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP
 );
 """
 

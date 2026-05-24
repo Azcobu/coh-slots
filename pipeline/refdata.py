@@ -57,6 +57,7 @@ class RefData:
     abbrev_to_display: dict
     static_idx_to_uid: dict      # str(int) -> uid
     enhancement_meta: dict       # uid -> {set, kind, short_name, display}
+    display_to_uid: dict         # inverted uid_to_display; resolves old-schema display names
 
     def is_tracked_uid(self, uid: str) -> bool:
         """True if the enhancement is a tracked kind (named set or generic IO)."""
@@ -77,6 +78,9 @@ class RefData:
 
     def meta_for_uid(self, uid: str) -> dict | None:
         return self.enhancement_meta.get(uid)
+
+    def uid_for_display(self, display: str) -> str | None:
+        return self.display_to_uid.get(display)
 
 
 def _kind_for_type(type_id: int) -> str:
@@ -109,6 +113,7 @@ def _build_powers_index(archetypes, powersets, powers, tree):
             "group_name": pw.group_name,
             "set_name": pw.set_name,
             "level": pw.level,
+            "can_be_enhanced": pw.can_be_enhanced,
             "role_hint": "other",
             "archetypes": [],
         }
@@ -303,6 +308,7 @@ def load() -> RefData:
     if not all((REFDATA_DIR / n).exists() for n in needed):
         build()
 
+    uid_to_display = json.loads((REFDATA_DIR / "uid_to_display.json").read_text())
     return RefData(
         powers_tree=json.loads((REFDATA_DIR / "powers_tree.json").read_text()),
         powers_index=json.loads((REFDATA_DIR / "powers_index.json").read_text()),
@@ -310,10 +316,11 @@ def load() -> RefData:
         archetype_map=json.loads((REFDATA_DIR / "archetype_map.json").read_text()),
         powerset_map=json.loads((REFDATA_DIR / "powerset_map.json").read_text()),
         power_static_idx_to_full=json.loads((REFDATA_DIR / "power_static_idx_to_full.json").read_text()),
-        uid_to_display=json.loads((REFDATA_DIR / "uid_to_display.json").read_text()),
+        uid_to_display=uid_to_display,
         abbrev_to_display=json.loads((REFDATA_DIR / "abbrev_to_display.json").read_text()),
         static_idx_to_uid=json.loads((REFDATA_DIR / "static_idx_to_uid.json").read_text()),
         enhancement_meta=json.loads((REFDATA_DIR / "enhancement_meta.json").read_text()),
+        display_to_uid={v: k for k, v in uid_to_display.items()},
     )
 
 

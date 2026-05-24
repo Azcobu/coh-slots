@@ -187,6 +187,8 @@ def _resolve_power(refdata: RefData, display_name: str,
 def _resolve_enhancement(refdata: RefData, abbrev: str) -> SlotEnh | None:
     """Look up an abbreviation and produce a SlotEnh, or None to skip."""
     abbrev = abbrev.strip()
+    if abbrev.startswith('?:'):
+        abbrev = abbrev[2:]
     if not abbrev or abbrev in ("Empty", "Empt", "-"):
         return None
     # Strip trailing ':NN' IO-level marker (e.g. 'BlsoftheZ-Travel:50').
@@ -206,6 +208,16 @@ def _resolve_enhancement(refdata: RefData, abbrev: str) -> SlotEnh | None:
     if not display and abbrev.startswith("DS:"):
         # D-Sync: same prefix-strip pattern as HO.
         display = refdata.display_for_abbrev(abbrev[3:])
+    if not display and ': ' in abbrev:
+        # Abbrev looks like a display name (e.g. 'Armageddon: Accuracy/Damage/Recharge').
+        # Try direct display lookup with the same normalisations used by text_v2.
+        set_part, _, enh_part = abbrev.partition(': ')
+        for candidate in _normalize_enh_display_simple(set_part, enh_part):
+            meta = _meta_for_display(refdata, candidate)
+            if meta and meta["kind"] in ("set", "io"):
+                return SlotEnh(uid=meta["uid"], display=meta["display"],
+                               set_name=meta.get("set") or None, kind=meta["kind"],
+                               io_level=None)
     if not display:
         # Unknown abbrev — preserve as opaque token, marked tracked so it
         # doesn't silently disappear from signatures.
@@ -229,8 +241,33 @@ def _resolve_enhancement(refdata: RefData, abbrev: str) -> SlotEnh | None:
 # Aliases for abbreviations that older Mids exports used. Maps the legacy
 # short form to a current one that resolves via abbrev_to_display.json.
 _ABBREV_ALIASES = {
-    "LucoftheG-Rchg+": "LucoftheG-Def/Rchg+",
+    "LucoftheG-Rchg+":  "LucoftheG-Def/Rchg+",
+    "SprBrtFur-Rech/Fury": "SprBrtFur-Rech/Fury%",
 }
+
+# Aliases for display names emitted by newer Mids that differ from refdata.
+_DISPLAY_ALIASES = {
+    "Luck of the Gambler: Recharge Speed": "Luck of the Gambler: Defense/Increased Global Recharge Speed",
+    "Gift of the Ancients: Run Speed +7.5%": "Gift of the Ancients: Defense/Increased Run Speed",
+}
+
+
+def _normalize_enh_display_simple(set_part: str, enh_part: str) -> list[str]:
+    """Candidate display strings for a 'Set: Enh' pair (used by both extractors)."""
+    if ': Level ' in enh_part:
+        enh_part = enh_part[:enh_part.index(': Level ')].strip()
+    enh_part = enh_part.replace('Hea/', 'Heal/')
+    candidates = [f"{set_part}: {enh_part}"]
+    reordered = None
+    if enh_part.startswith('Accuracy/'):
+        reordered = enh_part[len('Accuracy/'):] + '/Accuracy'
+        candidates.append(f"{set_part}: {reordered}")
+    # Some refdata entries have a spurious space before the colon; try both
+    # the original and (if applicable) the reordered form with that spacing.
+    candidates.append(f"{set_part} : {enh_part}")
+    if reordered:
+        candidates.append(f"{set_part} : {reordered}")
+    return candidates
 
 
 # Lazy reverse-lookup cache: display -> {uid, set, kind, ...}
@@ -245,6 +282,7 @@ def _meta_for_display(refdata: RefData, display: str) -> dict | None:
             d = meta.get("display")
             if d and d not in _DISPLAY_TO_META:
                 _DISPLAY_TO_META[d] = {**meta, "uid": uid}
+    display = _DISPLAY_ALIASES.get(display, display)
     return _DISPLAY_TO_META.get(display)
 
 
@@ -336,15 +374,21 @@ def _resolve_enh_by_full_name(refdata: RefData, set_name: str, enh_name: str
     # Handle generic IO long-form: "Invention - Recharge Reduction"
     if set_name.lower() == "invention":
         display = f"Invention: {enh_name}"
+        meta = _meta_for_display(refdata, display)
     else:
         display = f"{set_name}: {enh_name}"
-    meta = _meta_for_display(refdata, display)
+        meta = None
+        for candidate in _normalize_enh_display_simple(set_name, enh_name):
+            meta = _meta_for_display(refdata, candidate)
+            if meta:
+                display = candidate
+                break
     if not meta:
         return SlotEnh(uid=None, display=f"?:{display}",
                        set_name=None, kind="unknown")
     if meta["kind"] not in ("set", "io"):
         return None
     return SlotEnh(
-        uid=meta["uid"], display=display,
+        uid=meta["uid"], display=meta["display"],
         set_name=meta.get("set") or None, kind=meta["kind"],
     )

@@ -2,11 +2,14 @@
 {% block title %}{{ archetype }} — Homecoming Build Stats{% endblock %}
 {% block breadcrumb %}<nav class="breadcrumb"><a href="{{ url_for('index') }}">Archetypes</a> / {{ archetype }}</nav>{% endblock %}
 {% block content %}
+<div data-filter-page="at" data-filter-at="{{ at_slug(archetype) }}"></div>
 <h1>{{ archetype }}</h1>
-<p class="meta">
+<p class="meta" data-n-builds>
   {{ "{:,}".format(n_builds) }} builds in archive.
   <a href="{{ url_for('statistics_at', slug=at_slug(archetype)) }}">Take-rate &amp; statistics →</a>
 </p>
+
+<div id="filter-bar"></div>
 
 <input type="search" id="ps-filter" class="ps-filter" placeholder="Filter powers…" autocomplete="off">
 

@@ -123,6 +123,28 @@ def fetch_one(url: str) -> tuple[int, bytes | None]:
         return 0, None
 
 
+def update_cached_post_ids(cache: sqlite3.Connection, files: dict[int, dict]) -> int:
+    """Update post_ids for cached files when the archive now has an earlier post.
+
+    This matters when a new forum is added to the archiver and its posts
+    pre-date the posts that originally triggered the download.
+    Returns count of rows updated.
+    """
+    cached = {r[0]: r[1] for r in cache.execute(
+        "SELECT file_id, post_id FROM attachment"
+    ).fetchall()}
+    updates = [
+        (info["post_id"], fid)
+        for fid, info in files.items()
+        if fid in cached and info["post_id"] < cached[fid]
+    ]
+    if updates:
+        cache.executemany("UPDATE attachment SET post_id=? WHERE file_id=?", updates)
+        cache.commit()
+        print(f"  Updated post_id for {len(updates)} cached files with earlier posts")
+    return len(updates)
+
+
 def download_missing(cache: sqlite3.Connection, files: dict[int, dict],
                      rate: float, limit: int | None, dry_run: bool) -> int:
     """Download files not yet in cache. Returns count of new fetches attempted."""
@@ -195,7 +217,12 @@ def _parse_mbd_file(refdata, post_id: int, content: bytes):
             enh_obj = se.get("Enhancement") if se else None
             if not enh_obj:
                 continue
-            slot_enh = _slot_enh_from_uid(refdata, enh_obj.get("Uid"), enh_obj.get("IoLevel"))
+            uid = enh_obj.get("Uid")
+            io_level = enh_obj.get("IoLevel")
+            # Old Mids schema: Enhancement is {"Enhancement": "<display>", "IoLevel": n, ...}
+            if not uid and isinstance(enh_obj.get("Enhancement"), str):
+                uid = refdata.uid_for_display(enh_obj["Enhancement"])
+            slot_enh = _slot_enh_from_uid(refdata, uid, io_level)
             if slot_enh is not None:
                 enhancements.append(slot_enh)
         if enhancements:
@@ -231,8 +258,15 @@ def _parse_text_file(refdata, post_id: int, content: bytes):
 
 
 def parse_and_insert(cache: sqlite3.Connection, slots: sqlite3.Connection,
+                     archive: sqlite3.Connection,
                      refdata, dry_run: bool) -> None:
     from pipeline.scan import _insert_record
+
+    # Pre-load author/posted_at keyed by post_id for attachment builds.
+    post_meta = {
+        row["post_id"]: (row["author"], row["posted_at"])
+        for row in archive.execute("SELECT post_id, author, posted_at FROM posts")
+    }
 
     rows = cache.execute(
         "SELECT file_id, post_id, ext, content FROM attachment "
@@ -264,7 +298,8 @@ def parse_and_insert(cache: sqlite3.Connection, slots: sqlite3.Connection,
             continue
 
         try:
-            inserted = _insert_record(slots, rec)
+            author, posted_at = post_meta.get(post_id, (None, None))
+            inserted = _insert_record(slots, rec, author, posted_at)
             if inserted:
                 n_inserted += 1
             else:
@@ -308,12 +343,15 @@ def main() -> None:
     txt_count = sum(1 for f in files.values() if f["ext"] == "txt")
     print(f"  Found {len(files)} unique files: {mbd_count} mbd, {mxd_count} mxd, {txt_count} txt")
 
+    if not args.dry_run:
+        update_cached_post_ids(cache, files)
+
     if not args.parse_only:
         print(f"\nStep 2: downloading (rate={args.rate}s)...")
         download_missing(cache, files, rate=args.rate, limit=args.limit, dry_run=args.dry_run)
 
     print("\nStep 3: parsing and inserting...")
-    parse_and_insert(cache, slots, refdata, dry_run=args.dry_run)
+    parse_and_insert(cache, slots, archive, refdata, dry_run=args.dry_run)
 
     archive.close()
     cache.close()

@@ -15,6 +15,7 @@ import sys
 
 from . import refdata as refdata_mod
 from . import scan as scan_mod
+from . import scan_submitted as scan_submitted_mod
 from . import aggregate as agg_mod
 from . import validate as val_mod
 
@@ -31,10 +32,12 @@ def main(argv: list[str] | None = None) -> None:
 
     sub.add_parser("aggregate", help="compute power_stats")
 
+    sub.add_parser("submitted", help="ingest files from data/submitted/")
+
     s_val = sub.add_parser("validate", help="coverage report")
     s_val.add_argument("--top", type=int, default=20)
 
-    s_all = sub.add_parser("all", help="run scan + aggregate + validate (not refdata)")
+    s_all = sub.add_parser("all", help="run scan + submitted + aggregate + validate (not refdata)")
     s_all.add_argument("--limit", type=int, default=None)
     s_all.add_argument("--top", type=int, default=20)
 
@@ -46,10 +49,13 @@ def main(argv: list[str] | None = None) -> None:
         scan_mod.scan(limit=args.limit, reset=not args.no_reset)
     elif args.cmd == "aggregate":
         agg_mod.aggregate()
+    elif args.cmd == "submitted":
+        scan_submitted_mod.scan_submitted()
     elif args.cmd == "validate":
         val_mod.report(top=args.top)
     elif args.cmd == "all":
         scan_mod.scan(limit=args.limit, reset=True)
+        scan_submitted_mod.scan_submitted()
         agg_mod.aggregate()
         val_mod.report(top=args.top)
 

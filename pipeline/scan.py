@@ -89,7 +89,9 @@ def _flag_partial(rec: BuildRecord) -> None:
         rec.parsed_partial = True
 
 
-def _insert_record(conn: sqlite3.Connection, rec: BuildRecord) -> bool:
+def _insert_record(conn: sqlite3.Connection, rec: BuildRecord,
+                   author: str | None = None,
+                   posted_at: str | None = None) -> bool:
     """
     Insert a BuildRecord. Returns True if inserted, False if dropped as a
     cross-author duplicate (signature collision).
@@ -99,11 +101,11 @@ def _insert_record(conn: sqlite3.Connection, rec: BuildRecord) -> bool:
     cur = conn.execute(
         "INSERT OR IGNORE INTO build "
         "(post_id, block_index, source_format, archetype, primary_set, "
-        "secondary_set, epic_set, signature, parsed_partial) "
-        "VALUES (?,?,?,?,?,?,?,?,?)",
+        "secondary_set, epic_set, signature, parsed_partial, author, posted_at) "
+        "VALUES (?,?,?,?,?,?,?,?,?,?,?)",
         (rec.post_id, rec.block_index, rec.source_format, rec.archetype,
          rec.primary_set, rec.secondary_set, rec.epic_set, sig,
-         1 if rec.parsed_partial else 0),
+         1 if rec.parsed_partial else 0, author, posted_at),
     )
     if cur.rowcount == 0:
         return False
@@ -132,7 +134,7 @@ def scan(limit: int | None = None, reset: bool = True) -> None:
     archive = sqlite3.connect(str(ARCHIVE_DB))
     archive.row_factory = sqlite3.Row
 
-    sql = ("SELECT post_id, body_html FROM posts WHERE "
+    sql = ("SELECT post_id, body_html, author, posted_at FROM posts WHERE "
            "body_html LIKE '%MBD;%' OR body_html LIKE '%MxDz;%' "
            "OR body_html LIKE '%MxDu;%' OR body_html LIKE '%Plan by Mids%' "
            "OR body_html LIKE '%built using Mids%' "
@@ -151,7 +153,7 @@ def scan(limit: int | None = None, reset: bool = True) -> None:
         n_posts += 1
         try:
             for rec in _extract_for_post(refdata, row["post_id"], row["body_html"]):
-                inserted = _insert_record(conn, rec)
+                inserted = _insert_record(conn, rec, row["author"], row["posted_at"])
                 if inserted:
                     n_records += 1
                     counts[rec.source_format] = counts.get(rec.source_format, 0) + 1

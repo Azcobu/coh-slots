@@ -1,8 +1,11 @@
 {% extends "base.html" %}
 {% block title %}{{ page_title }} — Homecoming Build Stats{% endblock %}
 {% block content %}
+<div data-filter-page="pools"></div>
 <h1>{{ page_title }}</h1>
 <p class="meta">Powers any archetype can take.</p>
+
+<div id="filter-bar"></div>
 
 {% for section in sections %}
   {% if section.sets %}

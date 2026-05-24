@@ -154,6 +154,9 @@ def extract(refdata: RefData, post_id: int, body_html: str) -> Iterable[BuildRec
                     continue
                 uid = enh_obj.get("Uid")
                 io_level = enh_obj.get("IoLevel")
+                # Old Mids schema: Enhancement is {"Enhancement": "<display>", "IoLevel": n, ...}
+                if not uid and isinstance(enh_obj.get("Enhancement"), str):
+                    uid = refdata.uid_for_display(enh_obj["Enhancement"])
                 slot_enh = _slot_enh_from_uid(refdata, uid, io_level)
                 if slot_enh is not None:
                     enhancements.append(slot_enh)

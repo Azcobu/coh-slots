@@ -17,10 +17,26 @@ from __future__ import annotations
 import argparse
 import json
 from collections import Counter, defaultdict
+from pathlib import Path
 from statistics import mean, median
 
 from . import db_schema
 from .refdata import load as load_refdata
+
+_PROJECT_ROOT = Path(__file__).resolve().parent.parent
+
+
+def load_mutex_groups() -> list[list[str]]:
+    """Return flat list of mutex groups from data/mutex_powers.json.
+
+    Each group is a list of power_full_names where the player can pick at
+    most one (build-choice exclusivity, not runtime exclusivity).
+    """
+    path = _PROJECT_ROOT / "data" / "mutex_powers.json"
+    if not path.exists():
+        return []
+    data = json.loads(path.read_text())
+    return [group for entry in data for group in entry["groups"]]
 
 
 # AT-only purple sets ship in two tiers — "Superior X" (the upgraded form
@@ -151,6 +167,131 @@ def aggregate() -> None:
 
     _build_powerset_stats(conn, refdata)
     conn.close()
+
+
+def compute_filtered_stats(conn, since_year: int | None = None,
+                           author_in: list[str] | None = None,
+                           author_exclude: list[str] | None = None) -> dict[str, dict]:
+    """Compute power stats for a filtered build subset without touching the DB.
+
+    author_in: if given, only builds from these authors are included.
+    author_exclude: if given, builds from these authors are excluded
+                    (NULL author is kept — i.e. unnamed builders are included).
+
+    Returns dict: power_full_name -> {n_taken, mean_slots, median_slots,
+                                       top_layouts, top_enhs}
+    """
+    where = ["b.parsed_partial = 0", "ps.enh_kind IN ('set', 'io')"]
+    params: list = []
+    if since_year is not None:
+        where.append("b.posted_at >= ?")
+        params.append(f"{since_year}-01-01")
+    if author_in is not None:
+        placeholders = ",".join("?" * len(author_in))
+        where.append(f"b.author IN ({placeholders})")
+        params.extend(author_in)
+    elif author_exclude is not None:
+        placeholders = ",".join("?" * len(author_exclude))
+        where.append(f"(b.author IS NULL OR b.author NOT IN ({placeholders}))")
+        params.extend(author_exclude)
+
+    rows = conn.execute(
+        "SELECT ps.build_id, ps.power_full_name, ps.enh_display "
+        "FROM power_slotting ps "
+        "JOIN build b ON b.build_id = ps.build_id "
+        "WHERE " + " AND ".join(where) + " "
+        "ORDER BY ps.build_id, ps.power_full_name",
+        params,
+    ).fetchall()
+
+    per_power: dict[str, dict[int, list[str]]] = defaultdict(lambda: defaultdict(list))
+    for build_id, power_full, enh_display in rows:
+        per_power[power_full][build_id].append(_normalize_display(enh_display))
+
+    result = {}
+    for power_full, by_build in per_power.items():
+        layouts = [tuple(sorted(enhs)) for enhs in by_build.values()]
+        n_taken = len(layouts)
+        slot_counts = [len(layout) for layout in layouts]
+        mn = round(mean(slot_counts), 2) if slot_counts else 0.0
+        md = float(median(slot_counts)) if slot_counts else 0.0
+        layout_counter = Counter(layouts)
+        top_layouts = _select_top_layouts(list(layout_counter.items()), n_taken)
+        all_enhs: Counter = Counter()
+        for layout in layouts:
+            all_enhs.update(layout)
+        top_enhs = [(c, e) for e, c in all_enhs.most_common(6)]
+        result[power_full] = {
+            "n_taken": n_taken,
+            "mean_slots": mn,
+            "median_slots": md,
+            "top_layouts": top_layouts,
+            "top_enhs": top_enhs,
+        }
+    return result
+
+
+def compute_merged_stats(conn, full_names: list[str],
+                         since_year: int | None = None,
+                         author_in: list[str] | None = None,
+                         author_exclude: list[str] | None = None) -> dict | None:
+    """Compute stats for a display-name group of full_names, deduplicating by build_id.
+
+    Mirrors the behaviour of _merge_group in webapp/views.py so filter JSON
+    stats match the HTML-rendered baseline for powers like Sprint that exist
+    under multiple full_names (base + prestige/retailer variants).
+    """
+    pn_ph = ",".join("?" * len(full_names))
+    where = [
+        "b.parsed_partial = 0",
+        f"ps.power_full_name IN ({pn_ph})",
+        "ps.enh_kind IN ('set', 'io')",
+    ]
+    params: list = list(full_names)
+    if since_year is not None:
+        where.append("b.posted_at >= ?")
+        params.append(f"{since_year}-01-01")
+    if author_in is not None:
+        ph = ",".join("?" * len(author_in))
+        where.append(f"b.author IN ({ph})")
+        params.extend(author_in)
+    elif author_exclude is not None:
+        ph = ",".join("?" * len(author_exclude))
+        where.append(f"(b.author IS NULL OR b.author NOT IN ({ph}))")
+        params.extend(author_exclude)
+
+    rows = conn.execute(
+        "SELECT ps.build_id, ps.enh_display "
+        "FROM power_slotting ps "
+        "JOIN build b ON b.build_id = ps.build_id "
+        "WHERE " + " AND ".join(where) + " ORDER BY ps.build_id",
+        params,
+    ).fetchall()
+
+    per_build: dict[int, list[str]] = defaultdict(list)
+    for build_id, enh_display in rows:
+        per_build[build_id].append(_normalize_display(enh_display))
+
+    layouts = [tuple(sorted(enhs)) for enhs in per_build.values()]
+    n_taken = len(layouts)
+    if n_taken == 0:
+        return None
+    slot_counts = [len(layout) for layout in layouts]
+    mn = round(mean(slot_counts), 2)
+    md = float(median(slot_counts))
+    layout_counter = Counter(layouts)
+    top_layouts = _select_top_layouts(list(layout_counter.items()), n_taken)
+    all_enhs: Counter = Counter()
+    for layout in layouts:
+        all_enhs.update(layout)
+    top_enhs = [(c, e) for e, c in all_enhs.most_common(6)]
+    return {
+        "n_taken": n_taken,
+        "mean_slots": mn,
+        "median_slots": md,
+        "top_layouts": top_layouts,
+        "top_enhs": top_enhs,
+    }
 
 
 if __name__ == "__main__":

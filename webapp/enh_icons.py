@@ -58,10 +58,10 @@ _MANUAL: dict[str, str] = {
     "Superior Brute's Fury":            "SAO_Brute1.png",
     "Superior Unrelenting Fury":        "SAO_Brute2.png",
     # AO_ Controller
-    "Overpowering Presence":            "AO_Controller1.png",
-    "Will of the Controller":           "AO_Controller2.png",
-    "Superior Overpowering Presence":   "SAO_Controller1.png",
-    "Superior Will of the Controller":  "SAO_Controller2.png",
+    "Overpowering Presence":            "AO_Controller2.png",
+    "Will of the Controller":           "AO_Controller1.png",
+    "Superior Overpowering Presence":   "SAO_Controller2.png",
+    "Superior Will of the Controller":  "SAO_Controller1.png",
     # AO_ Corruptor
     "Malice of the Corruptor":          "AO_Corruptor1.png",
     "Scourging Blast":                  "AO_Corruptor2.png",

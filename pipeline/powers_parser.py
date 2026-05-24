@@ -64,6 +64,8 @@ class PowerInfo:
     available: int = 0
     desc_short: str = ""
     requires_classes: list = field(default_factory=list)
+    group_membership: list = field(default_factory=list)  # mutex group names
+    can_be_enhanced: bool = True   # False if power accepts no enhancement types
 
 
 # ── SetType enum values ───────────────────────────────────────────────────
@@ -189,8 +191,7 @@ def read_power_header(reader: DotNetBinaryReader) -> PowerInfo:
     reader.read_int32()           # AttackTypes
 
     gm_count = reader.read_int32() + 1
-    for _ in range(gm_count):
-        reader.read_string()
+    pw.group_membership = [s for s in (reader.read_string() for _ in range(gm_count)) if s]
 
     reader.read_int32()           # EntitiesAffected
     reader.read_int32()           # EntitiesAutoHit
@@ -229,6 +230,7 @@ def read_power_header(reader: DotNetBinaryReader) -> PowerInfo:
     reader.read_string()          # DescLong
 
     enh_count = reader.read_int32() + 1
+    pw.can_be_enhanced = enh_count > 0
     for _ in range(enh_count):
         reader.read_int32()
 

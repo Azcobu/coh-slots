@@ -1,0 +1,36 @@
+[
+  {
+    "note": "Ice Armor — Hoarfrost vs Rime (pick one)",
+    "groups": [
+      ["Brute_Defense.Ice_Armor.Hoarfrost",    "Brute_Defense.Ice_Armor.Rime"],
+      ["Scrapper_Defense.Ice_Armor.Hoarfrost",  "Scrapper_Defense.Ice_Armor.Rime"],
+      ["Sentinel_Defense.Ice_Armor.Hoarfrost",  "Sentinel_Defense.Ice_Armor.Rime"],
+      ["Stalker_Defense.Ice_Armor.Hoarfrost",   "Stalker_Defense.Ice_Armor.Rime"],
+      ["Tanker_Defense.Ice_Armor.Hoarfrost",    "Tanker_Defense.Ice_Armor.Rime"]
+    ]
+  },
+  {
+    "note": "Dark Armor — Dark Regeneration vs Obscure Sustenance (pick one)",
+    "groups": [
+      ["Brute_Defense.Dark_Armor.Dark_Regeneration",    "Brute_Defense.Dark_Armor.Obscure_Sustenance"],
+      ["Scrapper_Defense.Dark_Armor.Dark_Regeneration", "Scrapper_Defense.Dark_Armor.Obscure_Sustenance"],
+      ["Sentinel_Defense.Dark_Armor.Dark_Regeneration", "Sentinel_Defense.Dark_Armor.Obscure_Sustenance"],
+      ["Stalker_Defense.Dark_Armor.Dark_Regeneration",  "Stalker_Defense.Dark_Armor.Obscure_Sustenance"],
+      ["Tanker_Defense.Dark_Armor.Dark_Regeneration",   "Tanker_Defense.Dark_Armor.Obscure_Sustenance"]
+    ]
+  },
+  {
+    "note": "Regeneration — Instant Healing vs Reactive Regeneration (pick one)",
+    "groups": [
+      ["Brute_Defense.Regeneration.Instant_Healing",    "Brute_Defense.Regeneration.Reactive_Regeneration"],
+      ["Scrapper_Defense.Regeneration.Instant_Healing", "Scrapper_Defense.Regeneration.Reactive_Regeneration"],
+      ["Stalker_Defense.Regeneration.Instant_Healing",  "Stalker_Defense.Regeneration.Reactive_Regeneration"]
+    ]
+  },
+  {
+    "note": "Sentinel Super Reflexes — Practiced Brawler vs Master Brawler (pick one)",
+    "groups": [
+      ["Sentinel_Defense.Super_Reflexes.Practiced_Brawler", "Sentinel_Defense.Super_Reflexes.Master_Brawler"]
+    ]
+  }
+]
